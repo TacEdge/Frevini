@@ -15,7 +15,7 @@ Two brands, one design standard. Frevini Studio is the source system; Kember Int
 
 | File | Purpose |
 |---|---|
-| `Kember-Interiors-Brand-Guidelines.pdf` | Visual Brand Guidelines v1.0 (9 pages, A4). Built from `src/kember-guidelines.html`. |
+| `Kember-Interiors-Brand-Guidelines.pdf` | Visual Brand Guidelines v1.1 (9 pages, A4). Built from `src/kember-guidelines.html`. |
 | `KEMBER_INTERIORS_BRAND_GUIDELINES.md` | Canonical guidelines with provenance (A/B/C/D), unresolved source conflicts and open decisions. |
 | `KEMBER_FREVINI_SYSTEM_MAPPING.md` | Every Frevini rule classified: retained, adapted, not applicable, or Kember-specific. |
 | `kember-design-tokens.json` | Kember tokens; inherits the Frevini typography, spacing and grid values and states them in full. |

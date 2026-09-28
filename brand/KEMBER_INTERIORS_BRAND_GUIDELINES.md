@@ -1,10 +1,12 @@
 # Kember Interiors — Brand Guidelines
 
-**Version 1.0 · September 2026 · Canonical, machine-readable edition**
+**Version 1.1 · September 2026 · Canonical, machine-readable edition**
 
 Companion files: `kember-design-tokens.json` (values), `Kember-Interiors-Brand-Guidelines.pdf` (visual edition), `KEMBER_FREVINI_SYSTEM_MAPPING.md` (how each Frevini rule was retained, adapted or set aside), `assets/kember/` (logo, icons, reference imagery, captures). Fonts are shared with Frevini in `assets/fonts/`.
 
 Kember Interiors is the New Zealand-facing brand for Kember's American oak interior products. Its design system is the Frevini Studio system (v1.1), applied to Kember's own name, colour, material, engineering and products. The two brands are governed to one standard and are never the same brand.
+
+**Scope.** This guide governs brand expression and the presentation of information. It does not set Kember's New Zealand positioning, which is being defined in a separate positioning and product-architecture exercise, and it is not a source of product data. **Brand guidelines govern presentation; approved product documentation governs technical claims.** Where the two disagree, the documentation wins and the guide is corrected.
 
 Provenance labels: **A** exact Kember · **B** existing Kember · **C** transferred from Frevini · **D** Kember adaptation. See §13.
 
@@ -34,7 +36,9 @@ One deep umber does all the work. Marcellus sets every hierarchy and DM Sans car
 
 ### 1.3 Character of the New Zealand brand (C/D)
 
-**Engineered, material, exact, calm.** Kember is the engineering-led American oak brand: the construction is the story, the oak is the colour, and the documents are specified rather than sold. Where Frevini is editorial and European, Kember is technical and North American; both are architectural, restrained and photographed the same way.
+**Engineered, material, exact, calm.** Where Frevini is editorial and European, Kember is technical and North American; both are architectural, restrained and photographed the same way.
+
+**Working expression, provisional.** "American oak. Engineered for stability." and the page-seven philosophy "Specified, not sold." are working lines for the specifier market. They are not the master-brand proposition. The master brand must hold floor, wall, ceiling, joinery and components — potentially a territory closer to coordinated timber surfaces across the interior than to engineered flooring alone — and that decision belongs to the positioning exercise. This guide leaves room for it: nothing in the colour, typography, layout, imagery or document system depends on the flooring-led line.
 
 ---
 
@@ -202,25 +206,24 @@ Frevini's verbal discipline with Kember's facts (C principles, D examples).
 
 ---
 
-## 9. Product architecture (A products, D structure)
+## 9. Product architecture (A products, D structure) — provisional
 
 ```
 KEMBER INTERIORS
 ├── FLOORING                       AVAILABLE IN NEW ZEALAND
-│   └── E3plank engineered flooring, American Northern Oak — curated colour selection
+│   └── Flooring product to be confirmed: E3plank or PrimeOak Flooring
 ├── WALL + CEILING                 AVAILABLE IN NEW ZEALAND
 │   └── American oak lining — New Zealand specification to be confirmed
 └── BROADER KEMBER CAPABILITY      KEMBER CAPABILITY (not stocked in New Zealand)
     ├── Interior doors
     ├── Cabinetry
-    └── Eplank · EcoKlik · KemLam laminate
+    └── Other Kember lines (Eplank, EcoKlik, KemLam laminate)
 ```
 
 - Two labels, always in the availability-label style: **AVAILABLE IN NEW ZEALAND** and **KEMBER CAPABILITY**. Capability is never presented as stock, never priced, never given a lead time.
 - Categories are added as rows under the brand as the New Zealand offer grows. The system never needs a rebrand to add one.
-- The "curated colour selection" is not named in this guide because the New Zealand selection is not yet confirmed. Product colour names (Naked Oak, Tawny Oak, Barn Oak, Pure Oak, Bronze Oak, Burnt Copper, Pale Oak, Pale Cream Oak) are Kember's and are written as Kember writes them once confirmed.
-
----
+- **The flooring product is not yet identified.** Kember's site presents E3plank; the product under consideration for New Zealand is PrimeOak Flooring. Whether PrimeOak is a Kember-branded product, a manufacturer brand distributed by Kember, a range within Kember, or something else decides how PrimeOak, An Cuong, Masterpiece Series and Kember Interiors appear on collateral. No collateral is produced until this is resolved in the positioning and product-architecture document.
+- Product colour names are Kember's and are written as the approved documentation writes them once the New Zealand selection is confirmed.
 
 ## 10. Document system
 
@@ -241,11 +244,30 @@ Not permitted, as Frevini: title bars, coloured header bands, bullet-heavy slide
 
 ## 11. Information design
 
+### 11.1 Product information system (D)
+
+Every product sheet, datasheet, specification sheet and product slide carries eight fields, in this order:
+
+| Field | What it holds |
+|---|---|
+| **Product** | Name as the approved documentation writes it; range and brand relationship where one exists |
+| **Application** | Floor, wall, ceiling, joinery, component; residential or commercial where documented |
+| **Construction** | Layers, species, core type; shown with the section device at the product's true proportions |
+| **Dimensions** | Thickness, width, length; metric first, imperial in brackets; ranges with an en-dash |
+| **Finish** | Finish type and sheen as documented; no performance adjectives |
+| **Compliance** | Certification, emissions class, test results with the standard named; blank where none is published |
+| **Warranty** | Term, scope and conditions as written in the applicable warranty document |
+| **Availability** | AVAILABLE IN NEW ZEALAND or KEMBER CAPABILITY |
+
+A field with no approved value is left blank, never filled with a plausible figure. The guide's own examples are illustrative and labelled as such.
+
+### 11.2 Standards
+
 Frevini §10 applies in full (tables, charts, diagrams, specifications, callouts, key numbers, quotations, captions, footnotes, references, metadata, revisions), with umber for green and Slate for Olive. Kember extends it:
 
 | Content | Standard (D) |
 |---|---|
-| **Three-layer construction** | The section device (§7.2), always labelled with millimetres, always 4 : 11 : 4 for E3plank; other constructions use their own true proportions. |
+| **Three-layer construction** | The section device (§7.2), always labelled with millimetres from the datasheet, always at the product's true proportions. |
 | **Board cross-sections** | Section device with profile: tongue and groove drawn at 0.75 pt; micro-bevel if applicable; dimensions in Technical style. |
 | **Dimensions** | Metric first, imperial in brackets; ranges with en-dash; "random lengths" stated as a range; widths listed ascending with a middle dot. |
 | **Technical performance** | Table with property, value, test method or source; blank where Kember publishes no value — never a plausible figure. |
@@ -295,7 +317,7 @@ Any "no" sends it back. Then hide the lock-up: is it still Kember, and not Frevi
 |---|---|---|
 | Products: flooring, wall panels, interior doors, cabinets; E3plank, Eplank, EcoKlik, KemLam | **A** | kemberfloors.com pages and catalogues as indexed |
 | American Northern Oak; "certified North American forests" | **A** (claim) | Site copy; certifying body not stated |
-| 3-ply all-hardwood; 4 / 11 / 4 mm; two-directional core; cross grain restrains width expansion; nail-down like ¾ in solid; random lengths; less seasonal gapping | **A** | Site and Northern Oak sheet as indexed |
+| E3plank as described on kemberfloors.com: 3-ply all-hardwood; 4 / 11 / 4 mm; two-directional core; cross grain restrains width expansion; nail-down like ¾ in solid; random lengths; less seasonal gapping | **A, reference only** | Site and Northern Oak sheet as indexed. Recorded for reference; not a rule of this guide and not the confirmed New Zealand product |
 | Hardwax oil; lifetime lamination and finish warranty subject to maintenance records | **A** (as indexed) | Warranty text; New Zealand applicability not confirmed |
 | Kember Umber `#312011`; wordmark grey `#AEB3B7`; blue `#2E90D0`; navy `#1E2554`; Montserrat; umber section fields | **B** | Pixel-measured and observed in the supplied captures |
 | Wordmark geometry | **B, reference only** | Measured visually; SVG is a reconstruction; master governs |
@@ -304,6 +326,7 @@ Any "no" sends it back. Then hide the lock-up: is it still Kember, and not Frevi
 
 ### Unresolved source conflicts — flagged, not resolved
 
+0. **Positioning and flooring product identity.** The New Zealand positioning and product-architecture exercise is not complete; the working expression is provisional. The flooring product is E3plank on Kember's site and PrimeOak Flooring in the New Zealand discussion; the relationship between PrimeOak, An Cuong, Masterpiece Series and Kember Interiors is undefined. Resolved in the positioning document, then fed back here as V1.2.
 1. **Manufacturing origin.** Company records place a facility at 246022 County Rd 16, Mono, Ontario (Dun & Bradstreet, Panjiva); a business listing gives Saint Charles, Michigan (ZoomInfo); import records show shipments from a supplier in Binh Duong, Vietnam, and a "Kember Home" site operates at kember.com.vn. No manufacturing-origin claim is made in New Zealand material until Kember confirms in writing. "American Northern Oak" describes the species and sourcing, not the place of manufacture.
 2. **Total thickness.** E3plank is stated as 4 + 11 + 4 = 19 mm (¾ in). A retailer summary gives 15–19 mm across Kember lines; other lines (Eplank, EcoKlik) may be thinner. Only E3plank figures are used here.
 3. **Widths, lengths and cuts** (102–254 mm; 610–3048 mm random; live, rift, rift-and-quartered) come from retailer listings, not Kember documents. Confirm against the 2024–2025 catalogue before use.
@@ -312,8 +335,16 @@ Any "no" sends it back. Then hide the lock-up: is it still Kember, and not Frevi
 6. **New Zealand contact details** do not yet exist; placeholders are used.
 7. **Site CSS, logo master and official PDFs** were not reachable from the authoring environment (network policy). Every A value above is "as indexed"; confirm against the documents themselves.
 
+### Revision history
+
+| Version | Date | Change | Issued by |
+|---|---|---|---|
+| 1.0 | September 2026 | Initial system derived from Frevini v1.1 | Kember Interiors / Claude |
+| 1.1 | September 2026 | Precision pass: working expression marked provisional; scope rule added (presentation vs. technical claims); product architecture marked provisional pending PrimeOak decision; E3plank data moved from rules to reference; page 7 rebuilt as a product information system with an illustrative example | Kember Interiors / Claude |
+
 ### Open decisions
 
+0. The New Zealand positioning and product-architecture document, which precedes any collateral.
 1. Official KEMBER wordmark master (SVG/EPS) to replace the reconstruction.
 2. Pantone match for Kember Umber from a printed swatch.
 3. Whether the ™ is carried in the New Zealand lock-up (retained by default because it is part of the mark).

@@ -4,10 +4,13 @@
     "brand": "Kember Interiors",
     "market_name": "KEMBER INTERIORS (New Zealand-facing); 'Kember Kreative Interiors' is not used unless a legal or licensing requirement demands it",
     "title": "Kember Interiors design tokens",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "date": "2026-09-28",
     "based_on": "Frevini Studio design tokens v1.1.0 (frevini-design-tokens.json)",
-    "companion_documents": ["KEMBER_INTERIORS_BRAND_GUIDELINES.md", "KEMBER_FREVINI_SYSTEM_MAPPING.md"],
+    "companion_documents": [
+      "KEMBER_INTERIORS_BRAND_GUIDELINES.md",
+      "KEMBER_FREVINI_SYSTEM_MAPPING.md"
+    ],
     "provenance_key": {
       "A": "EXACT KEMBER — directly verified from official Kember material",
       "B": "EXISTING KEMBER — observed in current Kember communications",
@@ -15,15 +18,44 @@
       "D": "KEMBER ADAPTATION — a new or modified rule to make the Frevini system work for Kember"
     },
     "note": "kemberfloors.com and its PDFs were not reachable from the authoring environment; Kember facts come from the supplied captures and from the site and its catalogues as indexed by search. Colours labelled B are pixel-measured from the captures. The wordmark SVG is a reconstruction; the official master governs.",
-    "revisions": [{"version": "1.0.0", "date": "2026-09-28", "change": "Initial system, derived from Frevini v1.1", "issued_by": "Kember Interiors / Claude"}]
+    "revisions": [
+      {
+        "version": "1.0.0",
+        "date": "2026-09-28",
+        "change": "Initial system, derived from Frevini v1.1",
+        "issued_by": "Kember Interiors / Claude"
+      },
+      {
+        "version": "1.1.0",
+        "date": "2026-09-28",
+        "change": "Working expression marked provisional; scope rule added; flooring product marked to-be-confirmed (E3plank or PrimeOak); product information system added; product data removed from tokens",
+        "issued_by": "Kember Interiors / Claude"
+      }
+    ],
+    "scope": "Governs brand expression and presentation. Not a source of product data and not the positioning: approved product documentation governs technical claims; the positioning and product-architecture document governs the proposition."
   },
-
   "inherits": {
     "from": "frevini-design-tokens.json",
-    "unchanged": ["typography.family", "typography.fallback", "typography.scale", "typography.rules", "spacing", "page", "line", "radius", "shadow", "icon", "arrow", "button", "imagery.overlay", "imagery.crop", "imagery.tone", "document_formats"],
+    "unchanged": [
+      "typography.family",
+      "typography.fallback",
+      "typography.scale",
+      "typography.rules",
+      "spacing",
+      "page",
+      "line",
+      "radius",
+      "shadow",
+      "icon",
+      "arrow",
+      "button",
+      "imagery.overlay",
+      "imagery.crop",
+      "imagery.tone",
+      "document_formats"
+    ],
     "note": "Values are repeated below where a consumer needs a single self-contained file."
   },
-
   "color": {
     "tiers": {
       "core": "Every document uses all three. Umber is the only colour that carries text.",
@@ -31,72 +63,393 @@
       "overlay": "Photographic overlays only."
     },
     "core": {
-      "kember-umber": { "value": "#312011", "rgb": [49, 32, 17], "cmyk": [0, 35, 65, 81], "provenance": "B/D", "role": "The brand colour. All text, headings, rules, fields, logo. Measured from the deep oak section fields on kemberfloors.com; adopted as primary after testing against the existing blue, navy and a neutral charcoal.", "pantone_reference": "To be matched from a printed swatch" },
-      "oak-white":    { "value": "#F6F1E9", "rgb": [246, 241, 233], "cmyk": [0, 2, 5, 4], "provenance": "D", "role": "Secondary page field: editorial covers, alternating sections, callouts, icon fields. Slightly cooler than Frevini Warm White so the two brands' fields differ." },
-      "white":        { "value": "#FFFFFF", "rgb": [255, 255, 255], "cmyk": [0, 0, 0, 0], "provenance": "C", "role": "Default page field; reversed type and logo." }
+      "kember-umber": {
+        "value": "#312011",
+        "rgb": [
+          49,
+          32,
+          17
+        ],
+        "cmyk": [
+          0,
+          35,
+          65,
+          81
+        ],
+        "provenance": "B/D",
+        "role": "The brand colour. All text, headings, rules, fields, logo. Measured from the deep oak section fields on kemberfloors.com; adopted as primary after testing against the existing blue, navy and a neutral charcoal.",
+        "pantone_reference": "To be matched from a printed swatch"
+      },
+      "oak-white": {
+        "value": "#F6F1E9",
+        "rgb": [
+          246,
+          241,
+          233
+        ],
+        "cmyk": [
+          0,
+          2,
+          5,
+          4
+        ],
+        "provenance": "D",
+        "role": "Secondary page field: editorial covers, alternating sections, callouts, icon fields. Slightly cooler than Frevini Warm White so the two brands' fields differ."
+      },
+      "white": {
+        "value": "#FFFFFF",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "cmyk": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "C",
+        "role": "Default page field; reversed type and logo."
+      }
     },
     "utility": {
-      "kember-slate": { "value": "#8A8F94", "rgb": [138, 143, 148], "cmyk": [7, 3, 0, 42], "provenance": "D (from B #AEB3B7)", "role": "Icons on Oak White, badges, second chart series. Derived from the existing wordmark grey, darkened to 3.3 : 1 on white for graphics. Never text below 18 pt." },
-      "umber-60": { "value": "#837970", "rgb": [131, 121, 112], "cmyk": [0, 8, 15, 49], "provenance": "D", "role": "Secondary text at 14 pt+, chart axes, de-emphasised metadata." },
-      "umber-20": { "value": "#D6D2CF", "rgb": [214, 210, 207], "cmyk": [0, 2, 3, 16], "provenance": "D", "role": "Table row rules, dividers, gridlines." },
-      "umber-8":  { "value": "#EFEDEC", "rgb": [239, 237, 236], "cmyk": [0, 1, 1, 6], "provenance": "D", "role": "Alternate table-row fill on white pages." },
+      "kember-slate": {
+        "value": "#8A8F94",
+        "rgb": [
+          138,
+          143,
+          148
+        ],
+        "cmyk": [
+          7,
+          3,
+          0,
+          42
+        ],
+        "provenance": "D (from B #AEB3B7)",
+        "role": "Icons on Oak White, badges, second chart series. Derived from the existing wordmark grey, darkened to 3.3 : 1 on white for graphics. Never text below 18 pt."
+      },
+      "umber-60": {
+        "value": "#837970",
+        "rgb": [
+          131,
+          121,
+          112
+        ],
+        "cmyk": [
+          0,
+          8,
+          15,
+          49
+        ],
+        "provenance": "D",
+        "role": "Secondary text at 14 pt+, chart axes, de-emphasised metadata."
+      },
+      "umber-20": {
+        "value": "#D6D2CF",
+        "rgb": [
+          214,
+          210,
+          207
+        ],
+        "cmyk": [
+          0,
+          2,
+          3,
+          16
+        ],
+        "provenance": "D",
+        "role": "Table row rules, dividers, gridlines."
+      },
+      "umber-8": {
+        "value": "#EFEDEC",
+        "rgb": [
+          239,
+          237,
+          236
+        ],
+        "cmyk": [
+          0,
+          1,
+          1,
+          6
+        ],
+        "provenance": "D",
+        "role": "Alternate table-row fill on white pages."
+      },
       "oak": {
         "description": "American oak neutrals sampled from Kember floors in the captures. Chart series, section-device and diagram fills only. Names are generic so they are never confused with Kember product colour names.",
         "provenance": "D (values sampled B)",
-        "oak-pale": { "value": "#DCD3C8", "rgb": [220, 211, 200] },
-        "oak-light": { "value": "#BCAA9B", "rgb": [188, 170, 155] },
-        "oak-mid":  { "value": "#A68E77", "rgb": [166, 142, 119] },
-        "oak-deep": { "value": "#887057", "rgb": [136, 112, 87] },
-        "oak-bark": { "value": "#46382E", "rgb": [70, 56, 46] }
+        "oak-pale": {
+          "value": "#DCD3C8",
+          "rgb": [
+            220,
+            211,
+            200
+          ]
+        },
+        "oak-light": {
+          "value": "#BCAA9B",
+          "rgb": [
+            188,
+            170,
+            155
+          ]
+        },
+        "oak-mid": {
+          "value": "#A68E77",
+          "rgb": [
+            166,
+            142,
+            119
+          ]
+        },
+        "oak-deep": {
+          "value": "#887057",
+          "rgb": [
+            136,
+            112,
+            87
+          ]
+        },
+        "oak-bark": {
+          "value": "#46382E",
+          "rgb": [
+            70,
+            56,
+            46
+          ]
+        }
       }
     },
     "overlay": {
-      "black": { "value": "#000000", "opacity_range": [0.3, 0.45], "provenance": "C", "role": "Photographic overlay under white type. Replaces the brown-tinted overlays on the current site." }
+      "black": {
+        "value": "#000000",
+        "opacity_range": [
+          0.3,
+          0.45
+        ],
+        "provenance": "C",
+        "role": "Photographic overlay under white type. Replaces the brown-tinted overlays on the current site."
+      }
     },
     "retired": {
-      "kember-blue": { "value": "#2E90D0", "provenance": "B", "status": "Not used in New Zealand material. Fails text contrast (3.5 : 1 on white) and reads as technology rather than timber. Permitted only as the link colour on kemberfloors.com until that site is updated." },
-      "kember-navy": { "value": "#1E2554", "provenance": "B", "status": "Not used." },
-      "wordmark-grey": { "value": "#AEB3B7", "provenance": "B", "status": "Not used for the mark (2.1 : 1 on white). Survives only as the source of Kember Slate." }
+      "kember-blue": {
+        "value": "#2E90D0",
+        "provenance": "B",
+        "status": "Not used in New Zealand material. Fails text contrast (3.5 : 1 on white) and reads as technology rather than timber. Permitted only as the link colour on kemberfloors.com until that site is updated."
+      },
+      "kember-navy": {
+        "value": "#1E2554",
+        "provenance": "B",
+        "status": "Not used."
+      },
+      "wordmark-grey": {
+        "value": "#AEB3B7",
+        "provenance": "B",
+        "status": "Not used for the mark (2.1 : 1 on white). Survives only as the source of Kember Slate."
+      }
     },
     "contrast": {
-      "kember-umber_on_white": 15.61, "kember-umber_on_oak-white": 13.88, "white_on_kember-umber": 15.61,
-      "kember-slate_on_white": 3.26, "kember-slate_on_oak-white": 2.9, "umber-60_on_white": 4.9,
+      "kember-umber_on_white": 15.61,
+      "kember-umber_on_oak-white": 13.88,
+      "white_on_kember-umber": 15.61,
+      "kember-slate_on_white": 3.26,
+      "kember-slate_on_oak-white": 2.9,
+      "umber-60_on_white": 4.9,
       "kember-blue_on_white": 3.49,
       "note": "WCAG AA: 4.5:1 body text, 3:1 large text and graphics. Slate is graphics and large text only."
     },
-    "chart_series_order": ["kember-umber", "kember-slate", "oak-mid", "oak-deep"]
+    "chart_series_order": [
+      "kember-umber",
+      "kember-slate",
+      "oak-mid",
+      "oak-deep"
+    ]
   },
-
   "typography": {
     "provenance": "C — identical to Frevini",
     "family": {
-      "serif": { "name": "Marcellus", "weights": [400], "file": "assets/fonts/marcellus/Marcellus-Regular.ttf" },
-      "sans":  { "name": "DM Sans", "weights": [300, 400, 500], "weights_restricted": { "600": "key numbers 24 pt+ only", "700": "not part of the standard hierarchy" }, "file": "assets/fonts/dm-sans/DMSans-Variable[opsz,wght].ttf", "static": "assets/fonts/dm-sans/static/" }
+      "serif": {
+        "name": "Marcellus",
+        "weights": [
+          400
+        ],
+        "file": "assets/fonts/marcellus/Marcellus-Regular.ttf"
+      },
+      "sans": {
+        "name": "DM Sans",
+        "weights": [
+          300,
+          400,
+          500
+        ],
+        "weights_restricted": {
+          "600": "key numbers 24 pt+ only",
+          "700": "not part of the standard hierarchy"
+        },
+        "file": "assets/fonts/dm-sans/DMSans-Variable[opsz,wght].ttf",
+        "static": "assets/fonts/dm-sans/static/"
+      }
     },
     "fallback": {
-      "serif": ["Marcellus", "Palatino Linotype", "Book Antiqua", "Palatino", "Georgia", "serif"],
-      "sans": ["DM Sans", "Aptos", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
-      "never": ["Montserrat (current kemberfloors.com face)", "Times New Roman", "Cambria", "Calibri"]
+      "serif": [
+        "Marcellus",
+        "Palatino Linotype",
+        "Book Antiqua",
+        "Palatino",
+        "Georgia",
+        "serif"
+      ],
+      "sans": [
+        "DM Sans",
+        "Aptos",
+        "Segoe UI",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif"
+      ],
+      "never": [
+        "Montserrat (current kemberfloors.com face)",
+        "Times New Roman",
+        "Cambria",
+        "Calibri"
+      ]
     },
     "scale": {
       "unit": "pt",
-      "display":      { "family": "serif", "weight": 400, "a4": 48, "slide16x9": 66, "lineHeight": 1.05 },
-      "h1":           { "family": "serif", "weight": 400, "a4": 30, "slide16x9": 44, "lineHeight": 1.15 },
-      "h2":           { "family": "serif", "weight": 400, "a4": 20, "slide16x9": 30, "lineHeight": 1.25 },
-      "h3":           { "family": "sans",  "weight": 400, "a4": 13, "slide16x9": 20, "lineHeight": 1.3 },
-      "eyebrow":      { "family": "sans",  "weight": 500, "a4": 7.5, "slide16x9": 11, "lineHeight": 1.2, "letterSpacing": "0.14em", "case": "upper" },
-      "body-large":   { "family": "sans",  "weight": 400, "a4": 12, "slide16x9": 20, "lineHeight": 1.55 },
-      "body":         { "family": "sans",  "weight": 400, "a4": 9.5, "slide16x9": 16, "lineHeight": 1.55 },
-      "caption":      { "family": "sans",  "weight": 400, "a4": 8, "slide16x9": 11, "lineHeight": 1.4 },
-      "technical":    { "family": "sans",  "weight": 400, "a4": 7, "slide16x9": 10, "lineHeight": 1.35, "letterSpacing": "0.02em" },
-      "table":        { "family": "sans",  "weight": 400, "a4": 8.5, "slide16x9": 12, "lineHeight": 1.35 },
-      "table-header": { "family": "sans",  "weight": 500, "a4": 7.5, "slide16x9": 11, "lineHeight": 1.3, "letterSpacing": "0.08em", "case": "upper" },
-      "footer":       { "family": "sans",  "weight": 400, "a4": 7, "slide16x9": 9, "lineHeight": 1.3, "letterSpacing": "0.04em" },
-      "cta":          { "family": "sans",  "weight": 500, "a4": 9.5, "slide16x9": 14, "lineHeight": 1.3, "letterSpacing": "0.04em" },
-      "button":       { "family": "sans",  "weight": 500, "web_px": 14, "slide16x9": 13, "letterSpacing": "0.06em", "case": "upper" },
-      "quotation":    { "family": "serif", "weight": 400, "a4": 18, "slide16x9": 28, "lineHeight": 1.4 },
-      "key-number":   { "family": "serif", "weight": 400, "a4": 36, "slide16x9": 60, "lineHeight": 1.0 },
-      "availability-label": { "family": "sans", "weight": 500, "a4": 6.5, "slide16x9": 10, "letterSpacing": "0.12em", "case": "upper", "border": "0.5 pt umber (available) or umber-20 with umber-60 text (capability)", "padding": "1.2 mm × 2.5 mm", "provenance": "D" }
+      "display": {
+        "family": "serif",
+        "weight": 400,
+        "a4": 48,
+        "slide16x9": 66,
+        "lineHeight": 1.05
+      },
+      "h1": {
+        "family": "serif",
+        "weight": 400,
+        "a4": 30,
+        "slide16x9": 44,
+        "lineHeight": 1.15
+      },
+      "h2": {
+        "family": "serif",
+        "weight": 400,
+        "a4": 20,
+        "slide16x9": 30,
+        "lineHeight": 1.25
+      },
+      "h3": {
+        "family": "sans",
+        "weight": 400,
+        "a4": 13,
+        "slide16x9": 20,
+        "lineHeight": 1.3
+      },
+      "eyebrow": {
+        "family": "sans",
+        "weight": 500,
+        "a4": 7.5,
+        "slide16x9": 11,
+        "lineHeight": 1.2,
+        "letterSpacing": "0.14em",
+        "case": "upper"
+      },
+      "body-large": {
+        "family": "sans",
+        "weight": 400,
+        "a4": 12,
+        "slide16x9": 20,
+        "lineHeight": 1.55
+      },
+      "body": {
+        "family": "sans",
+        "weight": 400,
+        "a4": 9.5,
+        "slide16x9": 16,
+        "lineHeight": 1.55
+      },
+      "caption": {
+        "family": "sans",
+        "weight": 400,
+        "a4": 8,
+        "slide16x9": 11,
+        "lineHeight": 1.4
+      },
+      "technical": {
+        "family": "sans",
+        "weight": 400,
+        "a4": 7,
+        "slide16x9": 10,
+        "lineHeight": 1.35,
+        "letterSpacing": "0.02em"
+      },
+      "table": {
+        "family": "sans",
+        "weight": 400,
+        "a4": 8.5,
+        "slide16x9": 12,
+        "lineHeight": 1.35
+      },
+      "table-header": {
+        "family": "sans",
+        "weight": 500,
+        "a4": 7.5,
+        "slide16x9": 11,
+        "lineHeight": 1.3,
+        "letterSpacing": "0.08em",
+        "case": "upper"
+      },
+      "footer": {
+        "family": "sans",
+        "weight": 400,
+        "a4": 7,
+        "slide16x9": 9,
+        "lineHeight": 1.3,
+        "letterSpacing": "0.04em"
+      },
+      "cta": {
+        "family": "sans",
+        "weight": 500,
+        "a4": 9.5,
+        "slide16x9": 14,
+        "lineHeight": 1.3,
+        "letterSpacing": "0.04em"
+      },
+      "button": {
+        "family": "sans",
+        "weight": 500,
+        "web_px": 14,
+        "slide16x9": 13,
+        "letterSpacing": "0.06em",
+        "case": "upper"
+      },
+      "quotation": {
+        "family": "serif",
+        "weight": 400,
+        "a4": 18,
+        "slide16x9": 28,
+        "lineHeight": 1.4
+      },
+      "key-number": {
+        "family": "serif",
+        "weight": 400,
+        "a4": 36,
+        "slide16x9": 60,
+        "lineHeight": 1.0
+      },
+      "availability-label": {
+        "family": "sans",
+        "weight": 500,
+        "a4": 6.5,
+        "slide16x9": 10,
+        "letterSpacing": "0.12em",
+        "case": "upper",
+        "border": "0.5 pt umber (available) or umber-20 with umber-60 text (capability)",
+        "padding": "1.2 mm × 2.5 mm",
+        "provenance": "D"
+      }
     },
     "rules": {
       "max_weight_in_running_use": 500,
@@ -107,54 +460,277 @@
       "hyphenation": "off"
     }
   },
-
   "spacing": {
     "provenance": "C",
-    "scale": { "xs": { "mm": 2, "web_px": 4, "slide_px": 8 }, "s": { "mm": 4, "web_px": 8, "slide_px": 16 }, "m": { "mm": 8, "web_px": 16, "slide_px": 32 }, "l": { "mm": 12, "web_px": 24, "slide_px": 48 }, "xl": { "mm": 24, "web_px": 48, "slide_px": 96 }, "xxl": { "mm": 40, "web_px": 80, "slide_px": 160 } },
-    "application": { "paragraph_gap": "s", "heading_space_before": "xl", "heading_space_after": "m", "section_gap": "xxl", "image_to_caption": "s", "cta_rule_offset": "xs", "table_cell_padding": "s vertical, m horizontal", "callout_padding": "l", "open_field": "About 40 percent in editorial, presentation and marketing layouts. Technical pages may be denser within the same margins, spacing scale and grouping." }
+    "scale": {
+      "xs": {
+        "mm": 2,
+        "web_px": 4,
+        "slide_px": 8
+      },
+      "s": {
+        "mm": 4,
+        "web_px": 8,
+        "slide_px": 16
+      },
+      "m": {
+        "mm": 8,
+        "web_px": 16,
+        "slide_px": 32
+      },
+      "l": {
+        "mm": 12,
+        "web_px": 24,
+        "slide_px": 48
+      },
+      "xl": {
+        "mm": 24,
+        "web_px": 48,
+        "slide_px": 96
+      },
+      "xxl": {
+        "mm": 40,
+        "web_px": 80,
+        "slide_px": 160
+      }
+    },
+    "application": {
+      "paragraph_gap": "s",
+      "heading_space_before": "xl",
+      "heading_space_after": "m",
+      "section_gap": "xxl",
+      "image_to_caption": "s",
+      "cta_rule_offset": "xs",
+      "table_cell_padding": "s vertical, m horizontal",
+      "callout_padding": "l",
+      "open_field": "About 40 percent in editorial, presentation and marketing layouts. Technical pages may be denser within the same margins, spacing scale and grouping."
+    }
   },
-
   "page": {
     "provenance": "C",
-    "a4_portrait": { "size_mm": [210, 297], "margins_mm": { "top": 22, "right": 20, "bottom": 24, "left": 20 }, "grid": { "columns": 12, "gutter_mm": 4, "column_width_mm": 10.5 }, "footer": { "baseline_from_bottom_mm": 12, "left": "Document title · Kember Interiors", "right": "page number" }, "bleed_mm": 3 },
-    "a4_landscape": { "size_mm": [297, 210], "margins_mm": { "top": 20, "right": 20, "bottom": 20, "left": 20 }, "grid": { "columns": 12, "gutter_mm": 4 } },
-    "slide_16x9": { "reference_px": [1920, 1080], "safe_margins_px": { "top": 72, "right": 96, "bottom": 72, "left": 96 }, "grid": { "columns": 12, "gutter_px": 24 }, "zones_px": { "eyebrow_baseline_y": 132, "title_block_y": [160, 320], "body_area_y": [372, 940], "footer_baseline_y": 1016 }, "footer": { "left": "KEMBER INTERIORS · document title", "right": "slide number", "logo": "none on content slides" }, "logo_slides": { "width_px": 210, "position": "top-left at safe margin on title and closing slides only" } },
-    "poster": { "formats": ["A3", "A2", "A1", "A0"], "margins": "5 percent of the short edge", "grid": { "columns": 6, "gutter": "1.5 percent of the short edge" }, "logo_width": "12 percent of the short edge", "headline_zone": "upper third", "hero_image": "at least 55 percent of the page area", "information_limit": "three zones", "variants": ["product launch", "colour launch", "engineering proposition", "architect and specifier communication"] },
-    "one_pager": { "base": "a4_portrait", "hero_zone_mm": "top 120 mm", "columns": "2 or 3 equal columns beneath the hero", "cta": "single text CTA with rule, bottom-left" }
+    "a4_portrait": {
+      "size_mm": [
+        210,
+        297
+      ],
+      "margins_mm": {
+        "top": 22,
+        "right": 20,
+        "bottom": 24,
+        "left": 20
+      },
+      "grid": {
+        "columns": 12,
+        "gutter_mm": 4,
+        "column_width_mm": 10.5
+      },
+      "footer": {
+        "baseline_from_bottom_mm": 12,
+        "left": "Document title · Kember Interiors",
+        "right": "page number"
+      },
+      "bleed_mm": 3
+    },
+    "a4_landscape": {
+      "size_mm": [
+        297,
+        210
+      ],
+      "margins_mm": {
+        "top": 20,
+        "right": 20,
+        "bottom": 20,
+        "left": 20
+      },
+      "grid": {
+        "columns": 12,
+        "gutter_mm": 4
+      }
+    },
+    "slide_16x9": {
+      "reference_px": [
+        1920,
+        1080
+      ],
+      "safe_margins_px": {
+        "top": 72,
+        "right": 96,
+        "bottom": 72,
+        "left": 96
+      },
+      "grid": {
+        "columns": 12,
+        "gutter_px": 24
+      },
+      "zones_px": {
+        "eyebrow_baseline_y": 132,
+        "title_block_y": [
+          160,
+          320
+        ],
+        "body_area_y": [
+          372,
+          940
+        ],
+        "footer_baseline_y": 1016
+      },
+      "footer": {
+        "left": "KEMBER INTERIORS · document title",
+        "right": "slide number",
+        "logo": "none on content slides"
+      },
+      "logo_slides": {
+        "width_px": 210,
+        "position": "top-left at safe margin on title and closing slides only"
+      }
+    },
+    "poster": {
+      "formats": [
+        "A3",
+        "A2",
+        "A1",
+        "A0"
+      ],
+      "margins": "5 percent of the short edge",
+      "grid": {
+        "columns": 6,
+        "gutter": "1.5 percent of the short edge"
+      },
+      "logo_width": "12 percent of the short edge",
+      "headline_zone": "upper third",
+      "hero_image": "at least 55 percent of the page area",
+      "information_limit": "three zones",
+      "variants": [
+        "product launch",
+        "colour launch",
+        "engineering proposition",
+        "architect and specifier communication"
+      ]
+    },
+    "one_pager": {
+      "base": "a4_portrait",
+      "hero_zone_mm": "top 120 mm",
+      "columns": "2 or 3 equal columns beneath the hero",
+      "cta": "single text CTA with rule, bottom-left"
+    }
   },
-
   "line": {
     "provenance": "C",
-    "cta_rule": { "web_px": 2, "print_pt": 1, "color": "kember-umber" },
-    "section_rule": { "web_px": 1, "print_pt": 0.5, "color": "umber-20" },
-    "table_header_rule": { "print_pt": 0.75, "color": "kember-umber" },
-    "table_row_rule": { "print_pt": 0.35, "color": "umber-20" },
+    "cta_rule": {
+      "web_px": 2,
+      "print_pt": 1,
+      "color": "kember-umber"
+    },
+    "section_rule": {
+      "web_px": 1,
+      "print_pt": 0.5,
+      "color": "umber-20"
+    },
+    "table_header_rule": {
+      "print_pt": 0.75,
+      "color": "kember-umber"
+    },
+    "table_row_rule": {
+      "print_pt": 0.35,
+      "color": "umber-20"
+    },
     "table_vertical_rules": "none",
-    "icon_stroke": { "grid": 24, "stroke": 1.5 },
+    "icon_stroke": {
+      "grid": 24,
+      "stroke": 1.5
+    },
     "boxes_and_borders": "not used; the only bordered elements are the availability labels"
   },
-
-  "radius": { "provenance": "C", "button": 0, "card": 0, "image": 0, "note": "Square corners. The rounded image cards and circular buttons on the current site are not used." },
-  "shadow": { "provenance": "C", "documents": "none" },
-
-  "icon": { "provenance": "C", "grid": 24, "stroke": 1.5, "caps": "round", "joins": "round", "fill": "none", "colors": { "on_white": "kember-umber", "on_oak_white": "kember-slate", "on_umber": "white" }, "size": { "web_px": [48, 64], "print_mm": [12, 16] }, "max_per_page": 4, "files": "assets/kember/icons/" },
-  "arrow": { "provenance": "C", "glyph": "→ (U+2192) in DM Sans, or assets/kember/icons/arrow-right-*.svg", "position": "after the label, one space" },
-  "button": { "provenance": "C", "digital_only": true, "height_px": 48, "fill": "kember-umber", "text": "white, DM Sans 500, 14 px, uppercase, 0.06em", "radius": 0 },
-
+  "radius": {
+    "provenance": "C",
+    "button": 0,
+    "card": 0,
+    "image": 0,
+    "note": "Square corners. The rounded image cards and circular buttons on the current site are not used."
+  },
+  "shadow": {
+    "provenance": "C",
+    "documents": "none"
+  },
+  "icon": {
+    "provenance": "C",
+    "grid": 24,
+    "stroke": 1.5,
+    "caps": "round",
+    "joins": "round",
+    "fill": "none",
+    "colors": {
+      "on_white": "kember-umber",
+      "on_oak_white": "kember-slate",
+      "on_umber": "white"
+    },
+    "size": {
+      "web_px": [
+        48,
+        64
+      ],
+      "print_mm": [
+        12,
+        16
+      ]
+    },
+    "max_per_page": 4,
+    "files": "assets/kember/icons/"
+  },
+  "arrow": {
+    "provenance": "C",
+    "glyph": "→ (U+2192) in DM Sans, or assets/kember/icons/arrow-right-*.svg",
+    "position": "after the label, one space"
+  },
+  "button": {
+    "provenance": "C",
+    "digital_only": true,
+    "height_px": 48,
+    "fill": "kember-umber",
+    "text": "white, DM Sans 500, 14 px, uppercase, 0.06em",
+    "radius": 0
+  },
   "section_device": {
     "provenance": "D",
     "description": "Kember's one specific graphic device: the three-layer engineered section. An information device, not decoration.",
-    "proportions": [4, 11, 4],
+    "proportions": [
+      4,
+      11,
+      4
+    ],
     "core_grain": "drawn perpendicular to the faces, umber-20 to oak-mid hairlines at 0.5 pt",
-    "line": { "print_pt": 0.75, "color": "kember-umber" },
-    "fills": { "explaining": ["oak-light (wear and balancing layers)", "oak-pale (core)"], "labelling": "none" },
+    "line": {
+      "print_pt": 0.75,
+      "color": "kember-umber"
+    },
+    "fills": {
+      "explaining": [
+        "oak-light (wear and balancing layers)",
+        "oak-pale (core)"
+      ],
+      "labelling": "none"
+    },
     "labels": "technical style, right of the section, one per layer",
-    "where": ["engineering pages", "technical datasheets", "product sheets", "engineering and product slides"],
-    "limits": { "per_face": 1, "max_width_mm": 40, "max_width_slide_px": 360 },
-    "never": ["as a pattern or background", "rotated", "inside the logo clear space", "on covers except technical covers", "in colours outside umber and the oak neutrals"],
+    "where": [
+      "engineering pages",
+      "technical datasheets",
+      "product sheets",
+      "engineering and product slides"
+    ],
+    "limits": {
+      "per_face": 1,
+      "max_width_mm": 40,
+      "max_width_slide_px": 360
+    },
+    "never": [
+      "as a pattern or background",
+      "rotated",
+      "inside the logo clear space",
+      "on covers except technical covers",
+      "in colours outside umber and the oak neutrals"
+    ],
     "file": "drawn inline as SVG; reference in src/kember-guidelines.html"
   },
-
   "logo": {
     "provenance": "B (wordmark geometry) / D (lock-up and rules)",
     "files": {
@@ -166,46 +742,168 @@
       "wordmark_black": "assets/kember/logo/kember-wordmark-black.svg"
     },
     "status": "Wordmark reconstructed from kemberfloors.com captures at measured proportions (unicase letterforms, uniform stroke ≈ 10 % of height). Reference only; the official master governs.",
-    "lockup": { "secondary_line": "INTERIORS", "font": "DM Sans Medium", "tracking": "0.22em", "cap_height": "≈ 19 % of wordmark height", "alignment": "right-aligned to the wordmark", "gap": "≈ 30 % of wordmark height", "aspect_ratio": "376 : 122 (about 3.08 : 1)" },
+    "lockup": {
+      "secondary_line": "INTERIORS",
+      "font": "DM Sans Medium",
+      "tracking": "0.22em",
+      "cap_height": "≈ 19 % of wordmark height",
+      "alignment": "right-aligned to the wordmark",
+      "gap": "≈ 30 % of wordmark height",
+      "aspect_ratio": "376 : 122 (about 3.08 : 1)"
+    },
     "retired_tagline": "kreative interiors",
-    "colors": ["kember-umber", "white", "black (single-colour reproduction only)"],
+    "colors": [
+      "kember-umber",
+      "white",
+      "black (single-colour reproduction only)"
+    ],
     "clear_space": "half the wordmark height on all sides",
-    "min_width": { "lockup_print_mm": 30, "lockup_screen_px": 130, "wordmark_print_mm": 22, "wordmark_screen_px": 96 },
-    "recommended_width": { "a4_cover_mm": 44, "slide_px": 210, "poster": "12 % of short edge", "web_px": 150 },
+    "min_width": {
+      "lockup_print_mm": 30,
+      "lockup_screen_px": 130,
+      "wordmark_print_mm": 22,
+      "wordmark_screen_px": 96
+    },
+    "recommended_width": {
+      "a4_cover_mm": 44,
+      "slide_px": 210,
+      "poster": "12 % of short edge",
+      "web_px": 150
+    },
     "position": "top-left at the margin; bottom-left on posters",
-    "appears_on": ["covers", "title and closing slides", "posters", "product sheets"],
-    "prohibited": ["kreative interiors", "grey or blue colouring", "recolouring", "outline or shadow", "stretching", "rotation", "watermark", "two marks on one face"]
+    "appears_on": [
+      "covers",
+      "title and closing slides",
+      "posters",
+      "product sheets"
+    ],
+    "prohibited": [
+      "kreative interiors",
+      "grey or blue colouring",
+      "recolouring",
+      "outline or shadow",
+      "stretching",
+      "rotation",
+      "watermark",
+      "two marks on one face"
+    ]
   },
-
   "imagery": {
     "provenance": "C (discipline) / D (categories)",
-    "categories": { "architecture": "finished spaces where the oak floor, wall or ceiling is the subject", "material": "American oak grain, texture, board edges, sawn character", "engineering": "three-layer construction, cross-grain core, profiles, components", "making": "factory, manufacturing, finishing, where high-quality assets exist", "application": "floor, wall, ceiling, doors and other interior applications, one per image" },
-    "overlay": { "color": "#000000", "opacity": [0.3, 0.45] },
+    "categories": {
+      "architecture": "finished spaces where the oak floor, wall or ceiling is the subject",
+      "material": "American oak grain, texture, board edges, sawn character",
+      "engineering": "three-layer construction, cross-grain core, profiles, components",
+      "making": "factory, manufacturing, finishing, where high-quality assets exist",
+      "application": "floor, wall, ceiling, doors and other interior applications, one per image"
+    },
+    "overlay": {
+      "color": "#000000",
+      "opacity": [
+        0.3,
+        0.45
+      ]
+    },
     "text_on_image": "white only, over a darkened or naturally deep region",
     "crop": "square corners; full bleed or column edges; level horizontals",
     "tone": "natural light, warm-neutral white balance, restrained saturation, no blue grading, no HDR, no filters",
-    "avoid": ["generic luxury-house imagery", "heavy blue grading", "HDR", "decorative filters", "stock lifestyle photography", "busy collages", "rounded image cards", "unnecessary overlays", "renders presented as photographs"],
+    "avoid": [
+      "generic luxury-house imagery",
+      "heavy blue grading",
+      "HDR",
+      "decorative filters",
+      "stock lifestyle photography",
+      "busy collages",
+      "rounded image cards",
+      "unnecessary overlays",
+      "renders presented as photographs"
+    ],
     "status": "Current assets are captures of kemberfloors.com; a photography commission in the five categories is required before production collateral.",
     "files": "assets/kember/imagery/"
   },
-
   "product_architecture": {
     "provenance": "A (products) / D (structure and labels)",
     "brand": "Kember Interiors",
     "categories": [
-      { "name": "Flooring", "availability": "AVAILABLE IN NEW ZEALAND", "products": ["E3plank engineered flooring, American Northern Oak, curated colour selection"] },
-      { "name": "Wall + Ceiling", "availability": "AVAILABLE IN NEW ZEALAND", "products": ["American oak lining; New Zealand specification to be confirmed"] },
-      { "name": "Broader Kember capability", "availability": "KEMBER CAPABILITY", "products": ["Interior doors", "Cabinetry", "Eplank", "EcoKlik", "KemLam laminate"] }
+      {
+        "name": "Flooring",
+        "availability": "AVAILABLE IN NEW ZEALAND",
+        "products": [
+          "Flooring product to be confirmed: E3plank or PrimeOak Flooring; relationship of PrimeOak, An Cuong and Masterpiece Series to Kember Interiors undefined"
+        ]
+      },
+      {
+        "name": "Wall + Ceiling",
+        "availability": "AVAILABLE IN NEW ZEALAND",
+        "products": [
+          "American oak lining; New Zealand specification to be confirmed"
+        ]
+      },
+      {
+        "name": "Broader Kember capability",
+        "availability": "KEMBER CAPABILITY",
+        "products": [
+          "Interior doors",
+          "Cabinetry",
+          "Other Kember lines (Eplank, EcoKlik, KemLam laminate)"
+        ]
+      }
     ],
-    "labels": { "available": "AVAILABLE IN NEW ZEALAND", "capability": "KEMBER CAPABILITY", "rule": "Capability is never presented as stock. New categories are added as rows under the brand, not as a new brand." }
+    "labels": {
+      "available": "AVAILABLE IN NEW ZEALAND",
+      "capability": "KEMBER CAPABILITY",
+      "rule": "Capability is never presented as stock. New categories are added as rows under the brand, not as a new brand."
+    },
+    "status": "Provisional until the positioning and product-architecture exercise is complete.",
+    "working_expression": {
+      "line": "American oak. Engineered for stability.",
+      "status": "Provisional working expression for the specifier market; not the master-brand proposition."
+    }
   },
-
   "document_formats": {
     "provenance": "C/D",
     "file_naming": "Kember-<DocumentType>-<Subject>-v<major>.<minor>.pdf",
-    "metadata_block": { "position": "cover, bottom-left, eyebrow style", "fields": ["document type", "version", "date (Month YYYY)"] },
-    "revision_table": { "columns": ["Version", "Date", "Change", "Issued by"] },
-    "product_collateral": ["product sheet", "colour card", "technical datasheet", "sample information", "specification sheet"],
+    "metadata_block": {
+      "position": "cover, bottom-left, eyebrow style",
+      "fields": [
+        "document type",
+        "version",
+        "date (Month YYYY)"
+      ]
+    },
+    "revision_table": {
+      "columns": [
+        "Version",
+        "Date",
+        "Change",
+        "Issued by"
+      ]
+    },
+    "product_collateral": [
+      "product sheet",
+      "colour card",
+      "technical datasheet",
+      "sample information",
+      "specification sheet"
+    ],
+    "technical_data_disclaimer": "Product information shown in this guide demonstrates information hierarchy and layout. Current technical data must always be sourced from the applicable Kember technical documentation."
+  },
+  "product_information_system": {
+    "provenance": "D",
+    "fields": [
+      "Product",
+      "Application",
+      "Construction",
+      "Dimensions",
+      "Finish",
+      "Compliance",
+      "Warranty",
+      "Availability"
+    ],
+    "rule": "Every product sheet, datasheet, specification sheet and product slide carries these fields in this order. A field with no approved value is left blank."
+  },
+  "governance": {
+    "presentation_vs_claims": "Brand guidelines govern presentation. Approved product documentation governs technical claims. Where they disagree, the documentation wins and the guide is corrected.",
     "technical_data_disclaimer": "Product information shown in this guide demonstrates information hierarchy and layout. Current technical data must always be sourced from the applicable Kember technical documentation."
   }
 }

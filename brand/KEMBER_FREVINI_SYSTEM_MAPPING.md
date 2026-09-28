@@ -125,7 +125,7 @@ Provenance of the resulting Kember rule: **A** exact Kember · **B** existing Ke
 | Frevini | Kember | Class |
 |---|---|---|
 | Short statement + sentence of proof; specific beats superlative; assured not salesy; NZ English; address the specifier as a peer | Identical | RETAIN (C) |
-| Frevini's lines and examples | Kember's own: "American oak. Engineered for stability." "Three plies, all hardwood." | ADAPT (D) |
+| Frevini's lines and examples | Kember's own working expression, provisional until positioning is complete: "American oak. Engineered for stability." | ADAPT (D) |
 | — | Remove US promotional language ("transform your living spaces", "gorgeous for years", "industry leading") without altering technical meaning | KEMBER-SPECIFIC (D) |
 | — | Say what Kember says; where Kember publishes no figure, say nothing | KEMBER-SPECIFIC (D) |
 
@@ -144,4 +144,5 @@ Provenance of the resulting Kember rule: **A** exact Kember · **B** existing Ke
 - **Retained unchanged:** typography, type scale, fallbacks, grids, margins, spacing, footer logic, rules, arrow, icons, button, cover and slide anatomies, table and chart standards, voice principles, whitespace and serif rules, overlay, colour tiering.
 - **Adapted:** primary colour, warm field, utility colour, tints, timber neutrals, logo rules, photography categories, page and slide set (product, engineering), chart series order, disclaimer wording, governance test.
 - **Not applicable:** Frevini's framed mark, its statement lines, its provenance imagery.
-- **Kember-specific:** the lock-up, the retirement of blue and "kreative interiors", metric-first units, the section device, availability labels, product collateral set, the technical-information standard, the photography commission.
+- **Kember-specific:** the lock-up, the retirement of blue and "kreative interiors", metric-first units, the section device, availability labels, product collateral set, the product information system, the rule that presentation is governed here and technical claims by approved documentation, the photography commission.
+- **Deliberately not decided here:** the master-brand positioning and the identity of the New Zealand flooring product (E3plank or PrimeOak Flooring). Both belong to the positioning and product-architecture document and feed back into V1.2.
