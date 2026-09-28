@@ -19,7 +19,14 @@ Two brands, one design standard. Frevini Studio is the source system; Kember Int
 | `KEMBER_INTERIORS_BRAND_GUIDELINES.md` | Canonical guidelines with provenance (A/B/C/D), unresolved source conflicts and open decisions. |
 | `KEMBER_FREVINI_SYSTEM_MAPPING.md` | Every Frevini rule classified: retained, adapted, not applicable, or Kember-specific. |
 | `kember-design-tokens.json` | Kember tokens; inherits the Frevini typography, spacing and grid values and states them in full. |
-| `assets/kember/` | Lock-up and wordmark, recoloured icons, reference imagery, site captures. See `assets/kember/README.md`. |
+| `assets/kember/` | Lock-up and wordmark, recoloured icons, reference imagery, site captures, PrimeOak catalogue and swatches. See `assets/kember/README.md`. |
+
+## Kember Interiors — positioning (precedes Guidelines V1.2)
+
+| File | Purpose |
+|---|---|
+| `KEMBER_NZ_POSITIONING_AND_PRODUCT_ARCHITECTURE.md` | Draft 1.0 for decision: evidence from the PrimeOak Signature catalogue, E3plank / PrimeOak reconciliation, brand-relationship options, positioning territories, product architecture, decisions register. |
+| `Kember-NZ-Positioning-and-Product-Architecture.pdf` | The same as an 8-page A4 document in the Kember system, built from `src/kember-positioning.html` with `src/build-any.js`. |
 
 ## Rebuilding the PDFs
 

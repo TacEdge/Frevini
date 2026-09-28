@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<title>Kember Interiors — NZ Market Positioning &amp; Product Architecture</title>
+<style>
+@font-face { font-family: "Marcellus"; src: url("../assets/fonts/marcellus/Marcellus-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Light.ttf") format("truetype"); font-weight: 300; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Medium.ttf") format("truetype"); font-weight: 500; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-SemiBold.ttf") format("truetype"); font-weight: 600; }
+
+:root {
+  --green: #312011; --warm: #F6F1E9; --white: #FFFFFF; --olive: #8A8F94; --black: #000000;
+  --g60: #837970; --g20: #D6D2CF; --g8: #EFEDEC;
+  --oak1: #DCD3C8; --oak2: #BCAA9B; --oak3: #A68E77; --oak4: #887057; --oak5: #46382E;
+  --serif: "Marcellus", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --sans: "DM Sans", Aptos, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+@page { size: 210mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--white); color: var(--green); font-family: var(--sans); font-size: 9.5pt; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+img { display: block; }
+
+.page { position: relative; width: 210mm; height: 297mm; overflow: hidden; padding: 22mm 20mm 24mm 20mm; page-break-after: always; break-after: page; background: var(--white); }
+.page:last-child { page-break-after: auto; break-after: auto; }
+.page.warm { background: var(--warm); }
+.footer { position: absolute; left: 20mm; right: 20mm; bottom: 12mm; display: flex; justify-content: space-between; font-size: 7pt; letter-spacing: 0.04em; line-height: 1.3; color: var(--green); }
+
+/* type styles */
+.eyebrow { font-family: var(--sans); font-weight: 500; font-size: 7.5pt; letter-spacing: 0.14em; text-transform: uppercase; line-height: 1.2; }
+.display { font-family: var(--serif); font-size: 48pt; line-height: 1.05; font-weight: 400; }
+h1, .h1 { font-family: var(--serif); font-size: 30pt; line-height: 1.15; font-weight: 400; }
+h2, .h2 { font-family: var(--serif); font-size: 20pt; line-height: 1.25; font-weight: 400; }
+h3, .h3 { font-family: var(--sans); font-size: 13pt; line-height: 1.3; font-weight: 400; }
+.lead { font-size: 12pt; line-height: 1.55; }
+.body { font-size: 9.5pt; line-height: 1.55; }
+.caption { font-size: 8pt; line-height: 1.4; }
+.tech { font-size: 7pt; line-height: 1.35; letter-spacing: 0.02em; }
+.quote { font-family: var(--serif); font-size: 18pt; line-height: 1.4; }
+.keynum { font-family: var(--serif); font-size: 36pt; line-height: 1; }
+.cta { display: inline-block; font-weight: 500; font-size: 9.5pt; letter-spacing: 0.04em; line-height: 1.3; padding-bottom: 2.5mm; border-bottom: 1pt solid var(--green); }
+.cta.rev { color: var(--white); border-color: var(--white); }
+.muted { color: var(--g60); }
+
+/* spacing */
+.mt-xs { margin-top: 2mm; } .mt-s { margin-top: 4mm; } .mt-m { margin-top: 8mm; } .mt-l { margin-top: 12mm; } .mt-xl { margin-top: 24mm; } .mt-xxl { margin-top: 40mm; }
+.mb-xs { margin-bottom: 2mm; } .mb-s { margin-bottom: 4mm; } .mb-m { margin-bottom: 8mm; } .mb-l { margin-bottom: 12mm; }
+p + p { margin-top: 4mm; }
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; }
+.c3 { grid-column: span 3; } .c4 { grid-column: span 4; } .c5 { grid-column: span 5; } .c6 { grid-column: span 6; } .c7 { grid-column: span 7; } .c8 { grid-column: span 8; } .c9 { grid-column: span 9; } .c10 { grid-column: span 10; } .c11 { grid-column: span 11; } .c12 { grid-column: span 12; }
+.rule { border-top: 0.5pt solid var(--g20); }
+.rule-green { border-top: 0.75pt solid var(--green); }
+.head { display: flex; justify-content: space-between; align-items: baseline; }
+.list { list-style: none; }
+.list li { padding-left: 0; position: relative; }
+.list li + li { margin-top: 1.5mm; }
+.list.dash li::before { content: "—"; position: absolute; left: 0; }
+.list.dash li { padding-left: 5mm; }
+
+/* tables */
+table { border-collapse: collapse; width: 100%; font-size: 8.5pt; line-height: 1.35; }
+th { text-align: left; font-weight: 500; font-size: 7.5pt; letter-spacing: 0.08em; text-transform: uppercase; padding: 2mm 3mm 2mm 0; border-bottom: 0.75pt solid var(--green); vertical-align: bottom; }
+td { padding: 2.2mm 3mm 2.2mm 0; border-bottom: 0.35pt solid var(--g20); vertical-align: top; }
+td.num, th.num { text-align: right; padding-right: 0; }
+table.tech { font-size: 7.5pt; }
+table.tech th { font-size: 6.5pt; padding: 1.5mm 2mm 1.5mm 0; }
+table.tech td { padding: 1.4mm 2mm 1.4mm 0; }
+
+/* swatches */
+.sw { height: 10mm; }
+.sw .lbl { padding-top: 2mm; }
+.swrow { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; }
+
+/* icons */
+.ico { width: 10mm; height: 10mm; flex: 0 0 10mm; }
+
+/* thumbnails of pages and slides */
+.thumb { position: relative; overflow: hidden; background: var(--white); color: var(--green); }
+.thumb.a4 { width: 78%; aspect-ratio: 210 / 297; }
+.thumb.s169 { width: 90%; aspect-ratio: 16 / 9; }
+.thumb.a2 { width: 100%; aspect-ratio: 420 / 594; }
+.thumb .t-logo { position: absolute; }
+.thumb .t-eye { position: absolute; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em; font-size: 3pt; line-height: 1.2; }
+.thumb .t-title { position: absolute; font-family: var(--serif); line-height: 1.1; }
+.thumb .t-body { position: absolute; }
+.thumb .t-body i, .thumb .t-body b { display: block; height: 0.45mm; background: currentColor; opacity: 0.55; margin-bottom: 0.7mm; border-radius: 0; }
+.thumb .t-body i:nth-child(3n) { width: 70%; }
+.thumb .t-img { position: absolute; background-size: cover; background-position: center; }
+.thumb .t-foot { position: absolute; left: 8%; right: 8%; bottom: 4%; display: flex; justify-content: space-between; font-size: 2.6pt; letter-spacing: 0.04em; }
+.thumb .t-rule { position: absolute; height: 0.3mm; background: currentColor; }
+.thumb .t-row { position: absolute; left: 8%; right: 8%; height: 0.15mm; background: var(--g20); }
+.thumb.green { background: var(--green); color: var(--white); }
+.thumb.warm { background: var(--warm); }
+.thumb.img { background: var(--black); color: var(--white); }
+.thumb.img::before { content: ""; position: absolute; inset: 0; background: url("../assets/kember/imagery/mill-log-yard.jpg") center/cover; opacity: 0.6; }
+.thumb.img2::before { background-image: url("../assets/kember/imagery/office-oak-floor-detail.jpg"); }
+.thumb.img3::before { background-image: url("../assets/kember/imagery/kitchen-oak-cabinetry.jpg"); }
+.tl { font-size: 7pt; line-height: 1.35; letter-spacing: 0.02em; margin-top: 1.5mm; }
+.tl b { font-weight: 500; }
+
+/* cover */
+.cover { padding: 0; background: var(--black); color: var(--white); }
+.cover .bg { position: absolute; inset: 0; background: url("../assets/kember/imagery/office-oak-floor.jpg") center/cover; }
+.cover .ov { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0.30) 100%); }
+.cover .logo { position: absolute; left: 20mm; top: 22mm; width: 42mm; }
+.cover .block { position: absolute; left: 20mm; bottom: 24mm; right: 20mm; }
+.cover .display { color: var(--white); }
+.cover-ed { padding: 0; background: var(--warm); }
+.cover-ed .logo { position: absolute; left: 20mm; top: 22mm; width: 42mm; }
+.cover-ed .band { position: absolute; left: 0; right: 0; bottom: 0; height: 70mm; display:grid; grid-template-columns: repeat(12,1fr); }
+.cover-ed .band div { background-size: cover; background-position: center; }
+table.spec td { padding: 1.2mm 3mm 1.2mm 0; }
+
+/* closing band */
+.closing { position: absolute; left: 0; right: 0; bottom: 0; height: 64mm; background: var(--green); color: var(--white); padding: 10mm 20mm; }
+.closing .logo { width: 34mm; }
+.closing h2 { color: var(--white); }
+
+/* diagrams */
+.diagram { position: relative; background: var(--white); }
+.diagram .cols { position: absolute; display: grid; grid-template-columns: repeat(12, 1fr); }
+.diagram .cols span { background: var(--g8); }
+.diagram .lab { position: absolute; font-size: 6pt; letter-spacing: 0.02em; line-height: 1.2; color: var(--g60); }
+.diagram .mark { position: absolute; border: 0 dashed var(--olive); }
+.spacebar { display: flex; align-items: flex-end; gap: 4mm; }
+.spacebar div { background: var(--green); width: 6mm; }
+
+.do-dont td:first-child { width: 50%; }
+.check li { padding-left: 6mm; position: relative; }
+.check li::before { content: ""; position: absolute; left: 0; top: 1.3mm; width: 2.6mm; height: 2.6mm; border: 0.5pt solid var(--green); }
+.num { font-family: var(--serif); font-size: 14pt; line-height: 1; }
+</style>
+<style>
+.opt { border-top: 0.75pt solid var(--green); padding-top: 3mm; }
+.opt.rec { background: var(--warm); padding: 4mm; border-top: 0; }
+table.reg td { vertical-align: top; }
+.tree { font-family: var(--sans); font-size: 8pt; line-height: 1.5; }
+.tree .lvl1 { font-family: var(--serif); font-size: 13pt; }
+.tree .row { display: grid; grid-template-columns: 6mm 1fr auto; column-gap: 3mm; align-items: baseline; padding: 1.4mm 0; border-bottom: 0.35pt solid var(--g20); }
+.tree .row.cat { padding-top: 3mm; }
+.tree .cat .name { font-family: var(--serif); font-size: 11pt; }
+.tree .sub { padding-left: 9mm; color: var(--green); }
+.tree .sub .row { padding-left: 0; }
+.sw12 { display: grid; grid-template-columns: repeat(6, 1fr); column-gap: 3mm; row-gap: 3mm; }
+.sw12 div { aspect-ratio: 1; background-size: cover; background-position: center; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 — COVER -->
+<section class="page cover-ed">
+  <img class="logo" src="../assets/kember/logo/kember-interiors-lockup-umber.svg" alt="Kember Interiors" style="width:44mm">
+  <div style="position:absolute; left:20mm; right:20mm; top:38%">
+    <div class="eyebrow">Kember Interiors · New Zealand</div>
+    <div class="display mt-s" style="font-size:40pt">Market Positioning<br>&amp; Product Architecture</div>
+    <p class="lead mt-m" style="max-width:118mm">A working document for decision. It sits before the Brand Guidelines: positioning, then product architecture, then brand expression, then collateral. Eight decisions are asked for on page 8.</p>
+  </div>
+  <div class="eyebrow" style="position:absolute; left:20mm; bottom:78mm">Draft 1.0 for decision &nbsp;·&nbsp; September 2026 &nbsp;·&nbsp; Prepared for Courtney</div>
+  <div class="band">
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S01-french-white-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S02-french-vanilla-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S05-pearl-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S04-pure-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S06-tailor-taupe-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S07-naked-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S08-natural-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S03-mocha-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S09-tawny-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S10-barn-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S11-burnt-copper-select-rift-quarter.jpg')"></div>
+    <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S12-burnished-bronze-select-rift-quarter.jpg')"></div>
+  </div>
+</section>
+
+<!-- PAGE 2 — SUMMARY -->
+<section class="page">
+  <div class="eyebrow">01 — Summary</div>
+  <h1 class="mt-s">The product has a name.<br>The brand needs a decision.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">The New Zealand flooring product is PrimeOak® Flooring, Signature Collection: An Cuong’s registered product, in American Northern red oak from Michigan, designed and engineered in the United States. What decides the collateral is the relationship between Kember and An Cuong, which no document we hold sets out.</p>
+  </div>
+  <div class="grid mt-l" style="align-items:start">
+    <div class="c6">
+      <ol class="list body" style="font-size:9pt; line-height:1.45">
+        <li><span class="num">1</span>&nbsp; PrimeOak and Kember’s E3plank share the same 4 mm face, 11 mm core, cut names and six colour names. They are very probably one product family under two brands. Kember has not confirmed it.</li>
+        <li class="mt-s"><span class="num">2</span>&nbsp; Three brand architectures are possible. The recommendation is Kember Interiors as the master brand, carrying PrimeOak® as the named product, with An Cuong named only where certification and warranty require it.</li>
+        <li class="mt-s"><span class="num">3</span>&nbsp; The positioning territory with the most room is one oak for the whole interior: floor, stair, wall, ceiling and joinery, colour-matched from one range. The catalogue supports it today.</li>
+        <li class="mt-s"><span class="num">4</span>&nbsp; The product architecture that follows adds Stair + Components as a first-class category and names a curated colour selection to be chosen from twelve.</li>
+        <li class="mt-s"><span class="num">5</span>&nbsp; Eight decisions are needed from Courtney and Kember before Brand Guidelines V1.2 and any collateral. The largest are the brand relationship, the warranty and installer model, and the launch selection.</li>
+      </ol>
+    </div>
+    <div class="c6">
+      <div class="eyebrow">What changed since Guidelines V1.1</div>
+      <table class="mt-s tech spec" style="font-size:7.5pt">
+        <tr><th style="width:26%">Topic</th><th style="width:30%">V1.1 said</th><th>Catalogue establishes</th></tr>
+        <tr><td>Product name</td><td>E3plank or PrimeOak, unresolved</td><td>PrimeOak® Flooring, Signature Collection, by An Cuong</td></tr>
+        <tr><td>Finish</td><td>Hardwax oil</td><td>UV-cured lacquer, 9 layers, matt 5 % gloss</td></tr>
+        <tr><td>Construction</td><td>4 / 11 / 4 mm, 19 mm</td><td>4 mm oak face; oak core 11 or 15 mm; 15 or 19 mm total</td></tr>
+        <tr><td>Certification</td><td>Not published</td><td>NAF · EPA TSCA Title VI · JAS F4 Star</td></tr>
+        <tr><td>Warranty</td><td>Lifetime, maintained</td><td>2 / 2 years third-party install; 15 / 5 years An Cuong Authorized Partners</td></tr>
+        <tr><td>Species</td><td>American Northern Oak</td><td>American Northern red oak, Michigan, 120 km radius</td></tr>
+        <tr><td style="border:0">Range</td><td style="border:0">Curated colours, unnamed</td><td style="border:0">12 colours × 3 grain selections × 3 formats, coded</td></tr>
+      </table>
+      <p class="tech mt-s muted">Provenance in this document: A exact from the catalogue or the Kember site · B observed · I inference, stated as such · P proposal for decision.</p>
+    </div>
+  </div>
+  <div class="footer"><span>NZ Positioning &amp; Product Architecture · Kember Interiors</span><span>2</span></div>
+</section>
+
+<!-- PAGE 3 — EVIDENCE -->
+<section class="page">
+  <div class="eyebrow">02 — Evidence</div>
+  <h1 class="mt-s">What the catalogue establishes.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">PrimeOak® Flooring Signature Collection, An Cuong, 122 pages, May 2026. The first primary product document for the New Zealand offer. Everything on this page is exact from it.</p>
+  </div>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c7">
+      <table class="spec tech" style="font-size:7.5pt">
+        <tr><th style="width:24%">Field</th><th>PrimeOak® Signature Collection</th></tr>
+        <tr><td>Owner</td><td>An Cuong; PrimeOak® registered; within An Cuong’s Masterpiece Series. Kember is not named.</td></tr>
+        <tr><td>Material</td><td>100 % American Northern red oak, harvested within a 120 km radius in Michigan; designed and engineered in the United States. Place of manufacture not stated.</td></tr>
+        <tr><td>Construction</td><td>4 mm oak face on a PrimeOak® Core of cross-directional oak lamella, 11 or 15 mm; 15 or 19 mm total; all-oak; no added formaldehyde.</td></tr>
+        <tr><td>Finish</td><td>UV-cured lacquer, 9 layers; matt 5 % gloss ± 1 %; smooth or light wire-brushed; micro-bevel.</td></tr>
+        <tr><td>Straight</td><td>127 to 304 mm wide in eight widths; 15 mm to 254, 19 mm from 203; lengths 400–2300, 600–3000, 1800–3600 mm.</td></tr>
+        <tr><td>Herringbone · chevron</td><td>101 and 127 × 600 mm, 15 mm; Select Rift &amp; Quarter and Select Live Sawn.</td></tr>
+        <tr><td>Selections</td><td>Select Rift &amp; Quarter Sawn (SR) · Select Live Sawn (SL) · Light Character (LC).</td></tr>
+        <tr><td>Colours</td><td>Twelve, S01–S12: French White, French Vanilla, Mocha, Pure, Pearl, Tailor Taupe, Naked, Natural, Tawny, Barn, Burnt Copper, Burnished Bronze. Codes POF-ST/HE/CH-SR/SL/LC-Sxx.</td></tr>
+        <tr><td>Components</td><td>Colour-matched skirting, stair treads, nosings, reducers, T-moulds, end caps, flush vents; pre-finished panels 4 and 19 mm for risers, stringers, column cladding, furniture.</td></tr>
+        <tr><td>Installation</td><td>Glue-down or nail-down; floating for straight only; patterns glue-down; any grade; radiant heat ≤ 29 °C.</td></tr>
+        <tr><td>Certification</td><td>NAF · EPA TSCA Title VI · JAS F4 Star.</td></tr>
+        <tr><td>Warranty</td><td>Third-party installers 2 / 2 years; An Cuong Authorized Partners 15 structural / 5 surface.</td></tr>
+        <tr><td style="border:0">Packing</td><td style="border:0">Under 35 kg · 2.32 m² · 3–10 planks per pack.</td></tr>
+      </table>
+    </div>
+    <div class="c5">
+      <div class="eyebrow">Construction as the catalogue draws it</div>
+      <svg class="mt-s" viewBox="0 0 200 70" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans" font-size="7" fill="#312011">
+        <rect x="0" y="4" width="120" height="14" fill="#BCAA9B"/>
+        <rect x="0" y="18" width="120" height="39" fill="#DCD3C8"/>
+        <g stroke="#A68E77" stroke-width="0.6"><line x1="12" y1="18" x2="12" y2="57"/><line x1="30" y1="18" x2="30" y2="57"/><line x1="48" y1="18" x2="48" y2="57"/><line x1="66" y1="18" x2="66" y2="57"/><line x1="84" y1="18" x2="84" y2="57"/><line x1="102" y1="18" x2="102" y2="57"/></g>
+        <rect x="0" y="4" width="120" height="53" fill="none" stroke="#312011" stroke-width="0.75"/>
+        <line x1="0" y1="18" x2="120" y2="18" stroke="#312011" stroke-width="0.5"/>
+        <line x1="126" y1="4" x2="126" y2="18" stroke="#312011" stroke-width="0.4"/><text x="130" y="13">Oak face 4 mm</text>
+        <line x1="126" y1="18" x2="126" y2="57" stroke="#312011" stroke-width="0.4"/><text x="130" y="36">PrimeOak® Core</text><text x="130" y="45">11 or 15 mm, oak</text>
+        <text x="0" y="67" font-size="6" fill="#837970">Two layers, not three. V1.2 draws the device from this.</text>
+      </svg>
+      <div class="eyebrow mt-l">What no source establishes</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>The contractual relationship between Kember and An Cuong, and who may use PrimeOak® in New Zealand.</li>
+        <li>Where PrimeOak is manufactured.</li>
+        <li>Whether E3plank and PrimeOak are the same product.</li>
+        <li>Any New Zealand warranty, installer accreditation, slip-resistance result or Homestar / Green Star relevance.</li>
+        <li>Kember’s wall and ceiling lining specification.</li>
+      </ul>
+      <div class="eyebrow mt-l">Sources and weight</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>PrimeOak catalogue, An Cuong 2026: primary, full text; highest weight for product facts.</li>
+        <li>kemberfloors.com, six captures: primary, partial; high for Kember’s own claims.</li>
+        <li>Indexed site extracts and retailer listings: secondary; reference only.</li>
+        <li>Company records (Dun &amp; Bradstreet, Panjiva, ImportGenius, kember.com.vn): low; origin only.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>NZ Positioning &amp; Product Architecture · Kember Interiors</span><span>3</span></div>
+</section>
+
+<!-- PAGE 4 — RECONCILIATION -->
+<section class="page">
+  <div class="eyebrow">03 — E3plank and PrimeOak</div>
+  <h1 class="mt-s">One product, two names. Probably.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">Kember’s site sells E3plank. An Cuong’s catalogue sells PrimeOak. Dimensions, cuts and colour names line up closely enough that they are very probably one family. That is an inference; it stays out of collateral until confirmed.</p>
+  </div>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c7">
+      <div class="eyebrow">Points of agreement</div>
+      <table class="mt-s spec tech" style="font-size:7pt">
+        <tr><th style="width:20%"></th><th style="width:40%">Kember E3plank (site, retailer listings)</th><th>An Cuong PrimeOak (catalogue)</th></tr>
+        <tr><td>Species</td><td>American Northern Oak</td><td>American Northern red oak, Michigan</td></tr>
+        <tr><td>Face</td><td>4 mm</td><td>4 mm</td></tr>
+        <tr><td>Core</td><td>11 mm, “proprietary 2-directional”</td><td>11 or 15 mm, “cross-directional oak lamella”</td></tr>
+        <tr><td>Cuts</td><td>Live sawn · rift sawn · rift and quartered</td><td>Select Live Sawn · Select Rift &amp; Quarter Sawn · Light Character</td></tr>
+        <tr><td>Colour names</td><td>Naked, Tawny, Barn, Pure, Bronze, Burnt Copper, Pale (all “Oak”)</td><td>Naked, Tawny, Barn, Pure, Burnished Bronze, Burnt Copper, six more</td></tr>
+        <tr><td>Widths</td><td>4–10 in (102–254 mm)</td><td>127–304 mm</td></tr>
+        <tr><td style="border:0">US design authority</td><td style="border:0">“Kember Engineering”</td><td style="border:0">“Designed and engineered in the United States”</td></tr>
+      </table>
+      <div class="eyebrow mt-m">Conflicts, flagged not resolved</div>
+      <table class="mt-s spec tech" style="font-size:7pt">
+        <tr><th style="width:22%">Item</th><th style="width:20%">Kember site</th><th style="width:24%">Catalogue</th><th>Consequence</th></tr>
+        <tr><td>Finish</td><td>Hardwax oil</td><td>UV lacquer, 9 layers, 5 % gloss</td><td>Different maintenance and claim; describe the shipped finish only.</td></tr>
+        <tr><td>Balancing layer</td><td>4 mm, named</td><td>Not named; core 11 / 15</td><td>Section device drawn from the shipped datasheet, not 4 : 11 : 4.</td></tr>
+        <tr><td>Warranty</td><td>Lifetime, maintained</td><td>2 / 2 or 15 / 5 by installer</td><td>No New Zealand term yet; none stated until written.</td></tr>
+        <tr><td>Name</td><td>E3plank™</td><td>PrimeOak®</td><td>One name in New Zealand; see page 5.</td></tr>
+        <tr><td style="border:0">Origin</td><td style="border:0">Not stated</td><td style="border:0">Not stated</td><td style="border:0">No origin claim; “designed and engineered in the United States” is the most both support.</td></tr>
+      </table>
+    </div>
+    <div class="c5">
+      <div style="background:var(--warm); padding:6mm 8mm">
+        <div class="eyebrow">Inference</div>
+        <p class="body mt-xs" style="font-size:8.5pt">Shared face and core, shared cut vocabulary and six shared colour names make it very probable that PrimeOak Signature is E3plank’s family, made by or for An Cuong under An Cuong’s mark, with Kember as the North American design and sourcing partner. Kember’s Saint Charles, Michigan listing and the catalogue’s 120 km Michigan radius are consistent; Kember’s Vietnamese import records and kember.com.vn are consistent with manufacture in Vietnam, where An Cuong is based.</p>
+        <p class="tech mt-s muted">Not confirmed by either party. Not for collateral.</p>
+      </div>
+      <div class="eyebrow mt-m">Names in play</div>
+      <table class="mt-s spec tech" style="font-size:7pt">
+        <tr><td style="width:34%">Kember Interiors</td><td>The New Zealand brand; this system</td></tr>
+        <tr><td>Kember Kreative Interiors</td><td>The North American company; retired for NZ</td></tr>
+        <tr><td>An Cuong</td><td>Owner of PrimeOak®; author of the catalogue</td></tr>
+        <tr><td>Masterpiece Series</td><td>An Cuong’s luxury line that PrimeOak sits within</td></tr>
+        <tr><td>PrimeOak® Flooring</td><td>The product</td></tr>
+        <tr><td>Signature Collection</td><td>The twelve-colour range</td></tr>
+        <tr><td style="border:0">E3plank™</td><td style="border:0">Kember’s name for what is probably the same product</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="footer"><span>NZ Positioning &amp; Product Architecture · Kember Interiors</span><span>4</span></div>
+</section>
+
+<!-- PAGE 5 — BRAND RELATIONSHIP -->
+<section class="page">
+  <div class="eyebrow">04 — Brand relationship</div>
+  <h1 class="mt-s">How the names appear on a page.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">The question is not what Kember Interiors is called. It is how PrimeOak®, An Cuong, the Masterpiece Series and Kember Interiors appear on a New Zealand product sheet. Three architectures are possible.</p>
+  </div>
+  <div class="grid mt-l" style="align-items:start">
+    <div class="c4 opt">
+      <div class="eyebrow">Option A</div>
+      <div class="h3 mt-xs">Manufacturer brand, distributed</div>
+      <p class="tech mt-s" style="font-size:7.5pt">An Cuong PrimeOak® is the product brand; Kember Interiors is the New Zealand distributor. Collateral leads with PrimeOak and the Masterpiece Series; Kember appears as “distributed in New Zealand by”.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">For.</b> Honest to the mark; warranty and certifications attach to An Cuong; the catalogue can be reused.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">Against.</b> Kember Interiors becomes a footer logo, which defeats the brand system; An Cuong has no New Zealand recognition; the Masterpiece register and the catalogue’s design language are not the Kember system.</p>
+    </div>
+    <div class="c4 opt">
+      <div class="eyebrow">Option B</div>
+      <div class="h3 mt-xs">Kember-branded product</div>
+      <p class="tech mt-s" style="font-size:7.5pt">Kember Interiors owns the presentation; the flooring is “Kember [name] flooring, with PrimeOak® Core” or similar. An Cuong is named only on certificates and the warranty.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">For.</b> Strongest expression of the brand system; New Zealand-facing from the first page.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">Against.</b> Needs a licence to present An Cuong’s registered product under Kember’s name, which may not exist; risks the 15-year warranty if partner status is tied to An Cuong’s branding; creates a third name for one product.</p>
+    </div>
+    <div class="c4 opt rec">
+      <div class="eyebrow">Option C · recommended</div>
+      <div class="h3 mt-xs">Kember master brand, PrimeOak® named</div>
+      <p class="tech mt-s" style="font-size:7.5pt">Kember Interiors is the brand on every face. The flooring is named PrimeOak® Flooring as a product within Kember Interiors, with an attribution line in the technical block. An Cuong appears where certification, warranty or the mark require it, in technical style, never in the title block. Masterpiece Series is not used in New Zealand.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">For.</b> Uses the real name and its certifications without ceding the page; one name across Kember’s and An Cuong’s documents; needs a distribution and trademark-use agreement, not a rebrand licence; codes and datasheet values lift unchanged.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">Against.</b> Two names on the page need a fixed hierarchy; PrimeOak is a name Kember does not own and could lose.</p>
+    </div>
+  </div>
+  <div class="grid mt-l" style="align-items:start">
+    <div class="c7">
+      <div class="eyebrow">Conditions for Option C, all needing written confirmation from Kember</div>
+      <ol class="list mt-s body" style="font-size:8.5pt; line-height:1.4">
+        <li><span class="num">1</span>&nbsp; Kember Interiors may use the PrimeOak® mark in New Zealand collateral.</li>
+        <li class="mt-xs"><span class="num">2</span>&nbsp; Whether Kember Interiors, or an installer network it accredits, can hold An Cuong Authorized Partner status so the 15 / 5-year warranty applies.</li>
+        <li class="mt-xs"><span class="num">3</span>&nbsp; Whether “Masterpiece Series” must appear anywhere. Recommendation: no.</li>
+        <li class="mt-xs"><span class="num">4</span>&nbsp; The shipped specification for New Zealand: finish, thicknesses, formats, packs.</li>
+      </ol>
+    </div>
+    <div class="c5">
+      <div class="eyebrow">Hierarchy on a product sheet under Option C</div>
+      <div class="thumb a4 mt-s" style="width:60%"><div class="t-logo" style="left:9.5%; top:7.4%; width:22%"><img src="../assets/kember/logo/kember-interiors-lockup-umber.svg" style="width:100%"></div><div class="t-eye" style="left:9.5%; top:22%">Flooring · Available in New Zealand</div><div class="t-title" style="left:9.5%; top:26%; font-size:6pt">PrimeOak® Flooring<br>Signature Collection</div><div class="t-body" style="left:9.5%; width:80%; top:40%"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="t-eye" style="left:9.5%; bottom:12%; font-size:2.4pt; text-transform:none; letter-spacing:0">PrimeOak® is a registered trademark of An Cuong. NAF · EPA TSCA Title VI · JAS F4 Star</div><div class="t-foot"><span>Product sheet · Kember Interiors</span><span></span></div></div>
+    </div>
+  </div>
+  <div class="footer"><span>NZ Positioning &amp; Product Architecture · Kember Interiors</span><span>5</span></div>
+</section>
+
+<!-- PAGE 6 — POSITIONING -->
+<section class="page">
+  <div class="eyebrow">05 — Positioning</div>
+  <h1 class="mt-s">Three territories. One with room.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">Tested against five criteria: true today from the evidence; room for the wider Kember range; distinct from Frevini; credible to a specifier; supported by assets we have or can make.</p>
+  </div>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c4 opt">
+      <div class="eyebrow">Territory 1</div>
+      <div class="h3 mt-xs">Engineered American oak flooring</div>
+      <p class="tech mt-s" style="font-size:7.5pt">“American oak. Engineered for stability.” The V1.1 working line. Narrow, true, provable.</p>
+      <p class="tech mt-s" style="font-size:7.5pt">True today, yes. Room to grow, no. Distinct from Frevini, partly. Specifier credibility, high. Assets, yes.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">Verdict.</b> A strong product-level message for flooring, not a master-brand position.</p>
+    </div>
+    <div class="c4 opt rec">
+      <div class="eyebrow">Territory 2 · recommended</div>
+      <div class="h3 mt-xs">One oak for the whole interior</div>
+      <p class="tech mt-s" style="font-size:7.5pt">Floor, stair, wall, ceiling and joinery in one American red oak, colour-matched from one range. The interior reads as one material because it is one.</p>
+      <p class="tech mt-s" style="font-size:7.5pt">True today, yes: matched stair parts, trims and panels are in the catalogue; Kember makes wall panels, doors and cabinetry. Room to grow, the most. Distinct from Frevini, clearly. Credibility, high: coordinated material across floor, stair and joinery is a real specifier problem. Assets, partly: matched stair-and-floor photography is the gap.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">Verdict.</b> Recommended. It turns “Kember Interiors” from a company name into a proposition.</p>
+    </div>
+    <div class="c4 opt">
+      <div class="eyebrow">Territory 3</div>
+      <div class="h3 mt-xs">Precision-engineered interior systems</div>
+      <p class="tech mt-s" style="font-size:7.5pt">Kember as an engineering brand for interior components, oak being the first material.</p>
+      <p class="tech mt-s" style="font-size:7.5pt">True today, partly. Room to grow, large but abstract. Distinct, yes. Credibility, medium: a claim before it is a range. Assets, no.</p>
+      <p class="tech mt-s" style="font-size:7.5pt"><b style="font-weight:500">Verdict.</b> Not now. A later evolution of Territory 2 if Kember’s non-oak capability comes to New Zealand.</p>
+    </div>
+  </div>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c7">
+      <div class="eyebrow">Draft proposition under Territory 2, for Courtney to edit</div>
+      <p class="body mt-s" style="font-size:9pt">Kember Interiors brings one American red oak to the whole interior: floor, stair, wall and joinery, colour-matched from a single range and engineered as all-oak construction.</p>
+      <div class="quote mt-s" style="font-size:16pt">One oak. The whole interior.</div>
+      <p class="tech mt-s">Candidates to test: “American oak, floor to ceiling.” · “Floor, stair, wall. One oak.” Flooring line retained at product level: “American oak. Engineered for stability.”</p>
+      <div class="eyebrow mt-m">Reasons to believe, all from the catalogue</div>
+      <p class="tech mt-s" style="font-size:7.5pt">American Northern red oak from within 120 km in Michigan, designed and engineered in the United States · all-oak construction, 4 mm face on a cross-directional oak core · colour-matched stair parts, trims and panels from the same twelve colours · NAF, EPA TSCA Title VI, JAS F4 Star · up to 304 × 3600 mm.</p>
+    </div>
+    <div class="c5">
+      <div class="eyebrow">Audience</div>
+      <p class="tech mt-s" style="font-size:7.5pt">Primary: architects, interior designers and specifiers on high-value residential, multi-residential and hospitality work. Secondary: builders, installers and developers. The homeowner is reached through the specifier.</p>
+      <div class="eyebrow mt-m">Competitive frame, to validate</div>
+      <p class="tech mt-s" style="font-size:7.5pt">New Zealand engineered oak is mostly European white oak on plywood or softwood cores. Kember’s checkable differences: red oak from a named region; an oak core; matched stair and panel components from one source; NAF, TSCA and F4 Star for Homestar and Green Star conversations, to verify; 304 × 3600 mm at 19 mm.</p>
+      <div class="eyebrow mt-m">Relationship to Frevini</div>
+      <p class="tech mt-s" style="font-size:7.5pt">Frevini: European oak, editorial, studio-led. Kember: American red oak, engineered, whole-interior, specifier-led. Kember leads with wide straight plank and matched components, not herringbone and chevron, which is Frevini’s ground.</p>
+    </div>
+  </div>
+  <div class="footer"><span>NZ Positioning &amp; Product Architecture · Kember Interiors</span><span>6</span></div>
+</section>
+
+<!-- PAGE 7 — PRODUCT ARCHITECTURE -->
+<section class="page">
+  <div class="eyebrow">06 — Product architecture</div>
+  <h1 class="mt-s">Brand, category, product, format.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">Four levels. The brand on every face; the category in the availability-label style; the product with its real name and mark; then format, dimension and selection. Stair + Components becomes a category, because it is what makes the whole-interior territory true.</p>
+  </div>
+  <div class="grid mt-l" style="align-items:start">
+    <div class="c7 tree">
+      <div class="lvl1">Kember Interiors</div>
+      <div class="row cat"><span></span><span class="name">Flooring</span><span class="avail">Available in New Zealand</span></div>
+      <div class="sub">
+        <div class="row"><span></span><span>PrimeOak® Flooring · Signature Collection</span><span class="tech">product</span></div>
+        <div class="row"><span></span><span>Straight · 127–304 mm · 15 / 19 mm · SR · SL · LC</span><span class="tech">format</span></div>
+        <div class="row"><span></span><span>Herringbone · 101 / 127 × 600 mm · 15 mm · SR · SL</span><span class="tech">format</span></div>
+        <div class="row"><span></span><span>Chevron · 101 / 127 × 600 mm · 15 mm · SR · SL</span><span class="tech">format</span></div>
+        <div class="row"><span></span><span>Colours: New Zealand curated selection from S01–S12</span><span class="tech">decision 5</span></div>
+      </div>
+      <div class="row cat"><span></span><span class="name">Stair + Components</span><span class="avail">Available in New Zealand · to confirm</span></div>
+      <div class="sub">
+        <div class="row"><span></span><span>Stair treads · nosings · risers (4 / 19 mm panel)</span><span class="tech">colour-matched</span></div>
+        <div class="row"><span></span><span>Skirting · reducers · T-moulds · end caps · flush-mount vents</span><span class="tech">colour-matched</span></div>
+      </div>
+      <div class="row cat"><span></span><span class="name">Wall + Ceiling</span><span class="avail">Available in New Zealand · specification to confirm</span></div>
+      <div class="sub">
+        <div class="row"><span></span><span>PrimeOak® pre-finished panels, 4 / 19 mm: column cladding, furniture components</span><span class="tech">catalogue</span></div>
+        <div class="row"><span></span><span>Kember wall panels: New Zealand specification not yet defined</span><span class="tech">Kember site</span></div>
+      </div>
+      <div class="row cat"><span></span><span class="name">Kember capability</span><span class="avail cap">Not stocked in New Zealand</span></div>
+      <div class="sub">
+        <div class="row" style="border:0"><span></span><span>Interior doors · Cabinetry · Eplank · EcoKlik · KemLam</span><span class="tech">capability</span></div>
+      </div>
+    </div>
+    <div class="c5">
+      <div class="eyebrow">Rules that follow</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>PrimeOak codes are carried on datasheets and colour cards as An Cuong writes them: POF-ST-SR-S07.</li>
+        <li>Colour names without “Oak”: Naked, not Naked Oak.</li>
+        <li>The E3plank name does not appear in New Zealand material. Where a Kember document using it must be cited, it is cited as a source.</li>
+        <li>Stair + Components is a first-class category once Kember confirms availability to New Zealand.</li>
+        <li>Capability is never presented as stock.</li>
+      </ul>
+      <div class="eyebrow mt-m">Recommended launch selection, to confirm against stock</div>
+      <div class="sw12 mt-s" style="grid-template-columns: repeat(3,1fr)">
+        <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S01-french-white-select-rift-quarter.jpg')"></div>
+        <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S04-pure-select-rift-quarter.jpg')"></div>
+        <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S07-naked-select-rift-quarter.jpg')"></div>
+        <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S08-natural-select-rift-quarter.jpg')"></div>
+        <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S09-tawny-select-rift-quarter.jpg')"></div>
+        <div style="background-image:url('../assets/kember/reference/primeoak/swatches/S12-burnished-bronze-select-rift-quarter.jpg')"></div>
+      </div>
+      <p class="tech mt-s">S01 French White · S04 Pure · S07 Naked · S08 Natural · S09 Tawny · S12 Burnished Bronze. Pale to dark without near-duplicates. Catalogue swatches, screen reference only.</p>
+      <div class="eyebrow mt-m">Guidelines V1.2, if adopted</div>
+      <p class="tech mt-s" style="font-size:7.5pt">Proposition and master line replace the working expression · product architecture as this page · section device at true proportions · Application photography led by a matched stair-and-floor installation · PrimeOak® as a product name in H2 or H3, never a logo; An Cuong in technical style · colour, type, grid and voice unchanged.</p>
+    </div>
+  </div>
+  <div class="footer"><span>NZ Positioning &amp; Product Architecture · Kember Interiors</span><span>7</span></div>
+</section>
+
+<!-- PAGE 8 — DECISIONS -->
+<section class="page">
+  <div class="eyebrow">07 — Decisions</div>
+  <h1 class="mt-s">Eight decisions before collateral.</h1>
+  <table class="mt-m spec tech reg" style="font-size:7.5pt">
+    <tr><th style="width:4%">#</th><th style="width:20%">Decision</th><th style="width:30%">Options</th><th style="width:30%">Recommendation</th><th>Owner</th></tr>
+    <tr><td>1</td><td>Brand relationship on New Zealand collateral</td><td>A distributed manufacturer brand · B Kember-branded · C Kember master, PrimeOak® named</td><td>C, subject to the four conditions on page 5. Blocks everything.</td><td>Courtney with Kember and An Cuong</td></tr>
+    <tr><td>2</td><td>Positioning territory</td><td>1 flooring · 2 whole interior · 3 engineered systems</td><td>2</td><td>Courtney</td></tr>
+    <tr><td>3</td><td>Master line</td><td>Three candidates on page 6, or Courtney’s own</td><td>“One oak. The whole interior.” to test</td><td>Courtney</td></tr>
+    <tr><td>4</td><td>Warranty and installer model</td><td>Third-party 2 / 2 · Authorized Partner 15 / 5 through Kember-accredited installers · a Kember New Zealand warranty</td><td>Pursue Authorized Partner status; state no term until written</td><td>Kember and An Cuong</td></tr>
+    <tr><td>5</td><td>Launch colour selection</td><td>Any subset of S01–S12</td><td>Six: French White, Pure, Naked, Natural, Tawny, Burnished Bronze; confirm against stock</td><td>Courtney</td></tr>
+    <tr><td>6</td><td>Stair + Components at launch</td><td>Include · available to order · defer</td><td>Available to order; it is the proof of Territory 2</td><td>Courtney with Kember</td></tr>
+    <tr><td>7</td><td>Wall + Ceiling specification</td><td>PrimeOak panels · Kember wall panels · both · defer</td><td>Confirm what ships; defer the category label until then</td><td>Kember</td></tr>
+    <tr><td style="border:0">8</td><td style="border:0">Shipped specification for New Zealand</td><td style="border:0">Finish, thicknesses, formats, packs</td><td style="border:0">Obtain the New Zealand datasheet from Kember; it supersedes both the site and the catalogue</td><td style="border:0">Kember</td></tr>
+  </table>
+  <div class="grid mt-l" style="align-items:start">
+    <div class="c6">
+      <div class="eyebrow">Verification before collateral</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>Written confirmation of the Kember–An Cuong relationship and of the right to use PrimeOak® in New Zealand.</li>
+        <li>New Zealand shipped specification and datasheet; New Zealand warranty wording.</li>
+        <li>Slip-resistance data for commercial use, and how NAF, TSCA and F4 Star map to Homestar and Green Star credits.</li>
+        <li>Manufacturing origin, if it is to be stated at all.</li>
+        <li>Stock, lead times and minimum orders for components and panels.</li>
+      </ul>
+    </div>
+    <div class="c6">
+      <div class="eyebrow">Photography brief, once decisions 2 and 6 are made</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>A matched floor-and-stair installation: the lead Application image.</li>
+        <li>Wide straight plank, 254–304 mm, under natural light.</li>
+        <li>Panel cladding on a column or wall, matched to the floor.</li>
+        <li>The launch colours as real boards, one setup, one light.</li>
+        <li>Nothing borrowed from the An Cuong catalogue in production collateral.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="closing">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start">
+      <img class="logo" src="../assets/kember/logo/kember-interiors-lockup-white.svg" alt="Kember Interiors" style="width:36mm">
+      <div class="eyebrow" style="opacity:.85">NZ Positioning &amp; Product Architecture · Draft 1.0 · September 2026</div>
+    </div>
+    <div class="grid" style="margin-top:8mm; align-items:end">
+      <div class="c6"><h2>Positioning, then product,<br>then brand, then collateral.</h2></div>
+      <div class="c6 body" style="line-height:1.6">Canonical text: KEMBER_NZ_POSITIONING_AND_PRODUCT_ARCHITECTURE.md<br>Source: PrimeOak® Flooring Signature Collection, An Cuong, 2026<br>Feeds Brand Guidelines V1.2 once decided</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
