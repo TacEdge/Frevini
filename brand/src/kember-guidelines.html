@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<title>Kember Interiors — Brand Guidelines</title>
+<style>
+@font-face { font-family: "Marcellus"; src: url("../assets/fonts/marcellus/Marcellus-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Light.ttf") format("truetype"); font-weight: 300; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Medium.ttf") format("truetype"); font-weight: 500; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-SemiBold.ttf") format("truetype"); font-weight: 600; }
+
+:root {
+  --green: #312011; --warm: #F6F1E9; --white: #FFFFFF; --olive: #8A8F94; --black: #000000;
+  --g60: #837970; --g20: #D6D2CF; --g8: #EFEDEC;
+  --oak1: #DCD3C8; --oak2: #BCAA9B; --oak3: #A68E77; --oak4: #887057; --oak5: #46382E;
+  --serif: "Marcellus", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --sans: "DM Sans", Aptos, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+@page { size: 210mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--white); color: var(--green); font-family: var(--sans); font-size: 9.5pt; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+img { display: block; }
+
+.page { position: relative; width: 210mm; height: 297mm; overflow: hidden; padding: 22mm 20mm 24mm 20mm; page-break-after: always; break-after: page; background: var(--white); }
+.page:last-child { page-break-after: auto; break-after: auto; }
+.page.warm { background: var(--warm); }
+.footer { position: absolute; left: 20mm; right: 20mm; bottom: 12mm; display: flex; justify-content: space-between; font-size: 7pt; letter-spacing: 0.04em; line-height: 1.3; color: var(--green); }
+
+/* type styles */
+.eyebrow { font-family: var(--sans); font-weight: 500; font-size: 7.5pt; letter-spacing: 0.14em; text-transform: uppercase; line-height: 1.2; }
+.display { font-family: var(--serif); font-size: 48pt; line-height: 1.05; font-weight: 400; }
+h1, .h1 { font-family: var(--serif); font-size: 30pt; line-height: 1.15; font-weight: 400; }
+h2, .h2 { font-family: var(--serif); font-size: 20pt; line-height: 1.25; font-weight: 400; }
+h3, .h3 { font-family: var(--sans); font-size: 13pt; line-height: 1.3; font-weight: 400; }
+.lead { font-size: 12pt; line-height: 1.55; }
+.body { font-size: 9.5pt; line-height: 1.55; }
+.caption { font-size: 8pt; line-height: 1.4; }
+.tech { font-size: 7pt; line-height: 1.35; letter-spacing: 0.02em; }
+.quote { font-family: var(--serif); font-size: 18pt; line-height: 1.4; }
+.keynum { font-family: var(--serif); font-size: 36pt; line-height: 1; }
+.cta { display: inline-block; font-weight: 500; font-size: 9.5pt; letter-spacing: 0.04em; line-height: 1.3; padding-bottom: 2.5mm; border-bottom: 1pt solid var(--green); }
+.cta.rev { color: var(--white); border-color: var(--white); }
+.muted { color: var(--g60); }
+
+/* spacing */
+.mt-xs { margin-top: 2mm; } .mt-s { margin-top: 4mm; } .mt-m { margin-top: 8mm; } .mt-l { margin-top: 12mm; } .mt-xl { margin-top: 24mm; } .mt-xxl { margin-top: 40mm; }
+.mb-xs { margin-bottom: 2mm; } .mb-s { margin-bottom: 4mm; } .mb-m { margin-bottom: 8mm; } .mb-l { margin-bottom: 12mm; }
+p + p { margin-top: 4mm; }
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; }
+.c3 { grid-column: span 3; } .c4 { grid-column: span 4; } .c5 { grid-column: span 5; } .c6 { grid-column: span 6; } .c7 { grid-column: span 7; } .c8 { grid-column: span 8; } .c9 { grid-column: span 9; } .c10 { grid-column: span 10; } .c11 { grid-column: span 11; } .c12 { grid-column: span 12; }
+.rule { border-top: 0.5pt solid var(--g20); }
+.rule-green { border-top: 0.75pt solid var(--green); }
+.head { display: flex; justify-content: space-between; align-items: baseline; }
+.list { list-style: none; }
+.list li { padding-left: 0; position: relative; }
+.list li + li { margin-top: 1.5mm; }
+.list.dash li::before { content: "—"; position: absolute; left: 0; }
+.list.dash li { padding-left: 5mm; }
+
+/* tables */
+table { border-collapse: collapse; width: 100%; font-size: 8.5pt; line-height: 1.35; }
+th { text-align: left; font-weight: 500; font-size: 7.5pt; letter-spacing: 0.08em; text-transform: uppercase; padding: 2mm 3mm 2mm 0; border-bottom: 0.75pt solid var(--green); vertical-align: bottom; }
+td { padding: 2.2mm 3mm 2.2mm 0; border-bottom: 0.35pt solid var(--g20); vertical-align: top; }
+td.num, th.num { text-align: right; padding-right: 0; }
+table.tech { font-size: 7.5pt; }
+table.tech th { font-size: 6.5pt; padding: 1.5mm 2mm 1.5mm 0; }
+table.tech td { padding: 1.4mm 2mm 1.4mm 0; }
+
+/* swatches */
+.sw { height: 10mm; }
+.sw .lbl { padding-top: 2mm; }
+.swrow { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; }
+
+/* icons */
+.ico { width: 11mm; height: 11mm; }
+
+/* thumbnails of pages and slides */
+.thumb { position: relative; overflow: hidden; background: var(--white); color: var(--green); }
+.thumb.a4 { width: 78%; aspect-ratio: 210 / 297; }
+.thumb.s169 { width: 90%; aspect-ratio: 16 / 9; }
+.thumb.a2 { width: 100%; aspect-ratio: 420 / 594; }
+.thumb .t-logo { position: absolute; }
+.thumb .t-eye { position: absolute; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em; font-size: 3pt; line-height: 1.2; }
+.thumb .t-title { position: absolute; font-family: var(--serif); line-height: 1.1; }
+.thumb .t-body { position: absolute; }
+.thumb .t-body i, .thumb .t-body b { display: block; height: 0.45mm; background: currentColor; opacity: 0.55; margin-bottom: 0.7mm; border-radius: 0; }
+.thumb .t-body i:nth-child(3n) { width: 70%; }
+.thumb .t-img { position: absolute; background-size: cover; background-position: center; }
+.thumb .t-foot { position: absolute; left: 8%; right: 8%; bottom: 4%; display: flex; justify-content: space-between; font-size: 2.6pt; letter-spacing: 0.04em; }
+.thumb .t-rule { position: absolute; height: 0.3mm; background: currentColor; }
+.thumb .t-row { position: absolute; left: 8%; right: 8%; height: 0.15mm; background: var(--g20); }
+.thumb.green { background: var(--green); color: var(--white); }
+.thumb.warm { background: var(--warm); }
+.thumb.img { background: var(--black); color: var(--white); }
+.thumb.img::before { content: ""; position: absolute; inset: 0; background: url("../assets/kember/imagery/office-oak-floor.jpg") center/cover; opacity: 0.6; }
+.thumb.img2::before { background-image: url("../assets/kember/imagery/office-oak-floor-detail.jpg"); }
+.thumb.img3::before { background-image: url("../assets/kember/imagery/kitchen-oak-cabinetry.jpg"); }
+.tl { font-size: 7pt; line-height: 1.35; letter-spacing: 0.02em; margin-top: 1.5mm; }
+.tl b { font-weight: 500; }
+
+/* cover */
+.cover { padding: 0; background: var(--black); color: var(--white); }
+.cover .bg { position: absolute; inset: 0; background: url("../assets/kember/imagery/office-oak-floor.jpg") center/cover; }
+.cover .ov { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0.30) 100%); }
+.cover .logo { position: absolute; left: 20mm; top: 22mm; width: 42mm; }
+.cover .block { position: absolute; left: 20mm; bottom: 24mm; right: 20mm; }
+.cover .display { color: var(--white); }
+.cover-ed { padding: 0; background: var(--warm); }
+.cover-ed .logo { position: absolute; left: 20mm; top: 22mm; width: 42mm; }
+.cover-ed .band { position: absolute; left: 0; right: 0; bottom: 0; height: 70mm; background: url("../assets/kember/imagery/office-oak-floor-detail.jpg") center/cover; }
+table.spec td { padding: 1.2mm 3mm 1.2mm 0; }
+
+/* closing band */
+.closing { position: absolute; left: 0; right: 0; bottom: 0; height: 64mm; background: var(--green); color: var(--white); padding: 10mm 20mm; }
+.closing .logo { width: 34mm; }
+.closing h2 { color: var(--white); }
+
+/* diagrams */
+.diagram { position: relative; background: var(--white); }
+.diagram .cols { position: absolute; display: grid; grid-template-columns: repeat(12, 1fr); }
+.diagram .cols span { background: var(--g8); }
+.diagram .lab { position: absolute; font-size: 6pt; letter-spacing: 0.02em; line-height: 1.2; color: var(--g60); }
+.diagram .mark { position: absolute; border: 0 dashed var(--olive); }
+.spacebar { display: flex; align-items: flex-end; gap: 4mm; }
+.spacebar div { background: var(--green); width: 6mm; }
+
+.do-dont td:first-child { width: 50%; }
+.check li { padding-left: 6mm; position: relative; }
+.check li::before { content: ""; position: absolute; left: 0; top: 1.3mm; width: 2.6mm; height: 2.6mm; border: 0.5pt solid var(--green); }
+.num { font-family: var(--serif); font-size: 14pt; line-height: 1; }
+</style>
+<style>
+.section-dev { display:block; }
+.avail { display:inline-block; font-weight:500; font-size:6.5pt; letter-spacing:0.12em; text-transform:uppercase; padding:1.2mm 2.5mm; border:0.5pt solid var(--green); }
+.avail.cap { color:var(--g60); border-color:var(--g20); }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 — COVER ============================ -->
+<section class="page cover-ed">
+  <img class="logo" src="../assets/kember/logo/kember-interiors-lockup-umber.svg" alt="Kember Interiors" style="width:44mm">
+  <div style="position:absolute; left:20mm; right:20mm; top:40%">
+    <div class="eyebrow">Kember Interiors</div>
+    <div class="display mt-s">Brand<br>Guidelines</div>
+    <p class="lead mt-m" style="max-width:112mm">The New Zealand brand and document system for Kember Interiors. Built on the Frevini Studio design system, carrying Kember’s own name, colour, material and engineering story.</p>
+  </div>
+  <div class="eyebrow" style="position:absolute; left:20mm; bottom:78mm">Version 1.0 &nbsp;·&nbsp; September 2026</div>
+  <div class="band"></div>
+</section>
+
+<!-- ============================ PAGE 2 — FOUNDATION ============================ -->
+<section class="page">
+  <div class="eyebrow">01 — Foundation</div>
+  <h1 class="mt-s">American oak.<br>Engineered for stability.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">Kember Interiors shares a design system with Frevini Studio and nothing else. The same typefaces, grid and document architecture carry a different material, construction and colour.</p>
+  </div>
+
+  <div class="grid mt-l">
+    <div class="c4">
+      <div class="eyebrow">Established by Kember</div>
+      <ul class="list mt-s" style="font-size:8pt; line-height:1.4">
+        <li>American Northern Oak from certified North American forests.</li>
+        <li>Three-ply, all-hardwood engineered construction: 4 mm wear layer, 11 mm core, 4 mm balancing layer.</li>
+        <li>A two-directional core that restrains width movement.</li>
+        <li>Hardwax oil finish. Lifetime warranty on lamination and finish, subject to maintenance.</li>
+        <li>Family-owned, vertically integrated.</li>
+      </ul>
+    </div>
+    <div class="c4">
+      <div class="eyebrow">Transferred from Frevini</div>
+      <ul class="list mt-s" style="font-size:8pt; line-height:1.4">
+        <li><b style="font-weight:500">Typography</b> — Marcellus and DM Sans, the same hierarchy and sizes.</li>
+        <li><b style="font-weight:500">Layout</b> — 12-column A4 and 16:9 grids, margins, spacing scale, footer logic.</li>
+        <li><b style="font-weight:500">Restraint</b> — one brand colour, square corners, horizontal rules only, no boxes or shadows.</li>
+        <li><b style="font-weight:500">Documents</b> — the cover, page, slide and poster archetypes.</li>
+        <li><b style="font-weight:500">Voice</b> — short statement, then a sentence of proof.</li>
+      </ul>
+    </div>
+    <div class="c4">
+      <div class="eyebrow">Kember’s own</div>
+      <ul class="list mt-s" style="font-size:8pt; line-height:1.4">
+        <li><b style="font-weight:500">Name and lock-up</b> — KEMBER INTERIORS. The wordmark is retained; “kreative interiors” is retired for New Zealand.</li>
+        <li><b style="font-weight:500">Colour</b> — Kember Umber, drawn from the deep oak fields already used by Kember.</li>
+        <li><b style="font-weight:500">Material</b> — American oak, in Kember’s own photography.</li>
+        <li><b style="font-weight:500">Engineering</b> — the three-layer section as an information device.</li>
+        <li><b style="font-weight:500">Products</b> — Flooring, Wall + Ceiling, and the broader Kember capability, labelled by availability.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid mt-l">
+    <div class="c12 head"><h2>Shared system, separate brands</h2><span class="tech">A exact Kember · B existing Kember · C transferred from Frevini · D Kember adaptation</span></div>
+  </div>
+  <table class="mt-s tech spec" style="font-size:7.5pt">
+    <tr><th style="width:22%">Element</th><th style="width:39%">Frevini Studio</th><th>Kember Interiors</th></tr>
+    <tr><td>Primary colour</td><td>Frevini Green #253C1B</td><td>Kember Umber #312011 (B, D)</td></tr>
+    <tr><td>Fields</td><td>Warm White #FAF5EB · White</td><td>Oak White #F6F1E9 · White (D)</td></tr>
+    <tr><td>Utility colour</td><td>Olive #8B9770</td><td>Kember Slate #8A8F94, from the existing wordmark grey (D)</td></tr>
+    <tr><td>Typefaces and scale</td><td>Marcellus · DM Sans</td><td>Identical (C)</td></tr>
+    <tr><td>Grid, spacing, footer</td><td>12 columns · 22/20/24/20 mm · XS–XXL</td><td>Identical (C)</td></tr>
+    <tr><td>Graphic devices</td><td>Rule, arrow, thin-line icon</td><td>The same, plus the three-layer section device for engineering content (D)</td></tr>
+    <tr><td>Photography</td><td>European oak, forest, factory, finished floors</td><td>American oak, floor, wall, ceiling, engineering, making (D)</td></tr>
+    <tr><td>Logo</td><td>Framed wordmark, top-left, once per face</td><td>Wordmark lock-up, same placement rules (C); no frame, no tagline (D)</td></tr>
+    <tr><td style="border:0">Voice</td><td style="border:0">Built not Branded.</td><td style="border:0">American oak. Engineered for stability. (D)</td></tr>
+  </table>
+  <div class="footer"><span>Brand Guidelines · Kember Interiors</span><span>2</span></div>
+</section>
+
+<!-- ============================ PAGE 3 — LOGO + COLOUR ============================ -->
+<section class="page">
+  <div class="eyebrow">02 — Logo, colour and devices</div>
+  <h1 class="mt-s">One mark, one colour.</h1>
+
+  <div class="grid mt-m">
+    <div class="c12 head"><h2>Logo</h2><span class="tech">Wordmark reconstructed from kemberfloors.com captures · the official master governs</span></div>
+  </div>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c5">
+      <div style="position:relative; padding:5.5mm; display:inline-block;">
+        <div style="position:absolute; inset:0; border:0.35pt dashed var(--olive);"></div>
+        <div style="position:absolute; left:0; right:0; top:5.5mm; border-top:0.35pt dashed var(--olive);"></div>
+        <div style="position:absolute; left:0; right:0; bottom:5.5mm; border-top:0.35pt dashed var(--olive);"></div>
+        <div style="position:absolute; top:0; bottom:0; left:5.5mm; border-left:0.35pt dashed var(--olive);"></div>
+        <div style="position:absolute; top:0; bottom:0; right:5.5mm; border-left:0.35pt dashed var(--olive);"></div>
+        <img src="../assets/kember/logo/kember-interiors-lockup-umber.svg" style="width:44mm; position:relative">
+      </div>
+      <p class="tech mt-s">The lock-up: the retained KEMBER wordmark with INTERIORS in DM Sans Medium, +0.22 em, right-aligned to the wordmark. Clear space = half the wordmark height on all sides.</p>
+    </div>
+    <div class="c3">
+      <div style="background:var(--green); padding:6mm 5mm; display:flex; align-items:center; justify-content:center; height:26mm">
+        <img src="../assets/kember/logo/kember-interiors-lockup-white.svg" style="width:30mm">
+      </div>
+      <p class="tech mt-s">Reversed on Kember Umber or over darkened photography.</p>
+    </div>
+    <div class="c4">
+      <ul class="list tech" style="font-size:7pt">
+        <li><b style="font-weight:500">Minimum width</b> 30 mm print · 130 px screen (wordmark alone 22 mm · 96 px)</li>
+        <li><b style="font-weight:500">Cover width</b> 44 mm on A4 · 210 px on a slide</li>
+        <li><b style="font-weight:500">Position</b> top-left at the margin; bottom-left on posters</li>
+        <li><b style="font-weight:500">Appears on</b> covers, title and closing slides, posters, product sheets. Interior pages carry the running footer.</li>
+        <li><b style="font-weight:500">Colour</b> Kember Umber or white only. The grey and blue of the current mark are not used in New Zealand material.</li>
+        <li><b style="font-weight:500">Never</b> “kreative interiors”, outlines, shadows, stretching, rotation, watermarks, or two marks on one face.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid mt-m">
+    <div class="c12 head"><h2>Colour</h2><span class="tech">Core carries every document. Utility colours live in tables, charts and icons. Photography supplies the rest.</span></div>
+  </div>
+  <div class="eyebrow mt-m">Core palette</div>
+  <div class="swrow mt-s">
+    <div class="c4"><div class="sw" style="background:var(--green)"></div><div class="lbl"><div class="eyebrow">Kember Umber</div><div class="tech">#312011 · 49 32 17 · C0 M35 Y65 K81<br>Text, headings, rules, fields, logo. From the deep oak fields on kemberfloors.com.</div></div></div>
+    <div class="c4"><div class="sw" style="background:var(--warm)"></div><div class="lbl"><div class="eyebrow">Oak White</div><div class="tech">#F6F1E9 · 246 241 233 · C0 M2 Y5 K4<br>Second field, editorial covers, callouts</div></div></div>
+    <div class="c4"><div class="sw" style="background:var(--white); border:0.35pt solid var(--g20)"></div><div class="lbl"><div class="eyebrow">White</div><div class="tech">#FFFFFF · 255 255 255 · C0 M0 Y0 K0<br>Default field, reversed type and logo</div></div></div>
+  </div>
+  <div class="swrow mt-s">
+    <div class="c9"><div class="eyebrow">Utility palette · tables, charts, icons and diagrams only</div></div>
+    <div class="c3"><div class="eyebrow">Overlay only</div></div>
+  </div>
+  <div class="swrow mt-s">
+    <div class="c3"><div class="sw" style="height:8mm;background:var(--olive)"></div><div class="lbl"><div class="eyebrow">Kember Slate</div><div class="tech">#8A8F94 · icons on Oak White, chart series two</div></div></div>
+    <div class="c3"><div style="display:flex;height:8mm"><div style="flex:1;background:var(--g60)"></div><div style="flex:1;background:var(--g20)"></div><div style="flex:1;background:var(--g8)"></div></div><div class="lbl"><div class="eyebrow">Umber 60 · 20 · 8</div><div class="tech">#837970 #D6D2CF #EFEDEC · axes, rules, row fills</div></div></div>
+    <div class="c3"><div style="display:flex;height:8mm"><div style="flex:1;background:var(--oak1)"></div><div style="flex:1;background:var(--oak2)"></div><div style="flex:1;background:var(--oak3)"></div><div style="flex:1;background:var(--oak4)"></div><div style="flex:1;background:var(--oak5)"></div></div><div class="lbl"><div class="eyebrow">American oak neutrals</div><div class="tech">Sampled from Kember floors · chart and section fills</div></div></div>
+    <div class="c3"><div class="sw" style="height:8mm;background:var(--black)"></div><div class="lbl"><div class="eyebrow">Black</div><div class="tech">#000000 · photo overlay at 30–45 %; never text</div></div></div>
+  </div>
+  <p class="tech mt-s muted">Retired for New Zealand material: Kember Blue #2E90D0 (3.5 : 1 on white; reads as technology, not timber), and the navy and grey of the current site. Blue remains only as the link colour on kemberfloors.com until that site is updated.</p>
+
+  <div class="grid mt-m">
+    <div class="c12 head"><h2>Graphic devices</h2><span class="tech">The Frevini set, plus one Kember information device</span></div>
+  </div>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c4">
+      <span class="cta">Request samples →</span>
+      <div class="rule" style="margin-top:5mm"></div>
+      <p class="tech mt-s">Text CTA: DM Sans Medium, trailing arrow, 1 pt umber rule the width of the label. Section rule 0.5 pt Umber 20; table rules 0.75 / 0.35 pt. Horizontal only; no boxes or borders.</p>
+    </div>
+    <div class="c4">
+      <div style="background:var(--warm); padding:3mm; display:flex; gap:3mm">
+        <img class="ico" src="../assets/kember/icons/specification-slate.svg"><img class="ico" src="../assets/kember/icons/ruler-slate.svg"><img class="ico" src="../assets/kember/icons/sample-swatch-slate.svg"><img class="ico" src="../assets/kember/icons/download-slate.svg">
+      </div>
+      <p class="tech mt-s">Icons: 24-unit grid, 1.5 stroke, round joins, no fill. Slate on Oak White, umber on white, white on umber. 12–16 mm; four per page at most; never as bullets.</p>
+    </div>
+    <div class="c4">
+      <div style="background:var(--warm); padding:3mm; height:17mm; display:flex; align-items:center">
+        <svg viewBox="0 0 60 26" width="40%" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="1" width="60" height="5" fill="#BCAA9B"/><rect x="0" y="6" width="60" height="14" fill="#DCD3C8"/><g stroke="#A68E77" stroke-width="0.5"><line x1="8" y1="6" x2="8" y2="20"/><line x1="18" y1="6" x2="18" y2="20"/><line x1="28" y1="6" x2="28" y2="20"/><line x1="38" y1="6" x2="38" y2="20"/><line x1="48" y1="6" x2="48" y2="20"/></g><rect x="0" y="20" width="60" height="5" fill="#BCAA9B"/><rect x="0" y="1" width="60" height="24" fill="none" stroke="#312011" stroke-width="0.6"/></svg>
+      </div>
+      <p class="tech mt-s">The section device: three bands in 4 : 11 : 4, core grain perpendicular, 0.75 pt umber. Engineering and product material only; once per face, ≤ 40 mm. Never a pattern, background or logo element.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Brand Guidelines · Kember Interiors</span><span>3</span></div>
+</section>
+
+<!-- ============================ PAGE 4 — TYPOGRAPHY + LAYOUT ============================ -->
+<section class="page">
+  <div class="eyebrow">03 — Typography and layout</div>
+  <h1 class="mt-s">The Frevini system, unchanged.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">Marcellus sets the hierarchy, DM Sans carries the rest, and neither is set bold in the standard hierarchy. The grid, margins and spacing are the Frevini values exactly. Shared typography is deliberate: it is what makes the two brands read as one standard.</p>
+  </div>
+
+  <div class="grid mt-l" style="align-items:start">
+    <div class="c7">
+      <table class="spec" style="table-layout:fixed">
+        <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
+        <tr><td class="tech" style="border:0"><b style="font-weight:500">Display</b> Marcellus 48 pt · slide 66</td><td style="border:0"><div class="display" style="font-size:36pt">Oak</div></td></tr>
+        <tr><td class="tech"><b style="font-weight:500">H1</b> Marcellus 30 pt · slide 44</td><td><div class="h1" style="font-size:24pt">Engineered for stability.</div></td></tr>
+        <tr><td class="tech"><b style="font-weight:500">H2</b> Marcellus 20 pt · slide 30</td><td><div class="h2">Three-ply construction</div></td></tr>
+        <tr><td class="tech"><b style="font-weight:500">H3</b> DM Sans 13 pt · slide 20</td><td><div class="h3">Wall + ceiling lining</div></td></tr>
+        <tr><td class="tech"><b style="font-weight:500">Eyebrow</b> DM Sans Medium 7.5 pt · +0.14 em</td><td><div class="eyebrow">Available in New Zealand</div></td></tr>
+        <tr><td class="tech"><b style="font-weight:500">Body large</b> 12 pt · <b style="font-weight:500">Body</b> 9.5 pt · slide 20 / 16</td><td><div class="body">A 4 mm American oak wear layer over an 11 mm two-directional hardwood core, balanced by a 4 mm hardwood base. Installed like a 19 mm solid floor.</div></td></tr>
+        <tr><td class="tech"><b style="font-weight:500">Caption</b> 8 pt · <b style="font-weight:500">Technical</b> 7 pt · +0.02 em</td><td><div class="caption">E3plank, live sawn. Kember reference project.</div><div class="tech mt-xs">Wear layer 4 mm · core 11 mm · balancing layer 4 mm · hardwax oil finish</div></td></tr>
+        <tr><td class="tech"><b style="font-weight:500">CTA</b> DM Sans Medium 9.5 pt · 1 pt rule</td><td><span class="cta">Request samples →</span></td></tr>
+        <tr><td class="tech" style="border:0"><b style="font-weight:500">Quotation</b> 18 pt · <b style="font-weight:500">Key number</b> 36 pt</td><td style="border:0"><div style="display:flex; gap:16mm; align-items:flex-end"><div><div class="keynum">19</div><div class="caption mt-xs">Total thickness, mm</div></div><div><div class="keynum">3</div><div class="caption mt-xs">Hardwood plies</div></div></div></td></tr>
+      </table>
+      <p class="tech mt-s">Fallbacks: Marcellus → Palatino Linotype, Book Antiqua, Georgia. DM Sans → Aptos, Segoe UI, Helvetica Neue, Arial. Montserrat, the current kemberfloors.com face, is not used. Metric first; imperial in brackets on first mention in technical documents.</p>
+    </div>
+    <div class="c5">
+      <div class="eyebrow mb-s">A4 portrait · 210 × 297 mm</div>
+      <div class="diagram" style="width:62%; aspect-ratio:210/297; border:0.35pt solid var(--g20)">
+        <div class="cols" style="left:9.52%; right:9.52%; top:7.41%; bottom:8.08%; column-gap:1.9%"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="lab" style="left:9.52%; top:2%">22 mm</div>
+        <div class="lab" style="left:9.52%; bottom:1.5%">24 mm · footer at 12 mm</div>
+      </div>
+      <ul class="list tech mt-s">
+        <li>Margins 22 · 20 · 24 · 20 mm · 12 columns · 4 mm gutters</li>
+        <li>Body within 8 columns · text + image 5 + 7 · sidebar 3 + 9</li>
+        <li>Footer: “Document title · Kember Interiors” left, page number right</li>
+      </ul>
+      <div class="eyebrow mt-l mb-s">Presentation 16 : 9 · 1920 × 1080 px</div>
+      <div class="diagram" style="width:100%; aspect-ratio:16/9; border:0.35pt solid var(--g20)">
+        <div class="cols" style="left:5%; right:5%; top:6.7%; bottom:6.7%; column-gap:1.25%"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="lab" style="left:5%; top:7.5%; color:var(--green)">Eyebrow · y 132</div>
+        <div class="lab" style="left:5%; top:15%; right:42%; height:14.8%; border-top:0.35pt dashed var(--olive); border-bottom:0.35pt dashed var(--olive); color:var(--green); padding-top:1mm">Title block · y 160–320</div>
+        <div class="lab" style="left:5%; top:34.5%; right:42%; height:52.5%; border-top:0.35pt dashed var(--olive); border-bottom:0.35pt dashed var(--olive); color:var(--green); padding-top:1mm">Body area · y 372–940</div>
+        <div class="lab" style="right:5%; top:0; width:38%; height:100%; background:rgba(138,143,148,0.18); color:var(--green); padding:1mm">Image zone · cols 7–12</div>
+        <div class="lab" style="left:5%; bottom:2.5%; color:var(--green)">KEMBER INTERIORS · title</div>
+        <div class="lab" style="right:5%; bottom:2.5%; color:var(--green)">12</div>
+      </div>
+      <ul class="list tech mt-s">
+        <li>Safe margins 72 px top and bottom, 96 px sides · 24 px gutters</li>
+        <li>Logo 210 px, top-left, on title and closing slides only</li>
+        <li>Spacing XS–XXL: 2 · 4 · 8 · 12 · 24 · 40 mm; ×2 px web, ×4 px slide</li>
+        <li>Posters: 5 % margins, 6 columns, logo 12 % of the short edge</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>Brand Guidelines · Kember Interiors</span><span>4</span></div>
+</section>
+
+<!-- ============================ PAGE 5 — PHOTOGRAPHY + GRAPHIC LANGUAGE ============================ -->
+<section class="page">
+  <div class="eyebrow">04 — Photography and graphic language</div>
+  <h1 class="mt-s">Oak does the work.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">Frevini’s photographic discipline applied to Kember’s subjects: the space, the oak, the construction, the making, the application.</p>
+  </div>
+
+  <div class="mt-l" style="position:relative; width:100%; aspect-ratio:1066/410; background:url('../assets/kember/imagery/kitchen-oak-floor.jpg') center 80%/cover; color:var(--white)">
+    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0) 100%)"></div>
+    <div class="h2" style="position:absolute; left:8mm; bottom:6mm; color:var(--white)">American oak, live sawn</div>
+  </div>
+  <div class="grid mt-s">
+    <div class="c4"><div class="eyebrow">Architecture</div><p class="caption mt-xs">The finished space with the oak floor as the subject; natural light, level horizontals, joinery as scale.</p></div>
+    <div class="c4"><div class="eyebrow">Text on imagery</div><p class="caption mt-xs">White Marcellus over a black overlay at 30–45 % or a bottom-up gradient, bottom-left at the margin.</p></div>
+    <div class="c4"><div class="eyebrow">Not this</div><p class="caption mt-xs">The blue-graded, render-like hero imagery on the current site: cool cast, artificial light, no material.</p></div>
+  </div>
+
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c4">
+      <div style="width:100%; aspect-ratio:3/2; background:url('../assets/kember/imagery/oak-floor-detail.jpg') center/cover"></div>
+      <div class="eyebrow mt-s">Material</div>
+      <p class="caption mt-xs">Grain, board edges, sawn character. Tight crop, one plane in focus, warm-neutral balance.</p>
+    </div>
+    <div class="c4">
+      <div style="width:100%; aspect-ratio:3/2; background:var(--warm); display:flex; align-items:center; justify-content:center">
+        <svg viewBox="0 0 120 72" width="80%" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans" font-size="5" fill="#312011">
+          <rect x="4" y="10" width="80" height="11" fill="#BCAA9B"/>
+          <rect x="4" y="21" width="80" height="30" fill="#DCD3C8"/>
+          <g stroke="#A68E77" stroke-width="0.6"><line x1="12" y1="21" x2="12" y2="51"/><line x1="24" y1="21" x2="24" y2="51"/><line x1="36" y1="21" x2="36" y2="51"/><line x1="48" y1="21" x2="48" y2="51"/><line x1="60" y1="21" x2="60" y2="51"/><line x1="72" y1="21" x2="72" y2="51"/></g>
+          <rect x="4" y="51" width="80" height="11" fill="#BCAA9B"/>
+          <rect x="4" y="10" width="80" height="52" fill="none" stroke="#312011" stroke-width="0.75"/>
+          <line x1="4" y1="21" x2="84" y2="21" stroke="#312011" stroke-width="0.5"/><line x1="4" y1="51" x2="84" y2="51" stroke="#312011" stroke-width="0.5"/>
+          <text x="90" y="17">4 mm oak</text><text x="90" y="38">11 mm core</text><text x="90" y="59">4 mm base</text>
+        </svg>
+      </div>
+      <div class="eyebrow mt-s">Engineering</div>
+      <p class="caption mt-xs">Where photography of the section is not available, the section device stands in. Three layers, cross-grain core shown as vertical grain.</p>
+    </div>
+    <div class="c4">
+      <div style="width:100%; aspect-ratio:3/2; background:url('../assets/kember/imagery/office-oak-floor.jpg') center 80%/cover"></div>
+      <div class="eyebrow mt-s">Application</div>
+      <p class="caption mt-xs">Floor, wall and ceiling in use. One application per image; the material continuous across the frame.</p>
+    </div>
+  </div>
+
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c6">
+      <div class="eyebrow">Principles</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>Natural, directional light; warm-neutral balance; restrained saturation. Colour from the oak, not the grade.</li>
+        <li>Level horizontals; one quiet edge for type; square corners; full bleed or on column edges.</li>
+        <li>One hero per page; support images at column width; one application per image; never a collage.</li>
+      </ul>
+    </div>
+    <div class="c6">
+      <div class="eyebrow">Do not use</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>Blue grading, HDR, filters, brown-tinted overlays, generic luxury-house imagery, stock lifestyle photography.</li>
+        <li>Rounded image cards, circular buttons, quote-mark glyphs and photo-filled display type as on the current site.</li>
+        <li>Renders presented as photographs; collages; drop shadows; decorative shapes.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="tech mt-s">Images on this page are reference captures from kemberfloors.com. A Kember photography commission in the five categories, at 300 ppi for print, is required before production collateral.</p>
+  <div class="footer"><span>Brand Guidelines · Kember Interiors</span><span>5</span></div>
+</section>
+
+<!-- ============================ PAGE 6 — DOCUMENTS + PRESENTATIONS ============================ -->
+<section class="page">
+  <div class="eyebrow">05 — Documents and presentations</div>
+  <h1 class="mt-s">The same architecture.</h1>
+
+  <div class="eyebrow mt-s">Covers</div>
+  <div class="grid mt-s" style="align-items:start">
+    <div class="c3">
+      <div class="thumb a4 img"><div class="t-logo" style="left:9.5%; top:7.4%; width:22%"><img src="../assets/kember/logo/kember-interiors-lockup-white.svg" style="width:100%"></div><div class="t-eye" style="left:9.5%; bottom:31%">Specifier guide</div><div class="t-title" style="left:9.5%; bottom:11%; font-size:9pt">American<br>oak</div><div class="t-eye" style="left:9.5%; bottom:8%; opacity:.8">v1.0 · September 2026</div></div>
+      <div class="tl"><b>Image-led.</b> Full bleed + overlay, white lock-up top-left, title block bottom-left.</div>
+    </div>
+    <div class="c3">
+      <div class="thumb a4 warm"><div class="t-logo" style="left:9.5%; top:7.4%; width:22%"><img src="../assets/kember/logo/kember-interiors-lockup-umber.svg" style="width:100%"></div><div class="t-eye" style="left:9.5%; top:34%">Colour card</div><div class="t-title" style="left:9.5%; top:38%; font-size:9pt">Flooring.<br>Wall + ceiling.</div><div class="t-img" style="left:55%; right:0; bottom:0; height:28%; background-image:url('../assets/kember/imagery/oak-floor-detail.jpg')"></div><div class="t-eye" style="left:9.5%; bottom:8%; opacity:.8">v1.0 · September 2026</div></div>
+      <div class="tl"><b>Editorial.</b> Oak White field, title at 40 %, optional image lower right or a band at the foot.</div>
+    </div>
+    <div class="c3">
+      <div class="thumb a4"><div class="t-logo" style="left:9.5%; top:7.4%; width:19%"><img src="../assets/kember/logo/kember-interiors-lockup-umber.svg" style="width:100%"></div><div class="t-eye" style="right:9.5%; top:8%">KI-DS-001 · Rev A</div><div class="t-title" style="left:9.5%; top:25%; font-size:7pt">Technical datasheet<br>E3plank flooring</div><div class="t-eye" style="left:9.5%; top:42%">Product · Application · Revision · Date</div><div class="t-body" style="left:9.5%; right:40%; top:47%; font-size:2.6pt"><div class="t-row" style="position:static; margin-bottom:2.2mm"></div><div class="t-row" style="position:static; margin-bottom:2.2mm"></div><div class="t-row" style="position:static; margin-bottom:2.2mm"></div><div class="t-row" style="position:static"></div></div><div style="position:absolute; left:9.5%; bottom:16%; width:26%"><svg viewBox="0 0 40 20" width="100%"><rect x="0" y="0" width="40" height="4" fill="#BCAA9B"/><rect x="0" y="4" width="40" height="11" fill="#DCD3C8"/><rect x="0" y="15" width="40" height="4" fill="#BCAA9B"/><rect x="0" y="0" width="40" height="19" fill="none" stroke="#312011" stroke-width="0.5"/></svg></div><div class="t-foot"><span>Technical datasheet · Kember Interiors</span><span></span></div></div>
+      <div class="tl"><b>Technical.</b> White, document code top-right, key-value block, the section device once.</div>
+    </div>
+    <div class="c3">
+      <div class="thumb a4 green"><div class="t-logo" style="left:9.5%; top:7.4%; width:22%"><img src="../assets/kember/logo/kember-interiors-lockup-white.svg" style="width:100%"></div><div class="t-title" style="left:9.5%; top:36%; font-size:9pt">Talk to<br>Kember.</div><div class="t-body" style="left:9.5%; bottom:8%; font-size:2.8pt; line-height:1.5">New Zealand contact<br>to be confirmed<br>kemberfloors.com</div></div>
+      <div class="tl"><b>Closing / contact.</b> Umber field, white lock-up, H1, contact block bottom-left.</div>
+    </div>
+  </div>
+
+  <div class="eyebrow mt-s">Internal pages</div>
+  <div class="grid mt-s" style="align-items:start">
+    <div class="c3"><div class="thumb a4"><div class="t-eye" style="left:9.5%; top:7.4%">01 — Flooring</div><div class="t-title" style="left:9.5%; top:30%; right:30%; font-size:6.5pt">E3plank</div><div class="t-body" style="left:9.5%; right:30%; top:44%; font-size:2.8pt; line-height:1.55">One lead paragraph. The rest of the page stays empty.</div><div class="t-img" style="left:0; right:0; bottom:0; height:24%; background-image:url('../assets/kember/imagery/oak-floor-detail.jpg')"></div></div><div class="tl"><b>Section opener.</b> H1 at 30 %, one paragraph, one image off the foot.</div></div>
+    <div class="c3"><div class="thumb a4"><div class="t-eye" style="left:9.5%; top:7.4%">Available in New Zealand</div><div class="t-title" style="left:9.5%; top:12%; right:52%; font-size:5pt">Live sawn, 190 mm</div><div class="t-body" style="left:9.5%; width:38%; top:26%"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="t-eye" style="left:9.5%; top:56%">Wear layer</div><div class="t-body" style="left:9.5%; top:60%; font-size:2.8pt">4 mm American oak</div><div class="t-eye" style="left:9.5%; top:68%">Finish</div><div class="t-body" style="left:9.5%; top:72%; font-size:2.8pt">Hardwax oil</div><div class="t-img" style="left:52%; right:0; top:0; bottom:0; background-image:url('../assets/kember/imagery/kitchen-oak-floor.jpg')"></div><div class="t-foot" style="right:52%"><span>Product sheet · Kember Interiors</span><span>2</span></div></div><div class="tl"><b>Product.</b> 5 + 7: availability eyebrow, name, key-value specs; image bleeding three edges.</div></div>
+    <div class="c3"><div class="thumb a4"><div class="t-eye" style="left:9.5%; top:7.4%">02 — Engineering</div><div class="t-title" style="left:9.5%; top:12%; font-size:5pt">Three-ply construction</div><div style="position:absolute; left:9.5%; top:24%; width:52%"><svg viewBox="0 0 60 30" width="100%"><rect x="0" y="2" width="44" height="5" fill="#BCAA9B"/><rect x="0" y="7" width="44" height="14" fill="#DCD3C8"/><g stroke="#A68E77" stroke-width="0.4"><line x1="6" y1="7" x2="6" y2="21"/><line x1="14" y1="7" x2="14" y2="21"/><line x1="22" y1="7" x2="22" y2="21"/><line x1="30" y1="7" x2="30" y2="21"/><line x1="38" y1="7" x2="38" y2="21"/></g><rect x="0" y="21" width="44" height="5" fill="#BCAA9B"/><rect x="0" y="2" width="44" height="24" fill="none" stroke="#312011" stroke-width="0.5"/></svg></div><div class="t-rule" style="left:9.5%; right:9.5%; top:56%"></div><div class="t-row" style="top:63%"></div><div class="t-row" style="top:70%"></div><div class="t-row" style="top:77%"></div><div class="t-body" style="left:9.5%; width:30%; top:58%; font-size:2.6pt; line-height:2.9">Wear layer<br>Core<br>Balancing</div><div class="t-body" style="left:45%; width:45%; top:58%; font-size:2.6pt; line-height:2.9">4 mm oak<br>11 mm two-directional<br>4 mm hardwood</div><div class="t-foot"><span>Engineering · Kember Interiors</span><span>6</span></div></div><div class="tl"><b>Engineering.</b> The section device at the top, a specification list beneath, XL between blocks.</div></div>
+    <div class="c3"><div class="thumb a4 warm"><div class="t-title" style="left:17%; right:17%; top:36%; font-size:5.2pt; line-height:1.4">“Cross grain restrains width expansion.”</div><div class="t-eye" style="left:17%; top:60%; opacity:.8">— Kember Engineering, kemberfloors.com</div><div class="t-foot"><span>Why Kember · Kember Interiors</span><span>9</span></div></div><div class="tl"><b>Quote / statement.</b> Oak White, Marcellus in columns 2–10. Nothing else.</div></div>
+  </div>
+
+  <div class="eyebrow mt-s">Presentation slides · 16 : 9</div>
+  <div class="grid mt-s" style="align-items:start">
+    <div class="c4"><div class="thumb s169 img"><div class="t-logo" style="left:5%; top:6.7%; width:18%"><img src="../assets/kember/logo/kember-interiors-lockup-white.svg" style="width:100%"></div><div class="t-eye" style="left:5%; bottom:44%">Specifier presentation</div><div class="t-title" style="left:5%; bottom:12%; font-size:8pt">American oak.<br>Engineered for stability.</div></div><div class="tl"><b>Title.</b> Image-led or umber. Lock-up top-left; title block bottom-left.</div></div>
+    <div class="c4"><div class="thumb s169"><div class="t-eye" style="left:5%; top:12%">Construction</div><div class="t-title" style="left:5%; top:19%; width:42%; font-size:5.5pt">Three plies, all hardwood</div><div style="position:absolute; left:5%; top:44%; width:42%"><svg viewBox="0 0 60 26" width="100%"><rect x="0" y="0" width="60" height="5" fill="#BCAA9B"/><rect x="0" y="5" width="60" height="14" fill="#DCD3C8"/><g stroke="#A68E77" stroke-width="0.4"><line x1="8" y1="5" x2="8" y2="19"/><line x1="18" y1="5" x2="18" y2="19"/><line x1="28" y1="5" x2="28" y2="19"/><line x1="38" y1="5" x2="38" y2="19"/><line x1="48" y1="5" x2="48" y2="19"/></g><rect x="0" y="19" width="60" height="5" fill="#BCAA9B"/><rect x="0" y="0" width="60" height="24" fill="none" stroke="#312011" stroke-width="0.5"/></svg></div><div class="t-img" style="left:52%; right:0; top:0; bottom:0; background-image:url('../assets/kember/imagery/oak-floor-detail.jpg')"></div><div class="t-foot" style="right:52%"><span>KEMBER INTERIORS</span><span>6</span></div></div><div class="tl"><b>Engineering.</b> Section device left, material right. One idea.</div></div>
+    <div class="c4"><div class="thumb s169"><div class="t-eye" style="left:5%; top:12%">Layer thickness, mm</div><div class="t-title" style="left:5%; top:19%; font-size:5.5pt">Balanced by design</div><div style="position:absolute; left:5%; top:44%; width:14%; height:8%; background:var(--green)"></div><div class="t-body" style="left:21%; top:44%; font-size:3pt">4 · Wear layer</div><div style="position:absolute; left:5%; top:56%; width:38%; height:8%; background:var(--olive)"></div><div class="t-body" style="left:45%; top:56%; font-size:3pt">11 · Core</div><div style="position:absolute; left:5%; top:68%; width:14%; height:8%; background:var(--oak3)"></div><div class="t-body" style="left:21%; top:68%; font-size:3pt">4 · Balancing layer</div><div class="t-foot"><span>KEMBER INTERIORS</span><span>9</span></div></div><div class="tl"><b>Comparison / data.</b> One chart, values labelled directly, series in order: umber, slate, oak.</div></div>
+  </div>
+  <p class="tech mt-m">Section divider, statement, text + image, product and closing slides follow the Frevini archetypes exactly, with the lock-up on title and closing slides only. Posters: hero statement, image over 55 percent, lock-up at 12 percent of the short edge, one CTA. Product launch, colour launch, engineering proposition and specifier posters differ only in which image and statement lead.</p>
+  <div class="footer"><span>Brand Guidelines · Kember Interiors</span><span>6</span></div>
+</section>
+
+<!-- ============================ PAGE 7 — PRODUCT + TECHNICAL ============================ -->
+<section class="page">
+  <div class="eyebrow">06 — Product and technical information</div>
+  <h1 class="mt-s">Specified, not sold.</h1>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c7">
+      <div class="eyebrow">Product architecture</div>
+      <table class="mt-s spec">
+        <tr><th style="width:34%">Level</th><th>Name and status</th></tr>
+        <tr><td>Brand</td><td>Kember Interiors</td></tr>
+        <tr><td>Category</td><td>Flooring &nbsp;<span class="avail">Available in New Zealand</span></td></tr>
+        <tr><td>Product</td><td>E3plank engineered flooring, American Northern Oak, curated colour selection</td></tr>
+        <tr><td>Category</td><td>Wall + Ceiling &nbsp;<span class="avail">Available in New Zealand</span></td></tr>
+        <tr><td>Product</td><td>American oak lining; New Zealand specification to be confirmed</td></tr>
+        <tr><td>Category</td><td>Interior doors · Cabinetry · Eplank · EcoKlik · KemLam &nbsp;<span class="avail cap">Kember capability</span></td></tr>
+      </table>
+      <p class="tech mt-xs">Two labels, always in eyebrow style: AVAILABLE IN NEW ZEALAND and KEMBER CAPABILITY. Capability is never presented as stock. New categories are added as rows, not as a new brand.</p>
+
+      <div class="h3 mt-l">E3plank — product details</div>
+      <table class="mt-s spec">
+        <tr><th style="width:34%">Property</th><th>Value</th></tr>
+        <tr><td>Species</td><td>American Northern Oak wear layer; all-hardwood plies</td></tr>
+        <tr><td>Construction</td><td>Three-ply: 4 mm wear layer · 11 mm two-directional core · 4 mm balancing layer</td></tr>
+        <tr><td>Total thickness</td><td>19 mm (¾ in), installed as a solid floor, nail-down</td></tr>
+        <tr><td>Widths</td><td>102–254 mm (4–10 in), by product</td></tr>
+        <tr><td>Lengths</td><td>Random, 610–3048 mm (24–120 in)</td></tr>
+        <tr><td>Cuts</td><td>Live sawn · rift sawn · rift and quartered</td></tr>
+        <tr><td>Finish</td><td>Hardwax oil</td></tr>
+        <tr><td>Warranty</td><td>Lifetime on lamination and hardwax oil finish, subject to documented maintenance; New Zealand terms to be confirmed</td></tr>
+      </table>
+      <p class="tech mt-xs">Widths, lengths and cuts are taken from retailer listings, not Kember documents, and must be confirmed against the Kember catalogue before use. Metric first, imperial in brackets.</p>
+    </div>
+    <div class="c5">
+      <div class="h3">Board cross-section</div>
+      <svg class="mt-s" viewBox="0 0 200 92" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans" font-size="7" fill="#312011">
+        <rect x="0" y="6" width="120" height="12" fill="#BCAA9B"/>
+        <rect x="0" y="18" width="120" height="33" fill="#DCD3C8"/>
+        <g stroke="#A68E77" stroke-width="0.6"><line x1="12" y1="18" x2="12" y2="51"/><line x1="30" y1="18" x2="30" y2="51"/><line x1="48" y1="18" x2="48" y2="51"/><line x1="66" y1="18" x2="66" y2="51"/><line x1="84" y1="18" x2="84" y2="51"/><line x1="102" y1="18" x2="102" y2="51"/></g>
+        <rect x="0" y="51" width="120" height="12" fill="#BCAA9B"/>
+        <rect x="0" y="6" width="120" height="57" fill="none" stroke="#312011" stroke-width="0.75"/>
+        <line x1="0" y1="18" x2="120" y2="18" stroke="#312011" stroke-width="0.5"/><line x1="0" y1="51" x2="120" y2="51" stroke="#312011" stroke-width="0.5"/>
+        <line x1="126" y1="6" x2="126" y2="18" stroke="#312011" stroke-width="0.4"/><text x="130" y="14">Wear layer 4 mm</text>
+        <line x1="126" y1="18" x2="126" y2="51" stroke="#312011" stroke-width="0.4"/><text x="130" y="36">Core 11 mm</text>
+        <line x1="126" y1="51" x2="126" y2="63" stroke="#312011" stroke-width="0.4"/><text x="130" y="59">Balancing 4 mm</text>
+        <text x="0" y="80" font-size="6" fill="#837970">Proportions 4 : 11 : 4. Core grain drawn perpendicular to the faces.</text>
+      </svg>
+      <p class="tech mt-s">The section is the only Kember-specific device. Lines 0.75 pt umber; fills in oak neutrals when explaining; labels in technical style. Never rotated, never patterned.</p>
+
+      <div class="h3 mt-l">Layer thickness, mm</div>
+      <svg class="mt-s" viewBox="0 0 200 74" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans" font-size="8" fill="#312011">
+        <rect x="0" y="4" width="40" height="14" fill="#312011"/><text x="45" y="14">4 &nbsp;Wear layer</text>
+        <rect x="0" y="26" width="110" height="14" fill="#8A8F94"/><text x="115" y="36">11 &nbsp;Core</text>
+        <rect x="0" y="48" width="40" height="14" fill="#A68E77"/><text x="45" y="58">4 &nbsp;Balancing layer</text>
+        <text x="0" y="72" font-size="6" fill="#837970">Series order: umber, slate, oak mid. Flat bars, direct labels, axis dropped.</text>
+      </svg>
+
+      <div class="mt-l" style="background:var(--warm); padding:8mm 10mm">
+        <div class="eyebrow">Note</div>
+        <p class="body mt-xs" style="font-size:9pt">Claims are stated as Kember states them. Where Kember publishes no figure — humidity range, emissions class, certification body — the document says nothing rather than something plausible.</p>
+      </div>
+      <p class="tech mt-m muted">Product information shown in this guide demonstrates information hierarchy and layout. Current technical data must always be sourced from the applicable Kember technical documentation.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Brand Guidelines · Kember Interiors</span><span>7</span></div>
+</section>
+
+<!-- ============================ PAGE 8 — VOICE + GOVERNANCE ============================ -->
+<section class="page">
+  <div class="eyebrow">07 — Voice and governance</div>
+  <h1 class="mt-s">The Kember test.</h1>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c6">
+      <div class="h2">Voice</div>
+      <p class="body mt-s" style="font-size:9pt">Short, exact, unhurried. A statement of three to six words, then a sentence of measurable proof. American facts in New Zealand English: metric, sentence case, no exclamation marks, no “transform your living space”.</p>
+      <table class="mt-m do-dont tech" style="font-size:7.5pt">
+        <tr><th>Do</th><th>Don’t</th></tr>
+        <tr><td>American oak. Engineered for stability.</td><td>Transform your living spaces with exceptional quality!</td></tr>
+        <tr><td>Three plies, all hardwood. A 4 mm wear layer over an 11 mm two-directional core.</td><td>Superior strength and durability for modern living.</td></tr>
+        <tr><td>Installed like a 19 mm solid floor. Less seasonal gapping.</td><td>Your floors stay gorgeous for years.</td></tr>
+        <tr><td>Hardwax oil finish. Lifetime warranty, maintained.</td><td>Industry-leading, all-wood, lifetime peace of mind.</td></tr>
+        <tr><td>Request samples →</td><td>VIEW MORE →</td></tr>
+      </table>
+      <div class="eyebrow mt-l">Principles</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>Say it short. Specific beats superlative. Design and engineering in one breath.</li>
+        <li>Assured, not salesy. New Zealand English, metric first. Address the specifier as a peer.</li>
+        <li>Say what Kember says. Where Kember publishes no figure, say nothing.</li>
+      </ul>
+    </div>
+    <div class="c6">
+      <div class="eyebrow">Before issue</div>
+      <p class="caption mt-s">Any “no” sends it back. Then hide the lock-up: is it still Kember, and not Frevini?</p>
+      <ol class="list mt-m body" style="font-size:8.5pt; line-height:1.4">
+        <li><span class="num">1</span>&nbsp; Does it use the approved typography hierarchy: Marcellus sets it, DM Sans carries it, Medium for emphasis?</li>
+        <li class="mt-s"><span class="num">2</span>&nbsp; Is whitespace structural — about forty percent open in editorial and presentation layouts, generous on technical pages?</li>
+        <li class="mt-s"><span class="num">3</span>&nbsp; Is the palette umber, Oak White and white, with Slate at most once and no blue?</li>
+        <li class="mt-s"><span class="num">4</span>&nbsp; Is oak, in photograph or section, doing the visual work?</li>
+        <li class="mt-s"><span class="num">5</span>&nbsp; Is the hierarchy immediate: one eyebrow, one heading, one idea?</li>
+        <li class="mt-s"><span class="num">6</span>&nbsp; Have boxes, shadows, gradients, rounded cards and circular buttons been removed?</li>
+        <li class="mt-s"><span class="num">7</span>&nbsp; Is the language specific, with a number where a claim is made?</li>
+        <li class="mt-s"><span class="num">8</span>&nbsp; Is technical content set with the same care as marketing content, and labelled available or capability?</li>
+        <li class="mt-s"><span class="num">9</span>&nbsp; Does it meet the Frevini standard without being mistaken for Frevini?</li>
+        <li class="mt-s"><span class="num">10</span>&nbsp; With the lock-up hidden, is it still a serious architectural material brand?</li>
+      </ol>
+    </div>
+  </div>
+  <div class="footer"><span>Brand Guidelines · Kember Interiors</span><span>8</span></div>
+</section>
+
+<!-- ============================ PAGE 9 — TOKENS + SOURCES + CLOSING ============================ -->
+<section class="page">
+  <div class="eyebrow">08 — Reference</div>
+  <h1 class="mt-s">Tokens and sources.</h1>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c7">
+      <div class="eyebrow">Token reference</div>
+      <table class="tech mt-s spec" style="font-size:7pt">
+        <tr><td style="width:34%">Umber · Oak White · Slate</td><td>#312011 · #F6F1E9 · #8A8F94</td></tr>
+        <tr><td>Umber tints · oak neutrals</td><td>#837970 #D6D2CF #EFEDEC · #DCD3C8 #BCAA9B #A68E77 #887057 #46382E</td></tr>
+        <tr><td>Type</td><td>Marcellus 400 · DM Sans 300/400/500 (as Frevini)</td></tr>
+        <tr><td>A4 scale, pt</td><td>48 · 30 · 20 · 13 · 12 · 9.5 · 8 · 7 (eyebrow 7.5 +0.14 em)</td></tr>
+        <tr><td>Slide scale, pt</td><td>66 · 44 · 30 · 20 · 20 · 16 · 11 · 10 (eyebrow 11)</td></tr>
+        <tr><td>A4 margins · slide safe area</td><td>22 · 20 · 24 · 20 mm · 72 · 96 · 72 · 96 px</td></tr>
+        <tr><td>Spacing · rules · icons</td><td>2 · 4 · 8 · 12 · 24 · 40 mm · CTA 1 pt, section 0.5, table 0.75 / 0.35 · 24 grid, 1.5 stroke</td></tr>
+        <tr><td>Lock-up</td><td>min 30 mm / 130 px · clear space ½ wordmark height · cover 44 mm · slide 210 px</td></tr>
+        <tr><td>Section device</td><td>4 : 11 : 4 · 0.75 pt umber · ≤ 40 mm · once per face</td></tr>
+        <tr><td style="border:0">Provenance</td><td style="border:0">Kember facts A/B from kemberfloors.com as indexed and captured · system C from Frevini · adaptations D · site CSS and logo master not verified</td></tr>
+      </table>
+    </div>
+    <div class="c5">
+      <div class="eyebrow">Unresolved sources</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>Manufacturing origin: an Ontario facility, a Michigan listing and Vietnam import records all appear. No origin claim is made until Kember confirms.</li>
+        <li>Total thickness appears as 19 mm (4 + 11 + 4) for E3plank and as 15–19 mm across product lines.</li>
+        <li>Warranty term in New Zealand, certification body, emissions class and humidity tolerance are not published in accessible Kember documents.</li>
+        <li>Widths, lengths and cuts come from retailer listings, not Kember documents.</li>
+        <li>Wall and ceiling lining specification for New Zealand is not yet defined.</li>
+      </ul>
+      <div class="eyebrow mt-l">Files</div>
+      <ul class="list dash tech mt-s" style="font-size:7.5pt">
+        <li>KEMBER_INTERIORS_BRAND_GUIDELINES.md · kember-design-tokens.json</li>
+        <li>KEMBER_FREVINI_SYSTEM_MAPPING.md · assets/kember/</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="closing">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start">
+      <img class="logo" src="../assets/kember/logo/kember-interiors-lockup-white.svg" alt="Kember Interiors" style="width:36mm">
+      <div class="eyebrow" style="opacity:.85">Brand Guidelines · Version 1.0 · September 2026</div>
+    </div>
+    <div class="grid" style="margin-top:8mm; align-items:end">
+      <div class="c6"><h2>Talk to Kember.</h2><span class="cta rev mt-s">Request samples →</span></div>
+      <div class="c6 body" style="line-height:1.6">New Zealand contact to be confirmed<br>kemberfloors.com<br>Built on the Frevini Studio design system, v1.1</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
