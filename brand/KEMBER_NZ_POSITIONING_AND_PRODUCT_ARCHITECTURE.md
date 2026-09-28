@@ -1,8 +1,10 @@
 # Kember Interiors — New Zealand Market Positioning & Product Architecture
 
-**Draft 1.0 for decision · September 2026 · Prepared for Courtney**
+**Draft 1.1 for decision · September 2026 · Prepared for Courtney**
 
-Status: **working document, not a brand rule.** It sits before the Brand Guidelines in the order Positioning → Product architecture → Brand expression → Collateral. Every decision it asks for is listed in §9. When those are made, the outcomes feed back into `KEMBER_INTERIORS_BRAND_GUIDELINES.md` as V1.2 and collateral production can begin.
+Status: **working document, not a brand rule.** It sits before the Brand Guidelines in the order Positioning → Product architecture → Brand expression → Collateral. §9 separates the decisions Courtney can make now from the confirmations Kember and An Cuong must provide. The brand relationship blocks external collateral; it does not block deciding what Kember Interiors in New Zealand stands for. When both sets are settled, the outcomes feed back into `KEMBER_INTERIORS_BRAND_GUIDELINES.md` as V1.2 and collateral production can begin.
+
+**The first question for Courtney:** is Kember Interiors in New Zealand fundamentally a flooring brand, or does it own the idea of a coordinated American-oak interior — floor, stair, wall and joinery? Almost everything downstream follows from that answer.
 
 Provenance labels: **A** exact (from the PrimeOak Signature Collection catalogue, An Cuong, 2026, or the Kember site as captured) · **B** observed in Kember or An Cuong communications · **I** inference from evidence, stated as such · **P** proposal for decision.
 
@@ -11,10 +13,10 @@ Provenance labels: **A** exact (from the PrimeOak Signature Collection catalogue
 ## 0. Summary
 
 1. **The New Zealand flooring product is PrimeOak® Flooring, Signature Collection.** It is An Cuong's registered product, part of An Cuong's Masterpiece Series, made from American Northern red oak harvested within 120 km in Michigan and "designed and engineered in the United States". Kember's E3plank and PrimeOak share the same 4 mm face and 11 mm core, the same cut names and most of the same colour names, so they are very probably the same product family under two brands (I). Kember has not confirmed this.
-2. **The relationship that decides collateral is the one between Kember and An Cuong**, and it is not written down anywhere we have seen. Three architectures are possible (§4). The recommendation is **Kember Interiors as the New Zealand master brand, carrying PrimeOak® as the named product**, with An Cuong appearing only where certification and warranty require it. This needs Kember's confirmation of rights before any collateral is issued.
-3. **The positioning territory with the most room is "one oak for the whole interior"**: floor, stair, wall, ceiling and joinery in the same American red oak, colour-matched from the same range. The catalogue supports it today (colour-matched accessories and pre-finished panels are part of the offer) and Kember's wider capability extends it. It is distinct from Frevini, which is European oak and flooring-led (§5).
-4. **The product architecture that follows** is Kember Interiors → Flooring → Stair + Components → Wall + Ceiling → Kember capability, with availability labels, PrimeOak codes and a curated New Zealand colour selection to be chosen from the twelve (§7).
-5. **Six decisions are needed from Courtney and Kember** before V1.2 and collateral (§9). The largest are the brand relationship, the warranty and installer model, and the launch selection.
+2. **The relationship that decides collateral is the one between Kember and An Cuong**, and it is not written down anywhere we have seen. Three architectures are possible (§4). The preferred one, **subject to confirmation of what the relationship permits**, is Kember Interiors as the New Zealand master brand carrying PrimeOak® as the named product, with An Cuong appearing only where certification and warranty require it.
+3. **The positioning territory with the most room is one material language across the interior**: floor, stair, wall, ceiling and joinery in the same American red oak, colour-matched from the same range. The catalogue supports it today and Kember's wider capability extends it. It is distinct from Frevini, which is European oak and flooring-led (§5). No tagline is proposed for approval; the territory and proposition come first, the master expression after (§6.1).
+4. **The product architecture that follows** is Kember Interiors → Flooring → Stair + Components → Wall + Ceiling → Kember capability, with availability labels and PrimeOak codes. The launch colour selection is Courtney's decision, made with boards, demand and stock information in hand (§7).
+5. **Four decisions are Courtney's to make now; four confirmations must come from Kember and An Cuong** before external collateral (§9).
 
 ---
 
@@ -144,12 +146,12 @@ Kember Interiors owns the product presentation; the flooring is "Kember [name] f
 - For: strongest expression of the brand system; New Zealand-facing from the first page.
 - Against: requires a licence or agreement to present An Cuong's registered product under Kember's name, which may not exist; risks the 15-year warranty if An Cuong's authorised-partner status is tied to its own branding; creates a third name (E3plank, PrimeOak, Kember X) for the same product.
 
-### Option C — Kember Interiors master brand, PrimeOak® as the named product (recommended, P)
+### Option C — Kember Interiors master brand, PrimeOak® as the named product (preferred, subject to confirmation, P)
 
 Kember Interiors is the brand on every face. The flooring is named **PrimeOak® Flooring** as a product within Kember Interiors, with "®" and an attribution line ("PrimeOak® is a registered trademark of An Cuong") in the technical block. An Cuong appears where certification, warranty or the registered mark require it, in technical style, never in the title block. The Masterpiece Series name is not used in New Zealand.
 
 - For: uses the product's real name and its certifications without ceding the page; keeps one name across Kember's and An Cuong's documents; needs only a distribution and trademark-use agreement, not a licence to rebrand; the section device, colour codes and datasheet values can be lifted from the catalogue unchanged.
-- Against: two names on the page (brand and product) need a fixed hierarchy in the guidelines; "PrimeOak" is a product name that Kember does not own and could lose.
+- Against: two names on the page (brand and product) need a fixed hierarchy in the guidelines; "PrimeOak" is a product name that Kember does not own and could lose. Whether C is available at all depends on the contractual relationship, which no document we hold sets out; it is preferred, not recommended, until that is known.
 
 **Conditions for Option C.** Written confirmation from Kember that (1) Kember Interiors may use the PrimeOak® mark in New Zealand collateral; (2) whether Kember Interiors, or an installer network it accredits, can hold An Cuong Authorized Partner status so the 15 / 5-year warranty applies; (3) whether "Masterpiece Series" must appear anywhere (recommendation: no); (4) the shipped specification (finish, thickness, formats) for New Zealand.
 
@@ -161,15 +163,17 @@ Kember Interiors is the brand on every face. The flooring is named **PrimeOak® 
 
 Primary: architects, interior designers and specifiers on high-value residential, multi-residential and hospitality projects. Secondary: builders and flooring installers who receive the specification; developers choosing a standard for repeated units. The end homeowner is reached through the specifier, not directly. This matches Kember's own framing ("works closely with architects, designers, owners, and contractors") and An Cuong's ("residential and commercial").
 
-### 5.2 Competitive frame (P, to be validated by Courtney)
+### 5.2 Competitive frame — not yet researched
 
-New Zealand engineered oak is dominated by European oak, largely on plywood or multi-layer softwood cores, sold through showrooms and flooring retailers. Frevini Studio is one of those brands and, if the two are in the same portfolio, is the one Kember must not cannibalise. Kember's factual differences from the field are:
+**No New Zealand competitor scan has been done for this draft.** The earlier characterisation of the market as mostly European white oak on plywood or softwood cores was a working impression, not a finding, and is withdrawn until a short scan is completed. That scan should cover at least Forté, VidaSpace, BBS Timbers and Woodland Lifestyle, and record for each: species and origin, core construction, formats, whether matched stair and panel components are offered, certifications claimed, and channel. It could materially strengthen or weaken Territory 2 and must precede the territory becoming canonical.
 
-- **Species and provenance:** American Northern red oak from a named region, not European white oak. Red oak's warmer, pinker base and more open grain are visible in the twelve colours and are a genuine aesthetic difference.
-- **All-oak construction:** an oak core rather than plywood or softwood. A structural claim that specifiers can check on a datasheet.
-- **Whole-interior range:** colour-matched stair parts, trims, vents and panels from the same range, and Kember's wider capability in wall panels, doors and cabinetry. Few flooring brands in New Zealand offer the stair and panel components in the same colour from the same source.
-- **Indoor-air credentials:** NAF, TSCA Title VI and F4 Star are strong for Homestar and Green Star conversations, subject to verifying how each scheme treats them.
-- **Large format:** 304 × 3600 mm at 19 mm is a specification-level talking point.
+Kember's differences that can be checked on a datasheet regardless of the scan (A):
+
+- **Species and provenance:** American Northern red oak from a named region.
+- **All-oak construction:** an oak core rather than plywood or softwood.
+- **Whole-interior range:** colour-matched stair parts, trims, vents and panels from the same range, and Kember's wider capability in wall panels, doors and cabinetry.
+- **Indoor-air certifications:** NAF, EPA TSCA Title VI and JAS F4 Star. These are product facts. Whether they earn Homestar or Green Star credits is unverified and is not claimed in this document or in collateral until it is.
+- **Large format:** 304 × 3600 mm at 19 mm.
 
 ### 5.3 Relationship to Frevini (P)
 
@@ -188,7 +192,7 @@ Criteria: true today from the evidence; room for the wider Kember range; distinc
 - True today: yes. Room to grow: no; it is a flooring position. Distinct from Frevini: partly; Frevini also claims engineering. Specifier credibility: high. Assets: yes.
 - Verdict: a strong product-level message for flooring, not a master-brand position.
 
-### Territory 2 — One oak for the whole interior (recommended)
+### Territory 2 — One material language across the interior (recommended)
 
 Floor, stair, wall, ceiling and joinery in one American red oak, colour-matched from one range, engineered to the same standard. The interior reads as a single material because it is one.
 
@@ -202,24 +206,25 @@ Kember as an engineering brand for interior components, oak being the first mate
 - True today: only partly. Room to grow: large but abstract. Distinct from Frevini: yes. Specifier credibility: medium; it sounds like a claim before it is a range. Assets: no.
 - Verdict: not now. A later evolution of Territory 2 if Kember's non-oak capability comes to New Zealand.
 
-### 6.1 Draft proposition under Territory 2 (P, for Courtney to edit)
+### 6.1 Three layers, approved separately (P)
 
-**Proposition.** Kember Interiors brings one American red oak to the whole interior: floor, stair, wall and joinery, colour-matched from a single range and engineered as all-oak construction.
+The territory and the proposition are for Courtney's decision now. The master expression is developed afterwards and is not put forward for approval in this draft.
 
-**Working master line candidates.** "One oak. The whole interior." · "American oak, floor to ceiling." · "Floor, stair, wall. One oak."
-
-**Flooring product line (retained from V1.1).** "American oak. Engineered for stability."
+| Layer | Text | Status |
+|---|---|---|
+| **Positioning territory** | One material language across the interior. | For decision now |
+| **Proposition** | Kember Interiors brings American red oak across floor, stair, wall and joinery, colour-matched from a single range and engineered as all-oak construction. | For Courtney to edit and approve with the territory |
+| **Master expression** | Still to develop once the territory is agreed. Working candidates, as inputs only: "One oak. The whole interior." (strategically clear; reads as strategy language) · "American oak, floor to ceiling." (cleaner; a common idiom that omits stair and joinery) · "Floor, stair, wall. One oak." | Not for approval |
+| **Flooring product line** | "American oak. Engineered for stability." | Retained at product level |
 
 **Reasons to believe, all sourced (A).**
 - American Northern red oak, harvested within 120 km in Michigan; designed and engineered in the United States.
 - All-oak construction: 4 mm oak face on a cross-directional oak core, 15 or 19 mm.
 - Colour-matched stair treads, nosings, risers, trims and panels from the same twelve colours.
-- No added formaldehyde: NAF, EPA TSCA Title VI, JAS F4 Star.
+- No added formaldehyde, with NAF, EPA TSCA Title VI and JAS F4 Star certification.
 - Up to 304 mm wide and 3600 mm long.
 
 **Voice.** Unchanged from the guidelines: short statement, then proof; metric first; no superlatives. "Masterpiece", "luxury" and "refined spaces" from the An Cuong catalogue are not carried into New Zealand copy.
-
----
 
 ## 7. Product architecture (P)
 
@@ -231,7 +236,7 @@ KEMBER INTERIORS
 │       ├── Straight        127–304 mm · 15 / 19 mm · SR · SL · LC
 │       ├── Herringbone     101 / 127 × 600 mm · 15 mm · SR · SL
 │       └── Chevron         101 / 127 × 600 mm · 15 mm · SR · SL
-│       Colours: NZ curated selection from S01–S12 (decision 5)
+│       Colours: NZ launch selection from S01–S12 (decision 3, Courtney, with boards)
 │
 ├── STAIR + COMPONENTS                         AVAILABLE IN NEW ZEALAND (to confirm)
 │   ├── Stair treads · nosings · risers (4 / 19 mm panel)
@@ -271,27 +276,35 @@ If Option C and Territory 2 are adopted:
 
 ---
 
-## 9. Decisions register
+## 9. Decisions and confirmations
 
-| # | Decision | Options | Recommendation | Owner | Blocks |
-|---|---|---|---|---|---|
-| 1 | Brand relationship on New Zealand collateral | A distributed manufacturer brand · B Kember-branded · C Kember master, PrimeOak® named | **C**, subject to the four conditions in §4 | Courtney with Kember and An Cuong | Everything |
-| 2 | Positioning territory | 1 flooring · 2 whole interior · 3 engineered systems | **2** | Courtney | Master line, imagery, V1.2 |
-| 3 | Master line | Three candidates in §6.1, or Courtney's own | "One oak. The whole interior." to test | Courtney | Covers, posters |
-| 4 | Warranty and installer model | Third-party 2 / 2 · Authorized Partner 15 / 5 via Kember-accredited installers · a Kember New Zealand warranty | Pursue Authorized Partner status; state no term until written | Kember and An Cuong | Datasheets, specification sheets |
-| 5 | Launch colour selection | Any subset of S01–S12; V1.1 assumed a "small initial selection" | Six: French White, Pure, Naked, Natural, Tawny, Burnished Bronze, covering the pale-to-dark range without near-duplicates; confirm against stock | Courtney | Colour card, samples |
-| 6 | Stair + Components as a launch category | Include at launch · include as "available to order" · defer | Include as available to order; it is the proof of Territory 2 | Courtney with Kember | Product architecture, photography brief |
-| 7 | Wall + Ceiling specification | PrimeOak panels · Kember wall panels · both · defer | Confirm what ships; defer the category label until then | Kember | Product architecture |
-| 8 | Shipped specification for New Zealand | Finish (lacquer or oil), thicknesses, formats, packs | Obtain the New Zealand datasheet from Kember | Kember | Section device, all technical content |
+These are not equivalent. The first set are strategic decisions Courtney can make now. The second are facts Kember and An Cuong must provide in writing. The brand relationship (5) blocks external collateral; it does not block decisions 1 to 4.
 
----
+### 9.1 Decisions for Courtney
+
+| # | Decision | Options and note | Feeds |
+|---|---|---|---|
+| 1 | Positioning territory | Flooring brand · coordinated American-oak interior · engineered systems (§6). The first and largest question. | Proposition, imagery, V1.2 |
+| 2 | Product architecture and launch categories | Adopt §7; include Stair + Components at launch, as available to order, or defer. Category contents depend on confirmation 8. | Product collateral set |
+| 3 | Launch colour philosophy and selection | Any subset of S01–S12, chosen with physical boards, New Zealand interior demand, and stock, minimums and lead times in hand. A philosophy to test: pale to dark without near-duplicates. Not decided from catalogue swatches. | Colour card, samples |
+| 4 | Master expression | After decision 1. The working candidates in §6.1 are inputs, not a shortlist for approval. | Covers, posters |
+
+### 9.2 Confirmations from Kember and An Cuong
+
+| # | Confirmation | What is needed in writing | Blocks |
+|---|---|---|---|
+| 5 | Brand and trademark relationship | Whether Kember Interiors may use PrimeOak® in New Zealand; whether Masterpiece Series must appear; which of Options A, B or C the relationship permits. | External collateral |
+| 6 | New Zealand warranty and installer model | Whether Kember Interiors, or installers it accredits, can hold An Cuong Authorized Partner status for the 15 / 5-year terms; the New Zealand warranty wording. No term is stated until then. | Datasheets, specification sheets |
+| 7 | New Zealand shipped specification | Finish, thicknesses, formats, packs, datasheet. Supersedes both the Kember site and the catalogue where they differ. | Section device, all technical content |
+| 8 | Wall, ceiling and components availability | What ships to New Zealand: PrimeOak panels, Kember wall panels, stair parts and trims; stock, minimums, lead times. | Product architecture categories |
 
 ## 10. Verification before collateral
 
 - Written confirmation of the Kember–An Cuong relationship and of Kember Interiors' right to use PrimeOak® in New Zealand.
 - The New Zealand shipped specification and datasheet, superseding both the Kember site and the catalogue where they differ.
 - New Zealand warranty wording.
-- Slip-resistance test data for commercial use (relevant New Zealand standards to be confirmed with a building surveyor), and how NAF / TSCA / F4 Star map to Homestar and Green Star credits.
+- A short New Zealand competitor scan (§5.2).
+- Slip-resistance test data for commercial use (relevant New Zealand standards to be confirmed with a building surveyor), and how NAF / TSCA / F4 Star map, if at all, to Homestar and Green Star credits.
 - Manufacturing origin, if it is to be stated at all.
 - Stock, lead times and minimum orders for components and panels.
 - A photography brief: matched floor and stair installation; wide-plank straight floor; panel cladding; the twelve colours as real boards under natural light.
@@ -320,3 +333,10 @@ Swatches extracted from the catalogue (Select Rift & Quarter Sawn, straight) are
 ## Appendix B — Catalogue structure, for reuse planning
 
 Philosophy (pp. 4–13: essence, why PrimeOak, sourcing, American expertise, certifications, structure, surface) · Format and grains (pp. 14–19) · Straight flooring by selection (pp. 20–59) · Herringbone (pp. 60–85) · Chevron (pp. 86–111) · Installation (pp. 112–118) · Maintenance (p. 119) · Technical specification (pp. 120–121). The installation and maintenance text is usable as source for New Zealand installation guides after rewriting to the Kember voice and checking against New Zealand practice.
+
+## Appendix C — Revision history
+
+| Draft | Date | Change |
+|---|---|---|
+| 1.0 | September 2026 | First draft from the PrimeOak Signature catalogue and Kember captures |
+| 1.1 | September 2026 | Option C reworded from recommended to preferred, subject to confirmation; territory renamed "one material language across the interior" and separated from proposition and master expression, no tagline for approval; competitive frame withdrawn pending a New Zealand scan and Homestar / Green Star reference quarantined; §9 split into Courtney's decisions and Kember / An Cuong confirmations; launch colour selection returned to Courtney with boards |

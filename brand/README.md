@@ -26,7 +26,7 @@ Two brands, one design standard. Frevini Studio is the source system; Kember Int
 | File | Purpose |
 |---|---|
 | `KEMBER_NZ_POSITIONING_AND_PRODUCT_ARCHITECTURE.md` | Draft 1.0 for decision: evidence from the PrimeOak Signature catalogue, E3plank / PrimeOak reconciliation, brand-relationship options, positioning territories, product architecture, decisions register. |
-| `Kember-NZ-Positioning-and-Product-Architecture.pdf` | The same as an 8-page A4 document in the Kember system, built from `src/kember-positioning.html` with `src/build-any.js`. |
+| `Kember-NZ-Positioning-and-Product-Architecture.pdf` | Draft 1.1 as an 8-page A4 document in the Kember system, built from `src/kember-positioning.html` with `src/build-any.js`. |
 
 ## Rebuilding the PDFs
 
