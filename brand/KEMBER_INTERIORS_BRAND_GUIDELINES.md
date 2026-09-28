@@ -20,6 +20,7 @@ One deep umber does all the work. Marcellus sets every hierarchy and DM Sans car
 
 ### 1.1 Established by Kember (A, as indexed from kemberfloors.com and its catalogues)
 
+- **"Where Craftsmanship Meets Nature. American Northern Oak for Every Room."** Home-page hero line, set over a photograph of Kember's log yard and mill in winter — the one Kember-made material photograph in the captures, and the reference for the Making category.
 - **American Northern Oak**, "sustainably sourced from certified North American forests". Wear layer and all plies are hardwood.
 - **E3plank**: balanced three-ply construction — 4 mm wear layer, 11 mm proprietary two-directional core, 4 mm balancing layer — "minimising expansion and contraction due to temperature and humidity changes"; "cross grain restrains width expansion".
 - Installed like a ¾-inch solid floor, nail-down, in random lengths; "reduces minor gapping between planks during seasonal changes".
@@ -153,7 +154,7 @@ Principles: natural, directional light; warm-neutral white balance; restrained s
 
 Do not use: generic luxury-house imagery; heavy blue grading; HDR; decorative filters; brown-tinted overlays; stock lifestyle photography; busy collages; rounded image cards; renders presented as photographs; unnecessary overlays; unidentified or competitors' floors.
 
-**Status (D).** The imagery in `assets/kember/imagery/` is cut from captures of kemberfloors.com and is suitable for reference and column-width reproduction only. A photography commission covering the five categories, at 300 ppi for print, is required before production collateral.
+**Status (D).** The imagery in `assets/kember/imagery/` is cut from captures of kemberfloors.com and is suitable for reference and column-width reproduction only. The log-yard capture (`mill-log-yard.jpg`, 2732 px wide) is the strongest of them and is used for the guide's cover band; it shows a mill under snow and pines but does not by itself establish where that mill is, so it does not resolve the manufacturing-origin question. A photography commission covering the five categories, at 300 ppi for print, is required before production collateral.
 
 ---
 
