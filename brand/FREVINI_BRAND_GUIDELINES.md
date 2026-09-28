@@ -1,6 +1,6 @@
 # Frevini Studio — Brand Guidelines
 
-**Version 1.0 · September 2026 · Canonical, machine-readable edition**
+**Version 1.1 · September 2026 · Canonical, machine-readable edition**
 
 Companion files: `frevini-design-tokens.json` (values), `Frevini-Studio-Brand-Guidelines.pdf` (visual edition), `assets/` (fonts, logo, icons, reference imagery).
 
@@ -12,7 +12,7 @@ Provenance labels used throughout: **A** exact (from code or official asset) · 
 
 ## 0. The system in one paragraph
 
-One dark green does all the work. One editorial serif (Marcellus) carries every heading, one contemporary sans (DM Sans) carries everything else, and neither is ever bold. Pages are white or warm white, square-cornered, left-aligned and at least 40 percent empty. Photography of oak, timber and finished interiors supplies all the warmth and colour; the palette itself stays narrow. The only graphic devices are a fine green rule, a plain arrow and a thin-line icon. If a page needs a box, a gradient, a shadow or a second accent colour to work, it is not yet a Frevini page.
+One dark green does all the work. One editorial serif (Marcellus) carries every heading, one contemporary sans (DM Sans) carries everything else, and neither is set bold in the standard hierarchy. Pages are white or warm white, square-cornered, left-aligned and built on open field: about 40 percent in editorial and presentation layouts, denser but still generously margined on technical pages. Photography of oak, timber and finished interiors supplies all the warmth and colour; the palette itself stays narrow. The only graphic devices are a fine green rule, a plain arrow and a thin-line icon. If a page needs a box, a gradient, a shadow or a second accent colour to work, it is not yet a Frevini page.
 
 ---
 
@@ -39,8 +39,8 @@ One dark green does all the work. One editorial serif (Marcellus) carries every 
 
 ### 1.3 Proposed extensions for documents (C)
 
-- **Calm density.** A page's information load is set by whitespace first and content second.
-- **Serif as signature.** Marcellus appears at least once on every page or slide, even a technical one, so the identity survives without the logo.
+- **Calm density.** Whitespace is structural. Editorial, presentation and marketing layouts aim for about 40 percent open field. Technical documents, specifications, schedules and tables may carry greater density while keeping Frevini margins, clear grouping and breathing room between blocks.
+- **Serif as signature.** Marcellus establishes the hierarchy of every document and section, so the identity survives without the logo. Technical continuation pages (tables, metadata, running specification text) may use DM Sans alone where appropriate.
 - **One accent per page.** Green is the accent; photography is the colour. Nothing else competes.
 
 ---
@@ -51,7 +51,7 @@ One dark green does all the work. One editorial serif (Marcellus) carries every 
 
 The Frevini Studio logo is a wordmark: **FREVINI** in a wide geometric capitals inside a rectangular frame, with **S T U D I O** letter-spaced across the frame's lower edge and a short diagonal **tail** breaking out of the bottom-left corner. The tail gives the frame the character of a speech bubble — the studio in conversation — and is the mark's most identifiable element.
 
-Measured proportions (from site captures): frame 270 × 95 units, stroke 5 units; FREVINI cap height 33 units, stroke 5 units; STUDIO cap height 11 units, stroke 2 units; tail descends 45° for 12 units. Overall aspect ratio ≈ 2.57 : 1 including the tail.
+Proportions measured from the header logo in the site captures, accurate to about ±1 unit: frame 270 × 95 units, stroke 5; FREVINI cap height 33, stroke 5; STUDIO cap height 11, stroke 2; tail descends 45° for 12 units; overall aspect ratio ≈ 2.57 : 1 including the tail. These figures describe the reconstruction and are for reference only. They are not a redrawing specification: the official master artwork governs, and the mark is never redrawn from these numbers.
 
 ### 2.2 Files (see `assets/logo/`)
 
@@ -82,24 +82,25 @@ Measured proportions (from site captures): frame 270 × 95 units, stroke 5 units
 
 | Tier | Name | HEX | RGB | CMYK (approx.) | Provenance | Role |
 |---|---|---|---|---|---|---|
-| Brand primary | **Frevini Green** | `#253C1B` | 37 60 27 | 38 0 55 76 | B | The brand colour. All text, headings, buttons, footer and menu fields, rules, icons on white, logo. |
-| Brand primary | **Warm White** | `#FAF5EB` | 250 245 235 | 0 2 6 2 | B | Secondary page field: alternating sections, editorial covers, table header fills, callouts. |
-| Brand primary | **White** | `#FFFFFF` | 255 255 255 | 0 0 0 0 | B | Default page field; reversed type and logo. |
-| Secondary | **Olive** | `#8B9770` | 139 151 112 | 8 0 26 41 | B | Icons on warm white, count badges, second chart series, rules on green. Never text below 18 pt / 24 px. |
-| Neutral | **Black** | `#000000` | 0 0 0 | 0 0 0 100 | B | Photographic overlays; single-colour graphic devices (the world map). Not a text colour. |
-| Functional (tints of green) | Green 60 | `#7C8A76` | 124 138 118 | 10 0 14 46 | C | Secondary text at 14 pt+, chart axes, de-emphasised metadata. |
-| Functional | Green 20 | `#D3D8D1` | 211 216 209 | 2 0 3 15 | C | Table row rules, dividers, chart gridlines. |
-| Functional | Green 8 | `#EEEFED` | 238 239 237 | 0 0 1 6 | C | Alternate table-row fill on white pages. |
-| Timber neutrals | Oak Pale / Natural / Smoked / Fumed / Charred | `#E3DCD3` `#C1A88E` `#A08771` `#746150` `#4B3B30` | — | see tokens | C (sampled B) | Chart series, diagram fills, swatch references. Never a page field or a text colour. |
+| Core | **Frevini Green** | `#253C1B` | 37 60 27 | 38 0 55 76 | B | The brand colour. All text, headings, buttons, footer and menu fields, rules, icons on white, logo. |
+| Core | **Warm White** | `#FAF5EB` | 250 245 235 | 0 2 6 2 | B | Secondary page field: alternating sections, editorial covers, table header fills, callouts. |
+| Core | **White** | `#FFFFFF` | 255 255 255 | 0 0 0 0 | B | Default page field; reversed type and logo. |
+| Utility | **Olive** | `#8B9770` | 139 151 112 | 8 0 26 41 | B | Icons on warm white, count badges, second chart series, rules on green. Never text below 18 pt / 24 px. |
+| Overlay only | **Black** | `#000000` | 0 0 0 | 0 0 0 100 | B | Photographic overlays; single-colour graphic devices (the world map). Not a text colour. |
+| Utility (green tints) | Green 60 | `#7C8A76` | 124 138 118 | 10 0 14 46 | C | Secondary text at 14 pt+, chart axes, de-emphasised metadata. |
+| Utility | Green 20 | `#D3D8D1` | 211 216 209 | 2 0 3 15 | C | Table row rules, dividers, chart gridlines. |
+| Utility | Green 8 | `#EEEFED` | 238 239 237 | 0 0 1 6 | C | Alternate table-row fill on white pages. |
+| Utility (timber neutrals) | Oak Pale / Natural / Smoked / Fumed / Charred | `#E3DCD3` `#C1A88E` `#A08771` `#746150` `#4B3B30` | — | see tokens | C (sampled B) | Chart series, diagram fills, swatch references. Never a page field or a text colour. |
 
 CMYK values are arithmetic conversions for orientation only; press work must be proofed. Pantone matching should be done from a printed swatch of `#253C1B` (provisional reference PANTONE 5605 C).
 
 ### 3.2 Hierarchy of use
 
-1. **Brand primary** — every document uses all three. Green is the only colour that may carry text.
-2. **Secondary** — Olive appears at most as one element type per page (the icons, or the badges, or the second chart series).
-3. **Functional** — only in tables, charts and metadata. Never as decoration.
-4. **Timber neutrals** — only when data or a diagram needs more than two series. Photography supplies timber colour everywhere else.
+There are three colours, not nine.
+
+1. **Core palette — Frevini Green, Warm White, White.** Every document uses all three. Green is the only colour that carries text. This is the palette a PowerPoint or Word user should have in their theme.
+2. **Utility palette — Olive, the green tints, the timber neutrals.** Tables, charts, icons and diagrams only. Olive appears as at most one element type per page (the icons, or the badges, or the second chart series). Timber neutrals only when data or a diagram needs more than two series. Never a page field, never body text, never decoration.
+3. **Overlay only — Black.** Photographic overlays and single-colour graphic devices. Not a text colour.
 
 ### 3.3 Approved combinations
 
@@ -140,7 +141,7 @@ Black at 30–45 percent opacity over imagery that will carry white text (observ
 | Display / editorial | **Marcellus** (Regular) | 400 only | Google Fonts, SIL OFL 1.1 · `assets/fonts/marcellus/` | B — identified by rendered comparison of "Built not Branded", "Our Story" and "Where design intent…" against the captures; exact match of the inscriptional R, the slanted t and the two-storey a and g |
 | Functional / body | **DM Sans** | 300, 400, 500 (600 for key numbers ≥ 24 pt; 700 never) | Google Fonts, SIL OFL 1.1 · `assets/fonts/dm-sans/` | B — identified by rendered comparison of body copy; exact match of the single-storey g, straight y and the ampersand |
 
-Marcellus is a single-weight inscriptional roman: low contrast, wide proportions, no italic. It carries every heading, the navigation, quotations and key numbers. DM Sans is the working typeface: body, sub-headings, labels, tables, captions, links and UI. Sub-headings on the site are DM Sans **Regular**, larger rather than bolder; documents keep this: hierarchy comes from size, family and space, not weight.
+Marcellus is a single-weight inscriptional roman: low contrast, wide proportions, no italic. It carries every heading, the navigation, quotations and key numbers. DM Sans is the working typeface: body, sub-headings, labels, tables, captions, links and UI. Sub-headings on the site are DM Sans **Regular**, larger rather than bolder; documents keep this: hierarchy comes from size, family and space, not weight. Bold is not part of the standard brand hierarchy. Where emphasis or accessibility needs a stronger step, use DM Sans Medium; SemiBold is reserved for key numbers at 24 pt and above.
 
 The site's "BOOK CONSULTATION" button is set in the browser's default sans (an inconsistency). Documents and digital collateral set buttons in DM Sans Medium (§7.4).
 
@@ -180,7 +181,7 @@ Sizes in points. A4 = A4 portrait documents; Slide = 16:9 at 13.33 × 7.5 in (19
 
 - Left-aligned, ragged right. Centre only a single-line statement on an image-led cover.
 - Measure: 55–75 characters. Body never wider than 8 of 12 columns on A4 (≈ 112 mm).
-- No bold in running text. Emphasis is a new sentence, a pull quote or a key number.
+- Bold is not part of the standard hierarchy. Emphasis in running text is DM Sans Medium, a new sentence, a pull quote or a key number.
 - All caps only for eyebrow, table headers, buttons and metadata — always tracked.
 - Marcellus is never italicised, condensed, outlined or set in caps below 12 pt.
 - Hyphenation off. No widows or orphans; keep at least two lines together.
@@ -204,7 +205,7 @@ One scale across media. **1 unit ≈ 4 mm print / 8 px web (1366) / 16 px slide 
 | XL | 24 mm | 48 px | 96 px | Space before heading; between blocks |
 | XXL | 40 mm | 80 px | 160 px | Between sections; top of a section opener |
 
-Whitespace is not what is left over. **At least 40 percent of any page or slide is empty field.** The top 22 mm of an A4 page (top 72 px of a slide) carries at most an eyebrow.
+Whitespace is structural, not what is left over. **Editorial, presentation and marketing layouts aim for about 40 percent open field.** Technical documents may carry greater density while retaining the margins, the spacing scale, clear grouping and breathing room between blocks. The top 22 mm of an A4 page (top 72 px of a slide) carries at most an eyebrow.
 
 ### 5.2 A4 portrait (C)
 
@@ -368,6 +369,8 @@ Frevini writes the way it builds: short, exact, unhurried. The site pairs a two-
 
 ## 10. Information design
 
+> Product information shown in this guide and in any brand example (thicknesses, lamella, warranty, lead times, certification wording) is illustrative of layout and information hierarchy. Always source current technical data from the relevant Frevini product documentation.
+
 ### 10.1 Tables (C)
 
 - Header row: Table-header style, Frevini Green text, no fill on white pages; Warm White fill permitted on white pages for long tables.
@@ -421,8 +424,8 @@ Marcellus at 36 pt (A4) or 60 pt (slide) with a Caption-style label beneath, lef
 
 Before a document, deck or poster is issued, answer each question honestly. Any "no" sends it back.
 
-1. **Is the typography unmistakably Frevini?** Marcellus for every heading, DM Sans for everything else, nothing bold.
-2. **Is there enough whitespace?** At least 40 percent of the page empty; nothing in the top 22 mm but an eyebrow.
+1. **Is the typography unmistakably Frevini?** Marcellus sets the hierarchy, DM Sans carries the rest, Medium is the emphasis.
+2. **Is whitespace structural?** About 40 percent open field in editorial and presentation layouts; generous margins, grouping and breathing room on technical pages; nothing in the top 22 mm but an eyebrow.
 3. **Is the colour palette restrained?** Green, warm white, white — and Olive at most once. No other hue outside photography.
 4. **Is the imagery doing useful work?** Each image shows material, detail or a finished space, and there is at most one hero per page.
 5. **Is the information hierarchy immediately clear?** One eyebrow, one heading, one idea; tables with horizontal rules only.
@@ -459,13 +462,22 @@ Before a document, deck or poster is issued, answer each question honestly. Any 
 | CTA rule 2 px, label-width | — | **B** | Measured: 4 device px at 2× |
 | Icon stroke 2 px at 64 px, rounded | — | **B** | Measured on the four resource icons |
 | Button 48 px, radius 0 | — | **B** | Measured 96 × 381 device px at 2× |
-| Logo geometry | 270 × 95, stroke 5, tail 12 | **B** | Measured from the header logo crop; SVG is a reconstruction pending master artwork |
+| Logo geometry | 270 × 95, stroke 5, tail 12 (±1) | **B, reference only** | Measured visually from the header logo crop; the SVG is a reconstruction and the official master governs. Not a redrawing specification. |
 | Web type sizes | body 18 px, h3 26 px, h2 ≈ 52 px, display ≈ 120 px | **B** | Measured from captures at 2× |
 | Green tints, timber neutrals | see §3 | **C** | Derived; timber values sampled from the 60-colour grid |
 | Print/slide type scale, grids, spacing scale, page archetypes, information design, governance | see §4–11 | **C** | Proposed, proportioned to the site's observed ratios (body : h2 ≈ 1 : 2.9; body : display ≈ 1 : 6.7; section padding ≈ 13 % of viewport width) |
-| Brand facts (founders, factory, address, warranty, datasheet values) | — | **A** | Site copy and published PDFs as indexed by search |
+| Contact details (0800 555 722, hello@frevini.co.nz, 108 Hutt Road, Kaiwharawhara, Wellington 6035) | — | **A** | Visible in the site footer capture |
+| Brand facts (founders, factory, warranty 25/5 years, datasheet values, 8 % ± 2 % moisture) | — | **A (as indexed)** | Site copy, FAQ, datasheet and installation guide as indexed by search; re-confirm against the documents themselves |
+| “60 colours” | — | **B** | From the sample-grid image on the home page |
 
-No value in this document is labelled A for code-level typography or colour because the site's CSS, theme files and media library were not reachable from the authoring environment (network policy). Every B value should be confirmed against the theme's stylesheet when access is available; the expected confirmation is a `font-family: Marcellus` / `DM Sans` declaration and a `#253c1b` colour variable. If the stylesheet disagrees, the stylesheet wins and this document and the tokens file are to be corrected together.
+No value in this document is labelled A for code-level typography or colour because the site's CSS, theme files and media library were not reachable from the authoring environment (network policy), and the repository contained no site code or assets at authoring time. This was re-checked at V1.1 with the same result. Every B value should be confirmed against the theme's stylesheet when access is available; the expected confirmation is a `font-family: Marcellus` / `DM Sans` declaration and a `#253c1b` colour variable. If the stylesheet disagrees, the stylesheet wins and this document and the tokens file are to be corrected together.
+
+### Revision history
+
+| Version | Date | Change | Issued by |
+|---|---|---|---|
+| 1.0 | September 2026 | Initial system | Frevini Studio / Claude |
+| 1.1 | September 2026 | Precision pass: whitespace and serif rules reframed for technical pages; bold clarified; colour tiers renamed Core / Utility / Overlay; logo geometry marked reference-only; technical-data disclaimer; unverified lead-time figure removed; imagery page rebuilt around examples | Frevini Studio / Claude |
 
 ### Open decisions
 
