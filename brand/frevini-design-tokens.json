@@ -1,0 +1,291 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "brand": "Frevini Studio",
+    "title": "Frevini Studio design tokens",
+    "version": "1.0.0",
+    "date": "2026-09-28",
+    "source_of_truth": "https://frevini.co.nz and site captures dated 28 September 2026",
+    "companion_document": "FREVINI_BRAND_GUIDELINES.md",
+    "provenance_key": {
+      "A": "EXACT — read from site code, repository asset or official document",
+      "B": "OBSERVED — measured consistently across site captures, not explicitly declared",
+      "C": "PROPOSED — new rule that extends the identity into documents and presentations"
+    },
+    "note": "Live site code and the repository were not reachable from the authoring environment. Colour values are pixel-exact from the captures (B). Typefaces were identified by rendered comparison against the captures (B). Nothing in this file is labelled A."
+  },
+
+  "color": {
+    "brand": {
+      "frevini-green": { "value": "#253C1B", "rgb": [37, 60, 27], "cmyk": [38, 0, 55, 76], "provenance": "B", "role": "The brand colour. All text, headings, buttons, footer and menu fields, rules, icons on white, logo.", "pantone_reference": "To be matched from a printed swatch; provisional reference PANTONE 5605 C" },
+      "warm-white":    { "value": "#FAF5EB", "rgb": [250, 245, 235], "cmyk": [0, 2, 6, 2], "provenance": "B", "role": "Secondary page field. Alternating sections, editorial covers, table header fills, callouts." },
+      "white":         { "value": "#FFFFFF", "rgb": [255, 255, 255], "cmyk": [0, 0, 0, 0], "provenance": "B", "role": "Default page field. Reversed text and logo on green or photography." }
+    },
+    "secondary": {
+      "olive":         { "value": "#8B9770", "rgb": [139, 151, 112], "cmyk": [8, 0, 26, 41], "provenance": "B", "role": "Icons on warm white, count badges, second chart series, decorative rules on green. Never for text smaller than 18 pt / 24 px." }
+    },
+    "neutral": {
+      "black":         { "value": "#000000", "rgb": [0, 0, 0], "cmyk": [0, 0, 0, 100], "provenance": "B", "role": "Photographic overlays and single-colour graphic devices (e.g. world map). Not a text colour." },
+      "green-60":      { "value": "#7C8A76", "rgb": [124, 138, 118], "cmyk": [10, 0, 14, 46], "provenance": "C", "role": "Secondary text at 14 pt+ only, chart axes, de-emphasised metadata." },
+      "green-20":      { "value": "#D3D8D1", "rgb": [211, 216, 209], "cmyk": [2, 0, 3, 15], "provenance": "C", "role": "Table row rules, dividers, chart gridlines." },
+      "green-8":       { "value": "#EEEFED", "rgb": [238, 239, 237], "cmyk": [0, 0, 1, 6], "provenance": "C", "role": "Subtle fill for alternate table rows on white pages." }
+    },
+    "timber": {
+      "description": "Neutrals sampled from the Frevini sample range. For chart series, fills and diagrams only. Never as a page field or text colour.",
+      "provenance": "C (values sampled B)",
+      "oak-pale":    { "value": "#E3DCD3", "rgb": [227, 220, 211], "cmyk": [0, 3, 7, 11] },
+      "oak-natural": { "value": "#C1A88E", "rgb": [193, 168, 142], "cmyk": [0, 13, 26, 24] },
+      "oak-smoked":  { "value": "#A08771", "rgb": [160, 135, 113], "cmyk": [0, 16, 29, 37] },
+      "oak-fumed":   { "value": "#746150", "rgb": [116, 97, 80], "cmyk": [0, 16, 31, 55] },
+      "oak-charred": { "value": "#4B3B30", "rgb": [75, 59, 48], "cmyk": [0, 21, 36, 71] }
+    },
+    "contrast": {
+      "frevini-green_on_white": 12.06,
+      "frevini-green_on_warm-white": 11.1,
+      "white_on_frevini-green": 12.06,
+      "warm-white_on_frevini-green": 11.1,
+      "olive_on_white": 3.11,
+      "olive_on_warm-white": 2.86,
+      "olive_on_frevini-green": 3.88,
+      "green-60_on_white": 3.65,
+      "note": "WCAG AA requires 4.5:1 for body text and 3:1 for large text (18 pt regular / 14 pt medium) and graphics. Olive and green-60 pass only for large text and graphic elements."
+    },
+    "approved_pairs": [
+      ["frevini-green", "white"], ["frevini-green", "warm-white"],
+      ["white", "frevini-green"], ["warm-white", "frevini-green"],
+      ["white", "photograph-with-overlay"], ["olive", "warm-white", "icons and graphics only"], ["olive", "frevini-green", "graphics and large text only"]
+    ],
+    "photo_overlay": { "value": "#000000", "opacity_range": [0.3, 0.45], "provenance": "B", "note": "Observed at ~0.4 when the menu panel is open; hero images carry a darkening tint of similar strength behind white text." }
+  },
+
+  "typography": {
+    "family": {
+      "serif": { "name": "Marcellus", "weights": [400], "source": "Google Fonts, SIL OFL 1.1", "file": "assets/fonts/marcellus/Marcellus-Regular.ttf", "provenance": "B", "role": "Display, headings, navigation, quotations, key numbers." },
+      "sans":  { "name": "DM Sans", "weights": [300, 400, 500], "weights_restricted": { "600": "key numbers 24 pt+ only", "700": "not used" }, "source": "Google Fonts, SIL OFL 1.1", "file": "assets/fonts/dm-sans/DMSans-Variable[opsz,wght].ttf", "static": "assets/fonts/dm-sans/static/", "provenance": "B", "role": "Body, sub-headings, labels, tables, captions, CTAs, UI." }
+    },
+    "fallback": {
+      "serif": ["Marcellus", "Palatino Linotype", "Book Antiqua", "Palatino", "Georgia", "serif"],
+      "sans": ["DM Sans", "Aptos", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
+      "css_serif": "\"Marcellus\", \"Palatino Linotype\", \"Book Antiqua\", Palatino, Georgia, serif",
+      "css_sans": "\"DM Sans\", Aptos, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif",
+      "provenance": "C",
+      "never": ["Times New Roman", "Cambria", "Calibri", "Garamond as a Marcellus substitute", "any bold serif"]
+    },
+    "web_reference_px": {
+      "provenance": "B",
+      "viewport": 1366,
+      "display": { "size": 120, "lineHeight": 1.05 },
+      "h2": { "size": 52, "lineHeight": 1.15 },
+      "h3-sans": { "size": 26, "lineHeight": 1.3 },
+      "body": { "size": 18, "lineHeight": 1.55 },
+      "cta": { "size": 18, "weight": 500, "letterSpacing": "0.04em", "rule": "2px" },
+      "footer": { "size": 18 },
+      "nav-serif": { "size": 34 }
+    },
+    "scale": {
+      "unit": "pt",
+      "columns": ["a4", "slide16x9"],
+      "display":       { "family": "serif", "weight": 400, "a4": 48, "slide16x9": 66, "lineHeight": 1.05, "letterSpacing": 0,      "case": "sentence", "use": "Cover titles and hero statements only", "provenance": "C" },
+      "h1":            { "family": "serif", "weight": 400, "a4": 30, "slide16x9": 44, "lineHeight": 1.15, "letterSpacing": 0,      "case": "sentence", "use": "Page and section-opener titles", "provenance": "C" },
+      "h2":            { "family": "serif", "weight": 400, "a4": 20, "slide16x9": 30, "lineHeight": 1.25, "letterSpacing": 0,      "case": "sentence", "use": "Section headings within a page", "provenance": "C" },
+      "h3":            { "family": "sans",  "weight": 400, "a4": 13, "slide16x9": 20, "lineHeight": 1.3,  "letterSpacing": 0,      "case": "sentence", "use": "Sub-headings and card titles. Larger, not bolder.", "provenance": "B/C" },
+      "eyebrow":       { "family": "sans",  "weight": 500, "a4": 7.5, "slide16x9": 11, "lineHeight": 1.2, "letterSpacing": "0.14em", "case": "upper", "use": "Section labels, document type, running heads", "provenance": "C" },
+      "body-large":    { "family": "sans",  "weight": 400, "a4": 12, "slide16x9": 20, "lineHeight": 1.55, "letterSpacing": 0,      "case": "sentence", "use": "Lead paragraphs, statement support text", "provenance": "C" },
+      "body":          { "family": "sans",  "weight": 400, "a4": 9.5, "slide16x9": 16, "lineHeight": 1.55, "letterSpacing": 0,     "case": "sentence", "use": "Running text", "provenance": "C" },
+      "caption":       { "family": "sans",  "weight": 400, "a4": 8, "slide16x9": 11, "lineHeight": 1.4,  "letterSpacing": 0,       "case": "sentence", "use": "Image captions, chart notes", "provenance": "C" },
+      "technical":     { "family": "sans",  "weight": 400, "a4": 7, "slide16x9": 10, "lineHeight": 1.35, "letterSpacing": "0.02em", "case": "sentence", "use": "Annotations, units, footnotes, references", "provenance": "C" },
+      "table":         { "family": "sans",  "weight": 400, "a4": 8.5, "slide16x9": 12, "lineHeight": 1.35, "letterSpacing": 0,     "case": "sentence", "use": "Table cells", "provenance": "C" },
+      "table-header":  { "family": "sans",  "weight": 500, "a4": 7.5, "slide16x9": 11, "lineHeight": 1.3, "letterSpacing": "0.08em", "case": "upper", "use": "Table column headers", "provenance": "C" },
+      "footer":        { "family": "sans",  "weight": 400, "a4": 7, "slide16x9": 9, "lineHeight": 1.3,   "letterSpacing": "0.04em", "case": "sentence", "use": "Running footer: document title, page number", "provenance": "C" },
+      "page-number":   { "family": "sans",  "weight": 400, "a4": 7, "slide16x9": 9, "lineHeight": 1.3,   "letterSpacing": "0.04em", "case": "n/a", "use": "Page number, right-aligned in footer", "provenance": "C" },
+      "cta":           { "family": "sans",  "weight": 500, "a4": 9.5, "slide16x9": 14, "lineHeight": 1.3, "letterSpacing": "0.04em", "case": "sentence", "use": "Text link with trailing arrow and 1 pt rule", "provenance": "B/C" },
+      "button":        { "family": "sans",  "weight": 500, "a4": null, "slide16x9": 13, "web_px": 14, "lineHeight": 1, "letterSpacing": "0.06em", "case": "upper", "use": "Digital only. Filled green rectangle, no radius, 48 px tall.", "provenance": "B/C" },
+      "quotation":     { "family": "serif", "weight": 400, "a4": 18, "slide16x9": 28, "lineHeight": 1.4,  "letterSpacing": 0,      "case": "sentence", "use": "Pull quotes and feature statements", "provenance": "C" },
+      "key-number":    { "family": "serif", "weight": 400, "a4": 36, "slide16x9": 60, "lineHeight": 1.0,  "letterSpacing": 0,      "case": "n/a", "use": "Single headline figure with a sans caption beneath", "provenance": "C" }
+    },
+    "rules": {
+      "max_weight_in_running_use": 500,
+      "bold_body_text": "not permitted",
+      "italics": "DM Sans italic for titles of works only; Marcellus has no italic — never synthesise one",
+      "all_caps": "eyebrow, table headers, buttons and document metadata only, always with tracking",
+      "measure_body": "55–75 characters per line; never more than 8 of 12 columns on A4",
+      "alignment": "left-aligned, ragged right; centring only for single-line statements on image-led covers",
+      "hyphenation": "off",
+      "orphans_widows": "avoid; minimum two lines"
+    }
+  },
+
+  "spacing": {
+    "description": "One scale across media. 1 unit ≈ 4 mm in print, 8 px on a 1366 px web layout, 16 px on a 1920 px slide.",
+    "provenance": "C (proportions B)",
+    "scale": {
+      "xs":  { "mm": 2,  "web_px": 4,   "slide_px": 8,   "pt": 6 },
+      "s":   { "mm": 4,  "web_px": 8,   "slide_px": 16,  "pt": 11 },
+      "m":   { "mm": 8,  "web_px": 16,  "slide_px": 32,  "pt": 23 },
+      "l":   { "mm": 12, "web_px": 24,  "slide_px": 48,  "pt": 34 },
+      "xl":  { "mm": 24, "web_px": 48,  "slide_px": 96,  "pt": 68 },
+      "xxl": { "mm": 40, "web_px": 80,  "slide_px": 160, "pt": 113 }
+    },
+    "application": {
+      "paragraph_gap": "s",
+      "heading_space_before": "xl",
+      "heading_space_after": "m",
+      "section_gap": "xxl",
+      "image_to_caption": "s",
+      "cta_rule_offset": "xs (rule sits 2.5 mm / 8 px below the baseline)",
+      "table_cell_padding": "s vertical, m horizontal",
+      "callout_padding": "l",
+      "minimum_empty_page_area": "40 percent"
+    }
+  },
+
+  "page": {
+    "a4_portrait": {
+      "provenance": "C",
+      "size_mm": [210, 297],
+      "margins_mm": { "top": 22, "right": 20, "bottom": 24, "left": 20 },
+      "content_area_mm": [170, 251],
+      "grid": { "columns": 12, "gutter_mm": 4, "column_width_mm": 10.5 },
+      "common_splits": { "text_only": "8 of 12 (max measure)", "text_image": "5 + 7", "image_text": "7 + 5", "sidebar": "3 + 9", "two_column": "6 + 6 with body 9.5 pt" },
+      "footer": { "baseline_from_bottom_mm": 12, "left": "document title · Frevini Studio", "right": "page number", "style": "footer" },
+      "header": "none (technical documents may carry a document code top-right in eyebrow style)",
+      "bleed_mm": 3
+    },
+    "a4_landscape": {
+      "provenance": "C",
+      "size_mm": [297, 210],
+      "margins_mm": { "top": 20, "right": 20, "bottom": 20, "left": 20 },
+      "grid": { "columns": 12, "gutter_mm": 4 }
+    },
+    "slide_16x9": {
+      "provenance": "C",
+      "size_in": [13.333, 7.5],
+      "size_mm": [338.67, 190.5],
+      "reference_px": [1920, 1080],
+      "safe_margins_px": { "top": 72, "right": 96, "bottom": 72, "left": 96 },
+      "grid": { "columns": 12, "gutter_px": 24, "column_width_px": 122 },
+      "zones_px": {
+        "eyebrow_baseline_y": 132,
+        "title_block_y": [160, 320],
+        "body_area_y": [372, 940],
+        "image_zone": "full bleed, or columns 7–12 from y 0 to 1080",
+        "footer_baseline_y": 1016
+      },
+      "footer": { "left": "FREVINI STUDIO · document title (eyebrow style)", "right": "slide number", "logo": "none on content slides" },
+      "logo_slides": { "width_px": 200, "position": "top-left at safe margin on title and closing slides only" }
+    },
+    "poster": {
+      "provenance": "C",
+      "formats": ["A3", "A2", "A1", "A0"],
+      "margins": "5 percent of the short edge on all sides",
+      "grid": { "columns": 6, "gutter": "1.5 percent of the short edge" },
+      "logo_width": "12 percent of the short edge, top-left or bottom-left at the margin",
+      "headline_zone": "upper third; left-aligned to the margin",
+      "hero_image": "at least 55 percent of the page area when image-led",
+      "information_limit": "three zones: statement, image, contact/CTA"
+    },
+    "one_pager": {
+      "provenance": "C",
+      "base": "a4_portrait",
+      "hero_zone_mm": "top 120 mm (image or statement)",
+      "columns": "2 or 3 equal columns beneath the hero",
+      "cta": "single text CTA with rule, bottom-left of the content area"
+    }
+  },
+
+  "line": {
+    "provenance": "B (weights) / C (applications)",
+    "cta_rule":     { "web_px": 2, "print_pt": 1, "color": "frevini-green", "length": "width of the label including the arrow", "offset_below_baseline": "8 px / 2.5 mm" },
+    "section_rule": { "web_px": 1, "print_pt": 0.5, "color": "green-20", "length": "full text measure" },
+    "table_header_rule": { "print_pt": 0.75, "color": "frevini-green" },
+    "table_row_rule": { "print_pt": 0.35, "color": "green-20" },
+    "table_vertical_rules": "none",
+    "logo_frame_stroke": { "units": 5, "of_frame_width": 270 },
+    "icon_stroke": { "grid": 24, "stroke": 1.5, "web_px_at_64": 2 },
+    "boxes_and_borders": "not used; the only framed element in the system is the logo"
+  },
+
+  "radius": {
+    "provenance": "B",
+    "button": 0,
+    "card": 0,
+    "image": 0,
+    "badge": "full (circular count badge only)",
+    "note": "Frevini has square corners. Rounded cards are prohibited."
+  },
+
+  "shadow": {
+    "provenance": "B",
+    "header_web": "0 8px 12px rgba(0,0,0,0.06) beneath the sticky site header only",
+    "documents": "none"
+  },
+
+  "icon": {
+    "provenance": "B/C",
+    "grid": 24,
+    "stroke": 1.5,
+    "caps": "round",
+    "joins": "round",
+    "fill": "none",
+    "colors": { "on_white": "frevini-green", "on_warm_white": "olive", "on_green": "white" },
+    "size": { "web_px": [48, 64], "print_mm": [12, 16], "inline_arrow": "cap height of the adjacent text" },
+    "max_per_page": 4,
+    "use": "to label a category of resource or a contact channel",
+    "never": "as bullets, as decoration, filled, multicoloured, inside circles"
+  },
+
+  "arrow": {
+    "provenance": "B",
+    "glyph": "→ (U+2192) in DM Sans, or icons/arrow-right-*.svg",
+    "position": "after the label, one space, never before",
+    "weight": "matches text stroke; never bold",
+    "use": "text CTAs, links, navigation, 'next' relationships only",
+    "never": "doubled (→→), as a bullet, in headings"
+  },
+
+  "button": {
+    "provenance": "B/C",
+    "digital_only": true,
+    "height_px": 48,
+    "padding_px": [0, 32],
+    "fill": "frevini-green",
+    "text": "white, DM Sans 500, 14 px, uppercase, 0.06em",
+    "radius": 0,
+    "secondary": "text CTA with rule (no outlined buttons)",
+    "print": "never; use the text CTA"
+  },
+
+  "logo": {
+    "provenance": "B (geometry) / C (rules)",
+    "files": {
+      "green": "assets/logo/frevini-studio-logo-green.svg",
+      "white": "assets/logo/frevini-studio-logo-white.svg",
+      "black": "assets/logo/frevini-studio-logo-black.svg"
+    },
+    "aspect_ratio": "272 : 106 (about 2.57 : 1)",
+    "clear_space": "the height of the frame tail (≈ 12 % of logo width) on all sides",
+    "min_width": { "print_mm": 28, "screen_px": 120 },
+    "recommended_width": { "a4_cover_mm": 42, "a4_interior": "not shown (footer text instead)", "slide_px": 200, "poster": "12 % of short edge", "web_px": 135 },
+    "position": "top-left at the margin (covers, slides); bottom-left is the alternative on posters",
+    "backgrounds": ["white", "warm-white", "frevini-green", "dark region of a photograph"],
+    "prohibited": ["recolouring", "outline or shadow", "stretching", "rotation", "placing on busy imagery without an overlay", "removing STUDIO", "adding a tagline inside the frame"]
+  },
+
+  "imagery": {
+    "provenance": "B/C",
+    "categories": ["architecture", "detail", "material-process", "human"],
+    "overlay": { "color": "#000000", "opacity": [0.3, 0.45] },
+    "text_on_image": "white only, over a darkened or naturally deep region; never over faces or grain detail",
+    "crop": "square corners; full bleed or aligned to grid columns; horizontals level; oblique floor views permitted",
+    "tone": "natural light, warm-neutral white balance, restrained saturation, no HDR, no filters, no vignettes",
+    "minimum_resolution": "300 ppi at reproduction size for print; 2x for screen"
+  },
+
+  "document_formats": {
+    "provenance": "C",
+    "pdf": { "color_space": "sRGB for screen, FOGRA39 CMYK for press", "fonts": "embedded", "bleed_mm": 3 },
+    "file_naming": "Frevini-<DocumentType>-<Subject>-v<major>.<minor>.pdf",
+    "metadata_block": { "position": "cover, bottom-left, eyebrow style", "fields": ["document type", "version", "date (Month YYYY)"] },
+    "revision_table": { "columns": ["Version", "Date", "Change", "Issued by"], "style": "table" }
+  }
+}

@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<title>Frevini Studio — Brand Guidelines</title>
+<style>
+@font-face { font-family: "Marcellus"; src: url("../assets/fonts/marcellus/Marcellus-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Light.ttf") format("truetype"); font-weight: 300; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-Medium.ttf") format("truetype"); font-weight: 500; }
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans/static/DMSans-SemiBold.ttf") format("truetype"); font-weight: 600; }
+
+:root {
+  --green: #253C1B; --warm: #FAF5EB; --white: #FFFFFF; --olive: #8B9770; --black: #000000;
+  --g60: #7C8A76; --g20: #D3D8D1; --g8: #EEEFED;
+  --oak1: #E3DCD3; --oak2: #C1A88E; --oak3: #A08771; --oak4: #746150; --oak5: #4B3B30;
+  --serif: "Marcellus", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --sans: "DM Sans", Aptos, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+@page { size: 210mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--white); color: var(--green); font-family: var(--sans); font-size: 9.5pt; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+img { display: block; }
+
+.page { position: relative; width: 210mm; height: 297mm; overflow: hidden; padding: 22mm 20mm 24mm 20mm; page-break-after: always; break-after: page; background: var(--white); }
+.page:last-child { page-break-after: auto; break-after: auto; }
+.page.warm { background: var(--warm); }
+.footer { position: absolute; left: 20mm; right: 20mm; bottom: 12mm; display: flex; justify-content: space-between; font-size: 7pt; letter-spacing: 0.04em; line-height: 1.3; color: var(--green); }
+
+/* type styles */
+.eyebrow { font-family: var(--sans); font-weight: 500; font-size: 7.5pt; letter-spacing: 0.14em; text-transform: uppercase; line-height: 1.2; }
+.display { font-family: var(--serif); font-size: 48pt; line-height: 1.05; font-weight: 400; }
+h1, .h1 { font-family: var(--serif); font-size: 30pt; line-height: 1.15; font-weight: 400; }
+h2, .h2 { font-family: var(--serif); font-size: 20pt; line-height: 1.25; font-weight: 400; }
+h3, .h3 { font-family: var(--sans); font-size: 13pt; line-height: 1.3; font-weight: 400; }
+.lead { font-size: 12pt; line-height: 1.55; }
+.body { font-size: 9.5pt; line-height: 1.55; }
+.caption { font-size: 8pt; line-height: 1.4; }
+.tech { font-size: 7pt; line-height: 1.35; letter-spacing: 0.02em; }
+.quote { font-family: var(--serif); font-size: 18pt; line-height: 1.4; }
+.keynum { font-family: var(--serif); font-size: 36pt; line-height: 1; }
+.cta { display: inline-block; font-weight: 500; font-size: 9.5pt; letter-spacing: 0.04em; line-height: 1.3; padding-bottom: 2.5mm; border-bottom: 1pt solid var(--green); }
+.cta.rev { color: var(--white); border-color: var(--white); }
+.muted { color: var(--g60); }
+
+/* spacing */
+.mt-xs { margin-top: 2mm; } .mt-s { margin-top: 4mm; } .mt-m { margin-top: 8mm; } .mt-l { margin-top: 12mm; } .mt-xl { margin-top: 24mm; } .mt-xxl { margin-top: 40mm; }
+.mb-xs { margin-bottom: 2mm; } .mb-s { margin-bottom: 4mm; } .mb-m { margin-bottom: 8mm; } .mb-l { margin-bottom: 12mm; }
+p + p { margin-top: 4mm; }
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; }
+.c3 { grid-column: span 3; } .c4 { grid-column: span 4; } .c5 { grid-column: span 5; } .c6 { grid-column: span 6; } .c7 { grid-column: span 7; } .c8 { grid-column: span 8; } .c9 { grid-column: span 9; } .c10 { grid-column: span 10; } .c11 { grid-column: span 11; } .c12 { grid-column: span 12; }
+.rule { border-top: 0.5pt solid var(--g20); }
+.rule-green { border-top: 0.75pt solid var(--green); }
+.head { display: flex; justify-content: space-between; align-items: baseline; }
+.list { list-style: none; }
+.list li { padding-left: 0; position: relative; }
+.list li + li { margin-top: 1.5mm; }
+.list.dash li::before { content: "—"; position: absolute; left: 0; }
+.list.dash li { padding-left: 5mm; }
+
+/* tables */
+table { border-collapse: collapse; width: 100%; font-size: 8.5pt; line-height: 1.35; }
+th { text-align: left; font-weight: 500; font-size: 7.5pt; letter-spacing: 0.08em; text-transform: uppercase; padding: 2mm 3mm 2mm 0; border-bottom: 0.75pt solid var(--green); vertical-align: bottom; }
+td { padding: 2.2mm 3mm 2.2mm 0; border-bottom: 0.35pt solid var(--g20); vertical-align: top; }
+td.num, th.num { text-align: right; padding-right: 0; }
+table.tech { font-size: 7.5pt; }
+table.tech th { font-size: 6.5pt; padding: 1.5mm 2mm 1.5mm 0; }
+table.tech td { padding: 1.4mm 2mm 1.4mm 0; }
+
+/* swatches */
+.sw { height: 14mm; }
+.sw .lbl { padding-top: 2mm; }
+.swrow { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 4mm; }
+
+/* icons */
+.ico { width: 11mm; height: 11mm; }
+
+/* thumbnails of pages and slides */
+.thumb { position: relative; overflow: hidden; background: var(--white); color: var(--green); }
+.thumb.a4 { width: 78%; aspect-ratio: 210 / 297; }
+.thumb.s169 { width: 90%; aspect-ratio: 16 / 9; }
+.thumb.a2 { width: 100%; aspect-ratio: 420 / 594; }
+.thumb .t-logo { position: absolute; }
+.thumb .t-eye { position: absolute; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em; font-size: 3pt; line-height: 1.2; }
+.thumb .t-title { position: absolute; font-family: var(--serif); line-height: 1.1; }
+.thumb .t-body { position: absolute; }
+.thumb .t-body i, .thumb .t-body b { display: block; height: 0.45mm; background: currentColor; opacity: 0.55; margin-bottom: 0.7mm; border-radius: 0; }
+.thumb .t-body i:nth-child(3n) { width: 70%; }
+.thumb .t-img { position: absolute; background-size: cover; background-position: center; }
+.thumb .t-foot { position: absolute; left: 8%; right: 8%; bottom: 4%; display: flex; justify-content: space-between; font-size: 2.6pt; letter-spacing: 0.04em; }
+.thumb .t-rule { position: absolute; height: 0.3mm; background: currentColor; }
+.thumb .t-row { position: absolute; left: 8%; right: 8%; height: 0.15mm; background: var(--g20); }
+.thumb.green { background: var(--green); color: var(--white); }
+.thumb.warm { background: var(--warm); }
+.thumb.img { background: var(--black); color: var(--white); }
+.thumb.img::before { content: ""; position: absolute; inset: 0; background: url("../assets/imagery/herringbone-floor-tall.jpg") center/cover; opacity: 0.6; }
+.thumb.img2::before { background-image: url("../assets/imagery/timber-stack.jpg"); }
+.thumb.img3::before { background-image: url("../assets/imagery/oak-leaf-wide.jpg"); }
+.tl { font-size: 7pt; line-height: 1.35; letter-spacing: 0.02em; margin-top: 1.5mm; }
+.tl b { font-weight: 500; }
+
+/* cover */
+.cover { padding: 0; background: var(--black); color: var(--white); }
+.cover .bg { position: absolute; inset: 0; background: url("../assets/imagery/herringbone-floor-tall.jpg") center/cover; }
+.cover .ov { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0.30) 100%); }
+.cover .logo { position: absolute; left: 20mm; top: 22mm; width: 42mm; }
+.cover .block { position: absolute; left: 20mm; bottom: 24mm; right: 20mm; }
+.cover .display { color: var(--white); }
+.cover-ed { padding: 0; background: var(--warm); }
+.cover-ed .logo { position: absolute; left: 20mm; top: 22mm; width: 42mm; }
+.cover-ed .band { position: absolute; left: 0; right: 0; bottom: 0; height: 76mm; background: url("../assets/imagery/timber-stack.jpg") center/cover; }
+table.spec td { padding: 1.2mm 3mm 1.2mm 0; }
+
+/* closing band */
+.closing { position: absolute; left: 0; right: 0; bottom: 0; height: 64mm; background: var(--green); color: var(--white); padding: 10mm 20mm; }
+.closing .logo { width: 34mm; }
+.closing h2 { color: var(--white); }
+
+/* diagrams */
+.diagram { position: relative; background: var(--white); }
+.diagram .cols { position: absolute; display: grid; grid-template-columns: repeat(12, 1fr); }
+.diagram .cols span { background: var(--g8); }
+.diagram .lab { position: absolute; font-size: 6pt; letter-spacing: 0.02em; line-height: 1.2; color: var(--g60); }
+.diagram .mark { position: absolute; border: 0 dashed var(--olive); }
+.spacebar { display: flex; align-items: flex-end; gap: 4mm; }
+.spacebar div { background: var(--green); width: 6mm; }
+
+.do-dont td:first-child { width: 50%; }
+.check li { padding-left: 6mm; position: relative; }
+.check li::before { content: ""; position: absolute; left: 0; top: 1.3mm; width: 2.6mm; height: 2.6mm; border: 0.5pt solid var(--green); }
+.num { font-family: var(--serif); font-size: 14pt; line-height: 1; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 — COVER ============================ -->
+<section class="page cover-ed">
+  <img class="logo" src="../assets/logo/frevini-studio-logo-green.svg" alt="Frevini Studio">
+  <div style="position:absolute; left:20mm; right:20mm; top:40%">
+    <div class="eyebrow">Frevini Studio</div>
+    <div class="display mt-s">Brand<br>Guidelines</div>
+    <p class="lead mt-m" style="max-width:112mm">The visual system for documents, presentations, posters and collateral. Built from the identity already in place, and written so that anyone can produce work that is unmistakably Frevini.</p>
+  </div>
+  <div class="eyebrow" style="position:absolute; left:20mm; bottom:84mm">Version 1.0 &nbsp;·&nbsp; September 2026</div>
+  <div class="band"></div>
+</section>
+
+<!-- ============================ PAGE 2 — FOUNDATION ============================ -->
+<section class="page">
+  <div class="eyebrow">01 — Foundation</div>
+  <h1 class="mt-s">Built, not branded.</h1>
+  <div class="grid mt-m">
+    <p class="lead c10">One dark green does all the work. One editorial serif carries every heading, one contemporary sans carries everything else, and neither is ever bold. Pages are square-cornered, left-aligned and at least forty percent empty; photography supplies the warmth.</p>
+  </div>
+
+  <div class="grid mt-l">
+    <div class="c4">
+      <div class="eyebrow">Established</div>
+      <ul class="list mt-s" style="font-size:8pt; line-height:1.4">
+        <li>“Built not Branded.”</li>
+        <li>“Where design intent meets technical mastery.”</li>
+        <li>“Better. Bespoke. European Made.”</li>
+        <li>Made in Šiauliai, Lithuania. Studio in Wellington.</li>
+        <li>Written for specifiers: architects, designers, installers.</li>
+      </ul>
+    </div>
+    <div class="c4">
+      <div class="eyebrow">Observed</div>
+      <ul class="list mt-s" style="font-size:8pt; line-height:1.4">
+        <li><b style="font-weight:500">Architectural</b> — hard rectangles, full bleed, no rounded corners.</li>
+        <li><b style="font-weight:500">Restrained</b> — one colour for text, buttons, fields and rules.</li>
+        <li><b style="font-weight:500">Editorial</b> — large serif against small sans, wide margins.</li>
+        <li><b style="font-weight:500">Material</b> — every hero image is grain, bark, leaf or board.</li>
+        <li><b style="font-weight:500">Credible</b> — 15/4 mm, WBP birch ply, FSC, 25-year warranty.</li>
+      </ul>
+    </div>
+    <div class="c4">
+      <div class="eyebrow">Extended for documents</div>
+      <ul class="list mt-s" style="font-size:8pt; line-height:1.4">
+        <li><b style="font-weight:500">Calm density</b> — whitespace is set first, content second.</li>
+        <li><b style="font-weight:500">Serif as signature</b> — Marcellus appears on every page, even a datasheet.</li>
+        <li><b style="font-weight:500">One accent per page</b> — green is the accent; photography is the colour.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid mt-m">
+    <div class="c12 head"><h2>Logo</h2><span class="tech">Frame 270 × 95 · stroke 5 · tail 12 units at 45°</span></div>
+  </div>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c5">
+      <div style="position:relative; padding: 5mm; display:inline-block;">
+        <div style="position:absolute; inset:0; border: 0.35pt dashed var(--olive);"></div>
+        <div style="position:absolute; left:0; right:0; top:5mm; border-top:0.35pt dashed var(--olive);"></div>
+        <div style="position:absolute; left:0; right:0; bottom:5mm; border-top:0.35pt dashed var(--olive);"></div>
+        <div style="position:absolute; top:0; bottom:0; left:5mm; border-left:0.35pt dashed var(--olive);"></div>
+        <div style="position:absolute; top:0; bottom:0; right:5mm; border-left:0.35pt dashed var(--olive);"></div>
+        <img src="../assets/logo/frevini-studio-logo-green.svg" style="width:42mm; position:relative">
+      </div>
+      <p class="tech mt-s">Clear space = the height of the tail on all sides (≈ 12 % of logo width).</p>
+    </div>
+    <div class="c3">
+      <div style="background:var(--green); padding:6mm 5mm; display:flex; align-items:center; justify-content:center; height:26mm">
+        <img src="../assets/logo/frevini-studio-logo-white.svg" style="width:28mm">
+      </div>
+      <p class="tech mt-s">Reversed on Frevini Green or over darkened photography.</p>
+    </div>
+    <div class="c4">
+      <ul class="list tech" style="font-size:7pt">
+        <li><b style="font-weight:500">Minimum width</b> 28 mm print · 120 px screen</li>
+        <li><b style="font-weight:500">Cover width</b> 42 mm on A4 · 200 px on a slide</li>
+        <li><b style="font-weight:500">Position</b> top-left at the margin; bottom-left on posters</li>
+        <li><b style="font-weight:500">Appears on</b> covers, title and closing slides, posters. Interior pages carry the running footer instead.</li>
+        <li><b style="font-weight:500">Never</b> recoloured, outlined, shadowed, stretched, rotated, watermarked, or shown twice on one face.</li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid mt-m">
+    <div class="c12 head"><h2>Colour</h2><span class="tech">Green carries all text. Olive at most once per page. Nothing else outside photography.</span></div>
+  </div>
+  <div class="swrow mt-m">
+    <div class="c4"><div class="sw" style="background:var(--green)"></div><div class="lbl"><div class="eyebrow">Frevini Green</div><div class="tech">#253C1B · 37 60 27 · C38 M0 Y55 K76<br>Text, headings, rules, buttons, fields, logo</div></div></div>
+    <div class="c4"><div class="sw" style="background:var(--warm)"></div><div class="lbl"><div class="eyebrow">Warm White</div><div class="tech">#FAF5EB · 250 245 235 · C0 M2 Y6 K2<br>Second field, editorial covers, callouts</div></div></div>
+    <div class="c4"><div class="sw" style="background:var(--white); border:0.35pt solid var(--g20)"></div><div class="lbl"><div class="eyebrow">White</div><div class="tech">#FFFFFF · 255 255 255 · C0 M0 Y0 K0<br>Default field, reversed type and logo</div></div></div>
+  </div>
+  <div class="swrow mt-m">
+    <div class="c3"><div class="sw" style="height:8mm;background:var(--olive)"></div><div class="lbl"><div class="eyebrow">Olive</div><div class="tech">#8B9770 · icons on warm white, badges, second chart series</div></div></div>
+    <div class="c3"><div class="sw" style="height:8mm;background:var(--black)"></div><div class="lbl"><div class="eyebrow">Black</div><div class="tech">#000000 · photographic overlay at 30–45 %. Not a text colour.</div></div></div>
+    <div class="c3"><div style="display:flex;height:8mm"><div style="flex:1;background:var(--g60)"></div><div style="flex:1;background:var(--g20)"></div><div style="flex:1;background:var(--g8)"></div></div><div class="lbl"><div class="eyebrow">Green 60 · 20 · 8</div><div class="tech">#7C8A76 #D3D8D1 #EEEFED · axes, table rules, alternate rows</div></div></div>
+    <div class="c3"><div style="display:flex;height:8mm"><div style="flex:1;background:var(--oak1)"></div><div style="flex:1;background:var(--oak2)"></div><div style="flex:1;background:var(--oak3)"></div><div style="flex:1;background:var(--oak4)"></div><div style="flex:1;background:var(--oak5)"></div></div><div class="lbl"><div class="eyebrow">Timber neutrals</div><div class="tech">Sampled from the range · chart series and diagram fills only</div></div></div>
+  </div>
+  <div class="footer"><span>Brand Guidelines · Frevini Studio</span><span>2</span></div>
+</section>
+
+<!-- ============================ PAGE 3 — TYPOGRAPHY ============================ -->
+<section class="page">
+  <div class="eyebrow">02 — Typography</div>
+  <h1 class="mt-s">Two typefaces, one voice.</h1>
+  <div class="grid mt-m" style="align-items:end">
+    <div class="c6">
+      <div style="font-family:var(--serif); font-size:30pt; line-height:1">Aa</div>
+      <div class="h3 mt-xs" style="font-size:14pt; font-family:var(--serif)">Marcellus Regular</div>
+      
+      <p class="tech mt-s">Inscriptional roman, single weight, no italic. Display, headings, navigation, quotations, key numbers. Fallback: Palatino Linotype, Book Antiqua, Georgia.</p>
+    </div>
+    <div class="c6">
+      <div style="font-family:var(--sans); font-size:30pt; line-height:1; font-weight:400">Aa</div>
+      <div class="h3 mt-xs" style="font-size:14pt">DM Sans Light · Regular · Medium</div>
+      
+      <p class="tech mt-s">Low-contrast contemporary sans. Body, sub-headings, labels, tables, captions, links, UI. Medium is the heaviest weight in use; Bold is never used. Fallback: Aptos, Segoe UI, Helvetica Neue, Arial.</p>
+    </div>
+  </div>
+
+  <div class="grid mt-s">
+    <div class="c12 rule-green"></div>
+  </div>
+  <table class="mt-s spec" style="table-layout:fixed">
+    <colgroup><col style="width:28%"><col style="width:72%"></colgroup>
+    <tr><td class="tech" style="border:0; padding-top:3mm"><b style="font-weight:500">Display</b> Marcellus 48 / 50 pt<br>Slide 66 pt · covers only</td><td style="border:0; padding-top:3mm"><div class="display">Timber</div></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">H1</b> Marcellus 30 / 35 pt<br>Slide 44 pt · page and section titles</td><td><div class="h1">Better. Bespoke. European Made.</div></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">H2</b> Marcellus 20 / 25 pt<br>Slide 30 pt · section headings</td><td><div class="h2">Why oak?</div></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">H3</b> DM Sans Regular 13 / 17 pt<br>Slide 20 pt · larger, not bolder</td><td><div class="h3">Specifications &amp; Compliance</div></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">Eyebrow</b> DM Sans Medium 7.5 pt · +0.14 em · caps<br>Slide 11 pt · section labels, metadata</td><td><div class="eyebrow">Design resources</div></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">Body large</b> DM Sans 12 / 18.6 pt<br>Slide 20 pt · lead paragraphs</td><td><div class="lead">A collaborative partner for specifiers, translating complex briefs into timeless architectural outcomes.</div></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">Body</b> DM Sans 9.5 / 14.7 pt<br>Slide 16 pt · 55–75 characters per line</td><td><div class="body">We use carefully selected European oak, sourced through FSC-certified supply chains. Its consistent structure makes it well suited to flooring, from installation through to years of everyday use.</div></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">Caption</b> DM Sans 8 / 11.2 pt &nbsp; <b style="font-weight:500">Technical</b> 7 / 9.5 pt · +0.02 em<br>Slide 11 / 10 pt</td><td><div class="caption">Deep Creek, herringbone, Moderno UV oil. Wellington, 2025.</div><div class="tech mt-xs">Total thickness 15/4 mm or 20/6 mm · oak lamella 4 mm or 6 mm · 0.7 mm micro-bevel · tongue and groove</div></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">CTA</b> DM Sans Medium 9.5 pt · +0.04 em · 1 pt rule<br>Slide 14 pt · sentence case, trailing arrow</td><td><span class="cta">Book a consultation →</span></td></tr>
+    <tr><td class="tech"><b style="font-weight:500">Quotation</b> Marcellus 18 / 25 pt<br>Slide 28 pt · feature statements</td><td><div class="quote">Better built from the inside out.</div></td></tr>
+    <tr><td class="tech" style="border:0"><b style="font-weight:500">Key number</b> Marcellus 36 pt + caption<br>Slide 60 pt · up to three in a row</td><td style="border:0"><div style="display:flex; gap:24mm"><div><div class="keynum">25</div><div class="caption mt-xs">Year residential warranty</div></div><div><div class="keynum">60</div><div class="caption mt-xs">Colours across three collections</div></div><div><div class="keynum">8 %</div><div class="caption mt-xs">Target moisture content, ± 2 %</div></div></div></td></tr>
+  </table>
+  
+  <div class="footer"><span>Brand Guidelines · Frevini Studio</span><span>3</span></div>
+</section>
+
+<!-- ============================ PAGE 4 — LAYOUT ============================ -->
+<section class="page">
+  <div class="eyebrow">03 — Layout</div>
+  <h1 class="mt-s">Grid, whitespace and devices.</h1>
+  <div class="grid mt-m">
+    <p class="lead c9">At least forty percent of every page is empty field. The top margin carries at most an eyebrow. Body text never spans more than eight of twelve columns.</p>
+  </div>
+
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c4">
+      <div class="eyebrow mb-s">A4 portrait · 210 × 297 mm</div>
+      <div class="diagram" style="width:100%; aspect-ratio:210/297; border:0.35pt solid var(--g20)">
+        <div class="cols" style="left:9.52%; right:9.52%; top:7.41%; bottom:8.08%; column-gap:1.9%"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="lab" style="left:9.52%; top:2%">22 mm</div>
+        <div class="lab" style="left:1.5%; top:48%; writing-mode:vertical-rl; transform:rotate(180deg)">20 mm</div>
+        <div class="lab" style="right:1.5%; top:48%; writing-mode:vertical-rl">20 mm</div>
+        <div class="lab" style="left:9.52%; bottom:1.5%">24 mm · footer baseline at 12 mm</div>
+        <div class="lab" style="left:9.52%; right:9.52%; top:44%; text-align:center; color:var(--green)">12 columns · 4 mm gutters · 10.5 mm columns</div>
+      </div>
+      <ul class="list tech mt-s">
+        <li>Text only: columns 1–8 · Text + image: 5 + 7 or 7 + 5 · Sidebar: 3 + 9</li>
+        <li>Footer: “Document title · Frevini Studio” left, page number right</li>
+        <li>No header. Technical documents: document code top-right in eyebrow style</li>
+      </ul>
+    </div>
+    <div class="c5">
+      <div class="eyebrow mb-s">Presentation 16 : 9 · 1920 × 1080 px</div>
+      <div class="diagram" style="width:100%; aspect-ratio:16/9; border:0.35pt solid var(--g20)">
+        <div class="cols" style="left:5%; right:5%; top:6.7%; bottom:6.7%; column-gap:1.25%"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="lab" style="left:5%; top:7.5%; color:var(--green)">Eyebrow · y 132</div>
+        <div class="lab" style="left:5%; top:15%; right:42%; height:14.8%; border-top:0.35pt dashed var(--olive); border-bottom:0.35pt dashed var(--olive); color:var(--green); padding-top:1mm">Title block · y 160–320</div>
+        <div class="lab" style="left:5%; top:34.5%; right:42%; height:52.5%; border-top:0.35pt dashed var(--olive); border-bottom:0.35pt dashed var(--olive); color:var(--green); padding-top:1mm">Body area · y 372–940</div>
+        <div class="lab" style="right:5%; top:0; width:38%; height:100%; background:rgba(139,151,112,0.18); color:var(--green); padding:1mm">Image zone · cols 7–12, bleed</div>
+        <div class="lab" style="left:5%; bottom:2.5%; color:var(--green)">FREVINI STUDIO · title</div>
+        <div class="lab" style="right:5%; bottom:2.5%; color:var(--green)">12</div>
+      </div>
+      <ul class="list tech mt-s">
+        <li>Safe margins 72 px top and bottom, 96 px sides · 12 columns · 24 px gutters</li>
+        <li>Logo 200 px wide, top-left, on title and closing slides only</li>
+        <li>One idea per slide · body ≥ 16 pt · ≤ 60 words</li>
+      </ul>
+    </div>
+    <div class="c3">
+      <div class="eyebrow mb-s">Poster · A3–A0</div>
+      <div class="diagram" style="width:100%; aspect-ratio:420/594; border:0.35pt solid var(--g20)">
+        <div class="cols" style="left:5%; right:5%; top:3.5%; bottom:3.5%; column-gap:1.5%; grid-template-columns:repeat(6,1fr)"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div style="position:absolute; left:5%; top:3.5%; width:12%; height:4.7%; background:var(--green)"></div>
+        <div class="lab" style="left:5%; top:14%; right:20%; color:var(--green); font-family:var(--serif); font-size:9pt; letter-spacing:0; line-height:1.05">Hero statement, upper third</div>
+        <div class="lab" style="left:5%; right:5%; top:40%; bottom:12%; background:rgba(139,151,112,0.18); color:var(--green); padding:1mm">Image ≥ 55 %</div>
+        <div class="lab" style="left:5%; bottom:4%; color:var(--green); border-bottom:0.5pt solid var(--green); padding-bottom:0.5mm">Contact / CTA →</div>
+      </div>
+      <ul class="list tech mt-s">
+        <li>Margins 5 % of short edge · 6 columns</li>
+        <li>Logo 12 % of short edge</li>
+        <li>Three zones at most</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid mt-m" style="align-items:end">
+    <div class="c12"><div class="eyebrow mb-s">Spacing scale · 1 unit ≈ 4 mm print · 8 px web · 16 px slide</div></div>
+    <div class="c6">
+      <div class="spacebar" style="height:16mm">
+        <div style="height:2mm"></div><div style="height:4mm"></div><div style="height:8mm"></div><div style="height:12mm"></div><div style="height:14mm"></div><div style="height:16mm; background:var(--olive)"></div>
+      </div>
+      <div class="tech mt-xs" style="display:flex; gap:4mm"><span style="width:6mm">XS 2</span><span style="width:6mm">S 4</span><span style="width:6mm">M 8</span><span style="width:6mm">L 12</span><span style="width:6mm">XL 24</span><span style="width:6mm">XXL 40</span></div>
+    </div>
+    <ul class="list tech c6">
+      <li>Paragraph gap S · after a heading M · before a heading XL · between sections XXL</li>
+      <li>Image to caption S · callout padding L · table cells S vertical, M horizontal</li>
+      <li>CTA rule XS below the baseline · icon to label XS</li>
+    </ul>
+  </div>
+
+  <div class="grid mt-s" style="align-items:start">
+    <div class="c12"><div class="eyebrow mb-s">Graphic devices — the complete set</div></div>
+    <div class="c4">
+      <span class="cta">View our collections →</span>
+      <p class="tech mt-s">Text CTA: DM Sans Medium, arrow after one space, 1 pt green rule the width of the label, 2.5 mm below the baseline. The only decorative line in the system.</p>
+    </div>
+    <div class="c4">
+      <div class="rule" style="margin-top:3mm"></div>
+      <p class="tech mt-s">Section rule 0.5 pt Green 20, full measure. Table header rule 0.75 pt green; row rules 0.35 pt Green 20. Horizontal only. No boxes, no borders, no vertical rules.</p>
+      <div style="display:inline-block; background:var(--green); color:var(--white); font-weight:500; font-size:8pt; letter-spacing:0.06em; text-transform:uppercase; padding:0 8mm; height:10mm; line-height:10mm; margin-top:3mm">Book consultation</div>
+      <p class="tech mt-xs">Button, digital only: 48 px, no radius, one per screen.</p>
+    </div>
+    <div class="c4">
+      <div style="background:var(--warm); padding:4mm; display:flex; gap:3mm">
+        <img class="ico" src="../assets/icons/specification-olive.svg"><img class="ico" src="../assets/icons/ruler-olive.svg"><img class="ico" src="../assets/icons/roller-olive.svg"><img class="ico" src="../assets/icons/sample-swatch-olive.svg">
+      </div>
+      <p class="tech mt-s">Icons: 24-unit grid, 1.5 stroke, round joins, no fill. Olive on warm white, green on white, white on green. 12–16 mm. Four per page at most, never as bullets. No other shapes exist.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Brand Guidelines · Frevini Studio</span><span>4</span></div>
+</section>
+
+<!-- ============================ PAGE 5 — IMAGERY ============================ -->
+<section class="page">
+  <div class="eyebrow">04 — Imagery</div>
+  <h1 class="mt-s">Material first.</h1>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c8">
+      <div style="position:relative; width:100%; aspect-ratio:1967/710; background:url('../assets/imagery/oak-leaf-wide.jpg') center/cover; color:var(--white)">
+        <div style="position:absolute; inset:0; background:rgba(0,0,0,0.38)"></div>
+        <div class="h1" style="position:absolute; left:8mm; bottom:8mm; color:var(--white)">Our Story</div>
+      </div>
+      <p class="caption mt-s">Text on imagery: white Marcellus over a black overlay at 30–45 %, bottom-left at the margin. Never over faces, grain detail or the horizon.</p>
+      <div class="grid mt-m" style="column-gap:4mm">
+        <div class="c6">
+          <div style="width:100%; aspect-ratio:4/3; background:url('../assets/imagery/herringbone-floor-strip.jpg') center/cover"></div>
+          <div class="eyebrow mt-s">Architecture</div>
+          <p class="caption mt-xs">Finished interiors where the floor contributes materially. Oblique floor views are encouraged. Covers and openers.</p>
+        </div>
+        <div class="c6">
+          <div style="width:100%; aspect-ratio:4/3; background:url('../assets/imagery/oak-leaf-detail.jpg') center/cover"></div>
+          <div class="eyebrow mt-s">Detail</div>
+          <p class="caption mt-xs">Grain, bark, junctions, bevels, edges, brushing marks. Text + image pages, quotes, closing pages.</p>
+        </div>
+        <div class="c6 mt-m">
+          <div style="width:100%; aspect-ratio:4/3; background:url('../assets/imagery/timber-stack.jpg') center/cover"></div>
+          <div class="eyebrow mt-s">Material and process</div>
+          <p class="caption mt-xs">Oak, logs, stacked boards, finishing, smoking, samples. Narrative and technical documents.</p>
+        </div>
+        <div class="c6 mt-m">
+          <div style="width:100%; aspect-ratio:4/3; background:url('../assets/imagery/sample-grid-60-colours.png') center/cover var(--white)"></div>
+          <div class="eyebrow mt-s">Sample grids</div>
+          <p class="caption mt-xs">The one permitted use of cut-outs on white: swatches on a strict grid, square-cornered, evenly spaced.</p>
+        </div>
+      </div>
+    </div>
+    <div class="c4">
+      <div class="eyebrow">Principles</div>
+      <ul class="list dash body mt-s" style="font-size:8.5pt; line-height:1.45">
+        <li>Natural, directional, soft light. Late-afternoon warmth is the reference.</li>
+        <li>Warm-neutral white balance; restrained saturation. Colour comes from the subject, not the grade.</li>
+        <li>Level horizontals. Keep one edge of the frame quiet so type can sit there.</li>
+        <li>Square corners. Full bleed or on column edges. No insets with borders, no masks.</li>
+        <li>One hero image per page; support images at column width; never a collage.</li>
+        <li>People only when working with the material or occupying the space naturally. Never posed, never to camera.</li>
+        <li>300 ppi at size for print; 2× for screen.</li>
+      </ul>
+      <div class="eyebrow mt-l">Do not use</div>
+      <ul class="list dash body mt-s" style="font-size:8.5pt; line-height:1.45">
+        <li>Stock lifestyle photography or renders posing as photographs.</li>
+        <li>HDR, filters, vignettes, coloured overlays, green tints.</li>
+        <li>Product cut-outs on white outside sample grids.</li>
+        <li>Wide-angle or drone distortion; cluttered showrooms.</li>
+        <li>Unidentified or competitors’ floors; watermarks.</li>
+      </ul>
+      <div class="eyebrow mt-l">Overlay</div>
+      <p class="caption mt-s">Black at 30–45 % opacity, or a bottom-up gradient from 55 % to 0 % over the lower half. Observed on the site at ≈ 40 %.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Brand Guidelines · Frevini Studio</span><span>5</span></div>
+</section>
+
+<!-- ============================ PAGE 6 — DOCUMENT SYSTEM ============================ -->
+<section class="page">
+  <div class="eyebrow">05 — Document system</div>
+  <h1 class="mt-s">Covers, pages, slides, posters.</h1>
+
+  <div class="eyebrow mt-s">Three cover archetypes</div>
+  <div class="grid mt-s" style="align-items:start">
+    <div class="c3">
+      <div class="thumb a4 img"><div class="t-logo" style="left:9.5%; top:7.4%; width:20%"><img src="../assets/logo/frevini-studio-logo-white.svg" style="width:100%"></div><div class="t-eye" style="left:9.5%; bottom:31%">Capability document</div><div class="t-title" style="left:9.5%; bottom:11%; font-size:9pt">Built not<br>Branded</div><div class="t-eye" style="left:9.5%; bottom:8%; opacity:.8">v1.0 · September 2026</div></div>
+      <div class="tl"><b>Image-led.</b> Full bleed + overlay, white logo top-left, title block bottom-left. Proposals, capability, lookbooks.</div>
+    </div>
+    <div class="c3">
+      <div class="thumb a4 warm"><div class="t-logo" style="left:9.5%; top:7.4%; width:20%"><img src="../assets/logo/frevini-studio-logo-green.svg" style="width:100%"></div><div class="t-eye" style="left:9.5%; top:40%">Annual report</div><div class="t-title" style="left:9.5%; top:44%; font-size:9pt">Better.<br>Bespoke.<br>European Made.</div><div class="t-img" style="left:55%; right:0; bottom:0; height:38%; background-image:url('../assets/imagery/oak-leaf-detail.jpg')"></div><div class="t-eye" style="left:9.5%; bottom:8%; opacity:.8">v1.0 · September 2026</div></div>
+      <div class="tl"><b>Editorial.</b> Warm white field, title at 40 % height, optional single image lower right. Reports, journals.</div>
+    </div>
+    <div class="c3">
+      <div class="thumb a4"><div class="t-logo" style="left:9.5%; top:7.4%; width:17%"><img src="../assets/logo/frevini-studio-logo-green.svg" style="width:100%"></div><div class="t-eye" style="right:9.5%; top:8%">FS-DS-001 · Rev C</div><div class="t-title" style="left:9.5%; top:25%; font-size:7pt">Technical datasheet<br>Basica / Moderno</div><div class="t-body" style="left:9.5%; right:40%; top:47%; font-size:2.6pt"><div class="t-row" style="position:static; margin-bottom:2.2mm"></div><div class="t-row" style="position:static; margin-bottom:2.2mm"></div><div class="t-row" style="position:static; margin-bottom:2.2mm"></div><div class="t-row" style="position:static; margin-bottom:2.2mm"></div><div class="t-row" style="position:static"></div></div><div class="t-eye" style="left:9.5%; top:42%">Product · Collection · Revision · Date</div><div class="t-foot"><span>Technical datasheet · Frevini Studio</span><span></span></div></div>
+      <div class="tl"><b>Technical.</b> White, document code top-right, H1 at 25 %, key-value block. Datasheets, specifications, guides.</div>
+    </div>
+    <div class="c3">
+      <div class="thumb a4 green"><div class="t-logo" style="left:9.5%; top:7.4%; width:20%"><img src="../assets/logo/frevini-studio-logo-white.svg" style="width:100%"></div><div class="t-title" style="left:9.5%; top:36%; font-size:9pt">Let’s talk<br>timber.</div><div class="t-body" style="left:9.5%; bottom:8%; font-size:2.8pt; line-height:1.5">0800 555 722<br>hello@frevini.co.nz<br>108 Hutt Road, Kaiwharawhara<br>Wellington 6035</div></div>
+      <div class="tl"><b>Closing / contact.</b> Green field, white logo, H1, contact block bottom-left. Last page of every document.</div>
+    </div>
+  </div>
+
+  <div class="eyebrow mt-s">Internal pages</div>
+  <div class="grid mt-s" style="align-items:start">
+    <div class="c3"><div class="thumb a4"><div class="t-eye" style="left:9.5%; top:7.4%">01 — Our timber</div><div class="t-title" style="left:9.5%; top:30%; right:30%; font-size:6.5pt">Why oak?</div><div class="t-body" style="left:9.5%; right:30%; top:44%; font-size:2.8pt; line-height:1.55">One lead paragraph in body-large. The rest of the page stays empty.</div><div class="t-img" style="left:0; right:0; bottom:0; height:24%; background-image:url('../assets/imagery/timber-stack.jpg')"></div></div><div class="tl"><b>Section opener.</b> H1 at 30 %, one paragraph, one image bleeding off the foot.</div></div>
+    <div class="c3"><div class="thumb a4"><div class="t-eye" style="left:9.5%; top:7.4%">02 — Finishes</div><div class="t-title" style="left:9.5%; top:12%; right:52%; font-size:5pt">A closer look at UV oil</div><div class="t-body" style="left:9.5%; width:38%; top:26%"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="t-img" style="left:52%; right:0; top:0; bottom:0; background-image:url('../assets/imagery/herringbone-floor-tall.jpg')"></div><div class="t-foot" style="right:52%"><span>Journal · Frevini Studio</span><span>6</span></div></div><div class="tl"><b>Text + image.</b> 5 + 7. Image bleeds to the outer edge; text starts on its top line.</div></div>
+    <div class="c3"><div class="thumb a4"><div class="t-eye" style="left:9.5%; top:7.4%">03 — Specification</div><div class="t-title" style="left:9.5%; top:12%; font-size:5pt">Product details</div><div class="t-rule" style="left:9.5%; right:9.5%; top:24%"></div><div class="t-row" style="top:30%"></div><div class="t-row" style="top:36%"></div><div class="t-row" style="top:42%"></div><div class="t-row" style="top:48%"></div><div class="t-row" style="top:54%"></div><div class="t-row" style="top:60%"></div><div class="t-body" style="left:9.5%; width:28%; top:26%; font-size:2.6pt; line-height:2.9">Thickness<br>Lamella<br>Profile<br>Bevel<br>Widths<br>Finish</div><div class="t-body" style="left:45%; width:45%; top:26%; font-size:2.6pt; line-height:2.9">15/4 mm · 20/6 mm<br>4 mm · 6 mm<br>Tongue and groove<br>0.7 mm micro<br>150 · 200 · 250 · 300 mm<br>UV lacquer · UV oil</div><div class="t-eye" style="left:9.5%; top:70%">Note</div><div class="t-body" style="left:9.5%; right:30%; top:74%"><i></i><i></i><i></i></div><div class="t-foot"><span>Datasheet · Frevini Studio</span><span>4</span></div></div><div class="tl"><b>Technical / data.</b> Tables on 8 or 12 columns, horizontal rules only, XL between blocks.</div></div>
+    <div class="c3"><div class="thumb a4 warm"><div class="t-title" style="left:17%; right:17%; top:36%; font-size:5.2pt; line-height:1.4">“Frevini began with a shared obsession to make timber flooring better.”</div><div class="t-eye" style="left:17%; top:64%; opacity:.8">— Jordan Dallimore, co-founder</div><div class="t-foot"><span>Our Story · Frevini Studio</span><span>9</span></div></div><div class="tl"><b>Quote / statement.</b> Warm white, Marcellus in columns 2–10, attribution beneath. Nothing else.</div></div>
+  </div>
+
+  <div class="eyebrow mt-s">Presentation slides · 16 : 9</div>
+  <div class="grid mt-s" style="align-items:start">
+    <div class="c4"><div class="thumb s169 img img2"><div class="t-logo" style="left:5%; top:6.7%; width:16%"><img src="../assets/logo/frevini-studio-logo-white.svg" style="width:100%"></div><div class="t-eye" style="left:5%; bottom:44%">Specifier presentation</div><div class="t-title" style="left:5%; bottom:12%; font-size:8pt">Engineered oak,<br>made in Lithuania.</div></div><div class="tl"><b>Title.</b> Image-led or green. Logo top-left; title block bottom-left.</div></div>
+    <div class="c4"><div class="thumb s169 warm"><div class="t-eye" style="left:5%; top:12%">02</div><div class="t-title" style="left:5%; top:24%; font-size:9pt">Our timber</div></div><div class="tl"><b>Section divider.</b> Number and H1 only.</div></div>
+    <div class="c4"><div class="thumb s169"><div class="t-title" style="left:5%; top:30%; width:62%; font-size:6.5pt; line-height:1.25">Where design intent meets technical mastery.</div><div class="t-img" style="left:74%; right:0; top:0; bottom:0; background-image:url('../assets/imagery/oak-leaf-detail.jpg')"></div><div class="t-foot" style="right:30%"><span>FREVINI STUDIO · Specifier presentation</span><span>3</span></div></div><div class="tl"><b>Statement.</b> One Marcellus sentence; optional image in columns 10–12.</div></div>
+    <div class="c4 mt-s"><div class="thumb s169"><div class="t-eye" style="left:5%; top:12%">Construction</div><div class="t-title" style="left:5%; top:19%; width:42%; font-size:5.5pt">Cross-bonded birch plywood</div><div class="t-body" style="left:5%; width:40%; top:40%"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="t-img" style="left:52%; right:0; top:0; bottom:0; background-image:url('../assets/imagery/timber-stack.jpg')"></div><div class="t-foot" style="right:52%"><span>FREVINI STUDIO</span><span>8</span></div></div><div class="tl"><b>Text + image.</b> Columns 1–5 text; 7–12 image bleeding three edges.</div></div>
+    <div class="c4 mt-s"><div class="thumb s169"><div class="t-eye" style="left:5%; top:12%">Lead times</div><div class="t-title" style="left:5%; top:19%; font-size:5.5pt">Weeks from order to delivery</div><div style="position:absolute; left:5%; top:44%; width:26%; height:8%; background:var(--green)"></div><div class="t-body" style="left:33%; top:44%; font-size:3pt">2–3 · NZ Reserve</div><div style="position:absolute; left:5%; top:60%; width:72%; height:8%; background:var(--olive)"></div><div class="t-body" style="left:79%; top:60%; font-size:3pt">20–22 · Bespoke</div><div class="t-foot"><span>FREVINI STUDIO</span><span>11</span></div></div><div class="tl"><b>Comparison / data.</b> One chart or table, or two key numbers. Values labelled directly.</div></div>
+    <div class="c4 mt-s"><div class="thumb s169 green"><div class="t-logo" style="left:5%; top:6.7%; width:16%"><img src="../assets/logo/frevini-studio-logo-white.svg" style="width:100%"></div><div class="t-title" style="left:5%; top:36%; font-size:8pt">Let’s talk timber.</div><div class="t-body" style="left:5%; bottom:10%; font-size:2.8pt; line-height:1.5">0800 555 722 · hello@frevini.co.nz<br>108 Hutt Road, Kaiwharawhara, Wellington 6035</div></div><div class="tl"><b>Closing.</b> Green field, white logo, H1, contact. No slide number.</div></div>
+  </div>
+
+  
+  <div class="footer"><span>Brand Guidelines · Frevini Studio</span><span>6</span></div>
+</section>
+
+<!-- ============================ PAGE 7 — INFORMATION + VOICE ============================ -->
+<section class="page">
+  <div class="eyebrow">06 — Information and voice</div>
+  <h1 class="mt-s">Precise by default.</h1>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c7">
+      <div class="h3">Product details — Basica / Moderno</div>
+      <table class="mt-s spec">
+        <tr><th style="width:38%">Property</th><th>Value</th></tr>
+        <tr><td>Construction</td><td>Engineered oak on cross-bonded, water-boil-proof birch plywood</td></tr>
+        <tr><td>Total thickness</td><td>15/4 mm · 20/6 mm</td></tr>
+        <tr><td>Oak lamella</td><td>4 mm · 6 mm</td></tr>
+        <tr><td>Profile</td><td>Tongue and groove, 0.7 mm micro-bevel (2-sided plank, 4-sided parquet)</td></tr>
+        <tr><td>Plank widths</td><td>150 · 200 · 250 · 300 mm</td></tr>
+        <tr><td>Plank lengths</td><td>1750–2400 mm</td></tr>
+        <tr><td>Finish</td><td>Basica UV lacquer · Moderno UV oil, low-VOC</td></tr>
+        <tr><td>Origin</td><td>Šiauliai, Lithuania · FSC certification on request</td></tr>
+      </table>
+      <p class="tech mt-xs">Source: Frevini technical datasheet (BPRI), November 2025. Header rule 0.75 pt green; row rules 0.35 pt Green 20; no vertical rules; units in the value, not the header.</p>
+
+      <div class="grid mt-m" style="column-gap:4mm; align-items:start">
+        <div class="c6">
+          <div class="h3">Lead time, weeks</div>
+          <svg class="mt-s" viewBox="0 0 200 70" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans" font-size="8" fill="#253C1B">
+            <line x1="0" y1="4" x2="200" y2="4" stroke="#D3D8D1" stroke-width="0.4"/>
+            <line x1="0" y1="34" x2="200" y2="34" stroke="#D3D8D1" stroke-width="0.4"/>
+            <rect x="0" y="9" width="20" height="16" fill="#253C1B"/>
+            <text x="25" y="20">2–3 &nbsp;NZ Reserve, stocked</text>
+            <rect x="0" y="39" width="150" height="16" fill="#8B9770"/>
+            <text x="155" y="50">20–22 &nbsp;Bespoke</text>
+            <text x="0" y="67" font-size="6" fill="#7C8A76">Weeks from order confirmation to delivery. Source: FAQ.</text>
+          </svg>
+          <p class="tech mt-s">Series order: Frevini Green, Olive, Oak Natural, Oak Fumed. Flat bars, no outlines, values labelled directly, axis dropped. No pies, no 3D.</p>
+        </div>
+        <div class="c6">
+          <div class="h3">Board cross-section</div>
+          <svg class="mt-s" viewBox="0 0 200 70" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans" font-size="7" fill="#253C1B">
+            <rect x="0" y="6" width="120" height="14" fill="#C1A88E"/>
+            <rect x="0" y="20" width="120" height="12" fill="#E3DCD3"/>
+            <rect x="0" y="32" width="120" height="12" fill="#F3EFE8"/>
+            <rect x="0" y="44" width="120" height="12" fill="#E3DCD3"/>
+            <rect x="0" y="6" width="120" height="50" fill="none" stroke="#253C1B" stroke-width="0.6"/>
+            <line x1="0" y1="20" x2="120" y2="20" stroke="#253C1B" stroke-width="0.4"/>
+            <line x1="126" y1="6" x2="126" y2="20" stroke="#253C1B" stroke-width="0.4"/><text x="130" y="15">Oak lamella 4 mm</text>
+            <line x1="126" y1="20" x2="126" y2="56" stroke="#253C1B" stroke-width="0.4"/><text x="130" y="40">Birch ply 11 mm</text>
+            <text x="0" y="67" font-size="6" fill="#7C8A76">15/4 mm board. Lines 0.75 pt green; fills in timber neutrals.</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="mt-m" style="background:var(--warm); padding:10mm 12mm">
+        <div class="eyebrow">Note</div>
+        <p class="body mt-xs">A warm white field with L padding and no border; one per page. Acclimatise boards in their packaging until moisture content is 8 % ± 2 %.<sup>1</sup></p>
+      </div>
+      <p class="tech mt-s" style="border-top:0.5pt solid var(--g20); width:24mm; padding-top:1.5mm">1</p>
+      <p class="tech" style="margin-top:0">Frevini Installation Guide, “Installed to stand the test of time”, August 2025. Footnotes sit above the footer behind a 24 mm rule.</p>
+    </div>
+
+    <div class="c5">
+      <div class="h2">Voice</div>
+      <p class="body mt-s">Frevini writes the way it builds: short, exact, unhurried. A three-to-six-word statement, then a sentence of proof.</p>
+      <ol class="list mt-m body" style="font-size:8.5pt; line-height:1.45">
+        <li><span class="num">1</span>&nbsp; <b style="font-weight:500">Say it short.</b> “Built not Branded.” “Why oak?” Full stops are allowed when the line is a statement.</li>
+        <li class="mt-s"><span class="num">2</span>&nbsp; <b style="font-weight:500">Specific beats superlative.</b> 25-year warranty, 15/4 mm, FSC, Šiauliai. Never “premium” or “world-class”.</li>
+        <li class="mt-s"><span class="num">3</span>&nbsp; <b style="font-weight:500">Design and technical in one breath.</b> Intent and proof in the same paragraph.</li>
+        <li class="mt-s"><span class="num">4</span>&nbsp; <b style="font-weight:500">Assured, not salesy.</b> No exclamation marks, no urgency. “Connect with us to explore how we can support your next project.”</li>
+        <li class="mt-s"><span class="num">5</span>&nbsp; <b style="font-weight:500">Plain New Zealand English, European precision.</b> Sentence case, “we”, metric, en-dashes for ranges.</li>
+        <li class="mt-s"><span class="num">6</span>&nbsp; <b style="font-weight:500">Address the specifier as a peer.</b> “A collaborative partner for specifiers.”</li>
+      </ol>
+      <table class="mt-m do-dont">
+        <tr><th>Do</th><th>Don’t</th></tr>
+        <tr><td>Engineered oak. Made in Lithuania. Specified in New Zealand.</td><td>The ultimate premium flooring solution for discerning homeowners!</td></tr>
+        <tr><td>Total thickness 15/4 mm or 20/6 mm.</td><td>Super-thick, ultra-durable boards.</td></tr>
+        <tr><td>Book a consultation →</td><td>CLICK HERE TO GET STARTED NOW</td></tr>
+        <tr><td>Let’s talk timber.</td><td>Contact our friendly sales team today!</td></tr>
+      </table>
+      
+    </div>
+  </div>
+  <div class="footer"><span>Brand Guidelines · Frevini Studio</span><span>7</span></div>
+</section>
+
+<!-- ============================ PAGE 8 — GOVERNANCE + CLOSING ============================ -->
+<section class="page">
+  <div class="eyebrow">07 — Governance</div>
+  <h1 class="mt-s">The Frevini test.</h1>
+  <div class="grid mt-m" style="align-items:start">
+    <div class="c6">
+      <p class="body">Before anything is issued, answer each question. Any “no” sends it back. Then hide the logo: is it still Frevini?</p>
+      <ol class="list mt-m body" style="font-size:8.5pt; line-height:1.45">
+        <li><span class="num">1</span>&nbsp; Is the typography unmistakably Frevini — Marcellus headings, DM Sans everything else, nothing bold?</li>
+        <li class="mt-s"><span class="num">2</span>&nbsp; Is at least forty percent of the page empty, with only an eyebrow in the top margin?</li>
+        <li class="mt-s"><span class="num">3</span>&nbsp; Is the palette green, warm white and white — Olive at most once, no other hue outside photography?</li>
+        <li class="mt-s"><span class="num">4</span>&nbsp; Is every image doing work — material, detail or a finished space — with one hero at most?</li>
+        <li class="mt-s"><span class="num">5</span>&nbsp; Is the hierarchy immediate: one eyebrow, one heading, one idea, horizontal rules only?</li>
+        <li class="mt-s"><span class="num">6</span>&nbsp; Have boxes, shadows, gradients, rounded corners and icon-bullets been removed?</li>
+        <li class="mt-s"><span class="num">7</span>&nbsp; Does every spread pair a statement with a proof?</li>
+        <li class="mt-s"><span class="num">8</span>&nbsp; Would it look at home beside frevini.co.nz?</li>
+      </ol>
+    </div>
+    <div class="c6">
+      <table class="tech" style="font-size:7pt">
+        <tr><th style="width:50%">Do</th><th>Don’t</th></tr>
+        <tr><td>Marcellus for every heading; DM Sans Regular for sub-heads</td><td>Bold sans headings; Times, Cambria or Calibri fallbacks</td></tr>
+        <tr><td>#253C1B for all text; white and warm white fields</td><td>Black text; accent colours; gradients; coloured header bands</td></tr>
+        <tr><td>Square corners; full-bleed or column-edge images</td><td>Rounded cards, drop shadows, bordered insets, collages</td></tr>
+        <tr><td>Tables with horizontal rules only, units in the value</td><td>Office table styles, vertical rules, filled header rows in blue</td></tr>
+        <tr><td>One text CTA with a 1 pt rule and an arrow</td><td>Outlined buttons, multiple CTAs, arrows as bullets</td></tr>
+        <tr><td>Logo once, top-left, with tail-height clear space</td><td>Logo on every page, in the footer, or as a watermark</td></tr>
+        <tr><td>Short statement, then a sentence of proof</td><td>Exclamation marks, superlatives, “click here”</td></tr>
+      </table>
+
+      <div class="eyebrow mt-l">Token reference</div>
+      <table class="tech mt-s" style="font-size:7pt">
+        <tr><td style="width:36%">Green · Warm White · Olive</td><td>#253C1B · #FAF5EB · #8B9770</td></tr>
+        <tr><td>Type</td><td>Marcellus 400 · DM Sans 300/400/500</td></tr>
+        <tr><td>A4 scale, pt</td><td>48 · 30 · 20 · 13 · 12 · 9.5 · 8 · 7 (eyebrow 7.5 +0.14 em)</td></tr>
+        <tr><td>Slide scale, pt</td><td>66 · 44 · 30 · 20 · 20 · 16 · 11 · 10 (eyebrow 11)</td></tr>
+        <tr><td>A4 margins</td><td>22 · 20 · 24 · 20 mm · 12 columns · 4 mm gutters · footer at 12 mm</td></tr>
+        <tr><td>Slide safe area</td><td>72 · 96 · 72 · 96 px on 1920 × 1080 · 12 columns · 24 px gutters</td></tr>
+        <tr><td>Spacing</td><td>2 · 4 · 8 · 12 · 24 · 40 mm (× 2 px web, × 4 px slide)</td></tr>
+        <tr><td>Rules</td><td>CTA 1 pt green · section 0.5 pt Green 20 · table 0.75 / 0.35 pt</td></tr>
+        <tr><td>Icons · radius · overlay</td><td>24 grid, 1.5 stroke · 0 · black 30–45 %</td></tr>
+        <tr><td style="border:0">Provenance</td><td style="border:0">Colours, geometry (B) · typefaces (B) · print and slide rules (C)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="closing">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start">
+      <img class="logo" src="../assets/logo/frevini-studio-logo-white.svg" alt="Frevini Studio">
+      <div class="eyebrow" style="opacity:.85">Brand Guidelines · Version 1.0 · September 2026</div>
+    </div>
+    <div class="grid" style="margin-top:8mm; align-items:end">
+      <div class="c6"><h2>Let’s talk timber.</h2><span class="cta rev mt-s">Book a consultation →</span></div>
+      <div class="c6 body" style="line-height:1.6">0800 555 722<br>hello@frevini.co.nz<br>108 Hutt Road, Kaiwharawhara, Wellington 6035<br>frevini.co.nz</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
